@@ -1,0 +1,100 @@
+SIMULADO ONLINE — Henrique Coimbra · Mentoria · Concursos
+VERSÃO PARA NETLIFY (Functions + Blobs)
+=========================================================
+
+O QUE É CADA COISA
+------------------
+public/prova.html    -> link que você passa para os alunos
+public/painel.html   -> seu painel de resultados (NÃO divulgue)
+public/gerador.html  -> cria login + senha de cada aluno (abre no navegador)
+netlify/functions/   -> o "motor" (correção, login, uma tentativa só). NÃO é
+                        servido publicamente: o gabarito fica seguro aqui.
+  lib/config.mjs     -> AQUI você edita senha do professor, alunos, duração...
+  lib/questoes.mjs   -> as 60 questões + gabarito
+netlify.toml         -> configuração do site
+package.json         -> dependência do armazenamento (Netlify Blobs)
+
+Por que não foi em PHP: o Netlify é hospedagem estática (não roda PHP). Esta
+versão usa Netlify Functions + Netlify Blobs — tudo dentro do próprio Netlify,
+sem banco de dados externo e sem custo adicional nos planos comuns.
+
+
+PASSO 1 — GERAR OS LOGINS DOS ALUNOS
+------------------------------------
+1. Dê dois cliques em public/gerador.html (abre no seu navegador).
+2. Cole a lista de nomes (um por linha) e clique em "Gerar".
+3. Baixe/Imprima a lista de senhas para entregar aos alunos.
+4. Clique em "Copiar código" e cole no lugar do trecho ALUNOS: {…} dentro do
+   arquivo netlify/functions/lib/config.mjs.
+5. Ainda no config.mjs, troque a PROF_SENHA (senha do seu painel).
+
+
+PASSO 2 — PUBLICAR NO NETLIFY
+-----------------------------
+Recomendado: criar um site NOVO só para o simulado e usar um subdomínio, ex.:
+simulado.henriquecoimbra.com.br — assim você não mexe no site das suas LPs.
+
+Escolha UM dos caminhos:
+
+CAMINHO A — pela linha de comando (Netlify CLI) — mais direto
+  Pré-requisito: ter o Node.js instalado (https://nodejs.org).
+  Abra o Terminal/Prompt na pasta deste projeto e rode, na ordem:
+     npm install -g netlify-cli
+     netlify login
+     npm install
+     netlify deploy --prod
+  Na primeira vez ele pergunta se quer criar um site novo (responda que sim) ou
+  vincular a um existente. Pronto: ele publica e mostra a URL final.
+
+CAMINHO B — pelo GitHub (sem terminal)
+  1. Crie um repositório no GitHub e suba esta pasta inteira.
+  2. No Netlify: "Add new site" -> "Import an existing project" -> escolha o
+     repositório.
+  3. Build command: deixe em branco. Publish directory: public.
+     (As funções são detectadas sozinhas em netlify/functions.)
+  4. Clique em Deploy. A cada novo "git push", o Netlify republica.
+
+IMPORTANTE: o arrastar-e-soltar (drag-and-drop) puro NÃO funciona aqui, porque
+ele não instala a dependência do armazenamento. Use o caminho A ou o B.
+
+
+PASSO 3 — APONTAR O SUBDOMÍNIO (opcional, recomendado)
+------------------------------------------------------
+No site do simulado, em Domain settings, adicione
+simulado.henriquecoimbra.com.br e siga as instruções de DNS do Netlify.
+Enquanto isso, o site já funciona na URL .netlify.app que ele gera.
+
+
+ENDEREÇOS FINAIS
+----------------
+Prova dos alunos:  https://SEU-SITE/prova.html
+Seu painel:        https://SEU-SITE/painel.html   (uso interno)
+Gerador de logins: você pode usar local; se quiser online, /gerador.html
+
+
+COMO EDITAR DEPOIS (lembre-se: só vale após PUBLICAR de novo)
+-------------------------------------------------------------
+Tudo em netlify/functions/lib/config.mjs:
+  PROF_SENHA            -> senha do seu painel
+  ALUNOS               -> logins (use o gerador)
+  DURACAO_MIN          -> minutos (90 = 1h30)
+  PROVA_TITULO/SUBTITULO
+  storeName            -> troque para um nome novo a cada simulado novo;
+                          isso começa uma turma do zero (resultados antigos
+                          ficam preservados sob o nome antigo).
+Depois de editar, rode de novo "netlify deploy --prod" (caminho A) ou faça
+"git push" (caminho B).
+
+
+ENTRE TURMAS
+------------
+No painel há o botão "Zerar resultados", que apaga os envios do simulado atual
+(os alunos poderão refazer). Use com cuidado.
+
+
+OBSERVAÇÕES
+-----------
+- O gabarito nunca vai para o navegador do aluno (a correção é no servidor).
+- Cada aluno só consegue enviar uma vez; o cronômetro é controlado pelo
+  servidor, então fechar e reabrir a página não "zera" o tempo.
+- Troque a PROF_SENHA e as senhas de exemplo antes de aplicar de verdade.

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Gerador de logins · Simulado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --grafite:#1A1A1F; --carvao:#2A2A33; --esmeralda:#047857; --champagne:#C9A86A; --marfim:#F8F7F4;
+    --esm-soft:rgba(4,120,87,.12); --champ-soft:rgba(201,168,106,.18);
+    --card:#fff; --linha:#E7E3DA; --tinta:#1A1A1F; --tinta-suave:#5C5C66; --tinta-fraca:#9A9AA2;
+    --raio:14px; --sombra:0 1px 2px rgba(26,26,31,.04),0 8px 26px rgba(26,26,31,.06);
+    --disp:'Manrope',system-ui,sans-serif; --corpo:'Inter',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--corpo);color:var(--tinta);background:var(--marfim);line-height:1.55}
+  h1,h2,h3{font-family:var(--disp)}
+  button{font-family:inherit;cursor:pointer}
+  code,.mono{font-family:'Inter',monospace;font-variant-numeric:tabular-nums}
+  .hc{display:inline-block;color:var(--grafite)} .hc svg{display:block;width:100%;height:100%}
+
+  .topo{background:var(--grafite);color:var(--marfim)}
+  .topo-in{max-width:1000px;margin:0 auto;display:flex;align-items:center;gap:13px;padding:14px 22px}
+  .topo .hc{width:30px;height:30px;color:var(--marfim)}
+  .topo .l1{font-family:var(--disp);font-size:9.5px;letter-spacing:.26em;font-weight:500}
+  .topo .l1 .seg{color:var(--esmeralda)}
+  .topo .l2{font-family:var(--disp);font-size:15px;font-weight:700}
+
+  .container{max-width:1000px;margin:0 auto;padding:28px 22px 80px}
+  .intro{color:var(--tinta-suave);font-size:14.5px;margin:0 0 22px;max-width:680px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+  .secao{background:#fff;border:1px solid var(--linha);border-radius:var(--raio);box-shadow:var(--sombra);padding:20px 22px;margin-bottom:20px}
+  .secao h3{margin:0 0 14px;font-size:15.5px;font-weight:700}
+  label{display:block;font-size:11px;font-weight:600;color:var(--tinta-suave);text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px}
+  textarea{width:100%;min-height:230px;padding:13px 14px;border:1.5px solid var(--linha);border-radius:11px;font-family:var(--corpo);font-size:14px;background:#FCFBF9;resize:vertical;line-height:1.6}
+  textarea:focus{outline:none;border-color:var(--champagne);box-shadow:0 0 0 4px var(--champ-soft)}
+  .opcoes{display:flex;flex-direction:column;gap:14px}
+  .seg-control{display:flex;gap:8px;flex-wrap:wrap}
+  .seg-control button{flex:1;min-width:120px;padding:11px;border:1.5px solid var(--linha);border-radius:10px;background:#FCFBF9;font-size:13.5px;font-weight:500;color:var(--tinta-suave)}
+  .seg-control button.on{border-color:var(--grafite);background:#F6F5F1;color:var(--tinta);font-weight:600}
+  .ajuda{font-size:12.5px;color:var(--tinta-fraca);margin-top:6px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border:none;border-radius:11px;background:var(--grafite);color:var(--marfim);font-weight:600;font-size:14.5px;transition:background .15s}
+  .btn:hover{background:#000}
+  .btn.full{width:100%}
+  .btn.sec{background:#ECEAE3;color:var(--tinta)} .btn.sec:hover{background:#e2dfd6}
+  .btn.ouro{background:var(--champagne);color:#2A2210} .btn.ouro:hover{filter:brightness(1.05)}
+
+  #saida{display:none}
+  .barra-acoes{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+  table{border-collapse:collapse;width:100%;font-size:14px}
+  th,td{padding:9px 12px;text-align:left;border-bottom:1px solid #F1EEE6}
+  thead th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--tinta-suave);font-weight:600;background:#FAF8F3}
+  td.cred{font-family:'Inter',monospace;font-weight:600;letter-spacing:.02em}
+  .codigo-bloco{position:relative}
+  pre{background:#1A1A1F;color:#EDEDEF;border-radius:12px;padding:18px 18px;overflow:auto;font-size:12.5px;line-height:1.6;max-height:360px;margin:0}
+  pre .k{color:#C9A86A} pre .s{color:#7FD1A8}
+  .copia-flut{position:absolute;top:12px;right:12px}
+  .nota{background:var(--esm-soft);border:1px solid rgba(4,120,87,.2);border-radius:11px;padding:13px 15px;font-size:13.5px;color:#0a5c44;margin-top:14px}
+  .nota b{color:var(--esmeralda)}
+
+  @media (max-width:760px){ .grid{grid-template-columns:1fr} }
+  @media print{
+    .topo,.intro,.no-print,form,.opcoes,#bloco-config{display:none!important}
+    body{background:#fff} .container{padding:0}
+    .secao{box-shadow:none;border:none;padding:0}
+    table{font-size:12px} thead th{background:#eee}
+    h3.print-tit{display:block!important;margin-bottom:4px}
+  }
+  .print-tit{display:none}
+</style>
+</head>
+<body>
+
+<svg style="position:absolute;width:0;height:0" aria-hidden="true"><symbol id="hc-mono" viewBox="-45 -35 90 88">
+  <g stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none">
+    <path d="M -36,-25 L -36,25"/><path d="M -16,-25 L -16,25"/><path d="M -36,0 L -16,0"/><path d="M 36,-11 A 22,22 0 1,0 36,11"/>
+  </g>
+  <g stroke="currentColor" stroke-width="0.7" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M -30,33 L 30,33"/><path d="M -30,40 L 30,40"/><path d="M -30,47 L 30,47"/>
+  </g>
+</symbol></svg>
+
+<div class="topo"><div class="topo-in">
+  <span class="hc"><svg><use href="#hc-mono"/></svg></span>
+  <div><div class="l1">HENRIQUE COIMBRA <span class="seg">· SIMULADO</span></div><div class="l2">Gerador de logins</div></div>
+</div></div>
+
+<div class="container">
+  <p class="intro no-print">Cole a lista de nomes dos alunos (um por linha). A página cria um login e uma senha para cada um, gera o bloco pronto para colar na configuração do simulado e uma lista para você distribuir ou imprimir. Tudo acontece aqui no seu navegador — nada é enviado para a internet.</p>
+
+  <div class="grid no-print">
+    <div class="secao">
+      <h3>1. Nomes dos alunos</h3>
+      <label for="nomes">Um nome por linha</label>
+      <textarea id="nomes" placeholder="Maria Silva
+João Pereira
+Ana Beatriz Souza"></textarea>
+    </div>
+    <div class="secao">
+      <h3>2. Opções</h3>
+      <div class="opcoes">
+        <div>
+          <label>Formato do login</label>
+          <div class="seg-control" id="opt-login">
+            <button data-v="nome" class="on">Pelo nome (maria.silva)</button>
+            <button data-v="seq">Sequencial (aluno01)</button>
+          </div>
+          <div class="ajuda">O login é o que o aluno digita para entrar.</div>
+        </div>
+        <div>
+          <label>Senha</label>
+          <div class="seg-control" id="opt-senha">
+            <button data-v="6" class="on">Aleatória (6 caracteres)</button>
+            <button data-v="8">Aleatória (8 caracteres)</button>
+          </div>
+          <div class="ajuda">Senhas fáceis de digitar, sem letras/números ambíguos.</div>
+        </div>
+        <button class="btn full" id="btn-gerar">Gerar logins e senhas</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="saida">
+    <div class="secao">
+      <h3 class="no-print">3. Credenciais dos alunos</h3>
+      <h3 class="print-tit">Simulado — credenciais de acesso · Henrique Coimbra Mentoria</h3>
+      <div class="barra-acoes no-print">
+        <button class="btn ouro" id="btn-csv">↓ Baixar lista (CSV)</button>
+        <button class="btn sec" id="btn-imprimir">🖶 Imprimir / PDF</button>
+        <button class="btn sec" id="btn-regerar">↻ Gerar novas senhas</button>
+      </div>
+      <table id="tab"><thead><tr><th>#</th><th>Nome</th><th>Login</th><th>Senha</th></tr></thead><tbody id="tab-corpo"></tbody></table>
+    </div>
+
+    <div class="secao" id="bloco-config">
+      <h3>4. Bloco para colar na configuração</h3>
+      <p style="color:var(--tinta-suave);font-size:13.5px;margin:0 0 14px">Abra o arquivo <code>netlify/functions/lib/config.mjs</code> e substitua o trecho <code>ALUNOS: {…}</code> por este:</p>
+      <div class="codigo-bloco">
+        <button class="btn ouro copia-flut" id="btn-copia-code">Copiar código</button>
+        <pre id="code"></pre>
+      </div>
+      <div class="nota">Depois de colar e salvar, faça o deploy de novo (a configuração só vale após publicar). <b>Guarde a lista de senhas</b> — elas não ficam salvas em lugar nenhum depois que você fecha esta página.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  const $=s=>document.querySelector(s);
+  let estiloLogin='nome', tamSenha=6, dados=[];
+
+  segControl('opt-login', v=>estiloLogin=v);
+  segControl('opt-senha', v=>tamSenha=parseInt(v,10));
+  function segControl(id,cb){
+    const wrap=$('#'+id);
+    wrap.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{
+      wrap.querySelectorAll('button').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on'); cb(b.dataset.v);
+    }));
+  }
+
+  $('#btn-gerar').addEventListener('click', gerar);
+  $('#btn-regerar').addEventListener('click', ()=>{ dados.forEach(d=>d.senha=senha()); render(); });
+  $('#btn-csv').addEventListener('click', baixarCSV);
+  $('#btn-imprimir').addEventListener('click', ()=>window.print());
+  $('#btn-copia-code').addEventListener('click', copiarCodigo);
+
+  const ALFA='abcdefghijkmnpqrstuvwxyz23456789'; // sem o, l, 0, 1, etc.
+  function senha(){ let s=''; const n=tamSenha; const arr=new Uint32Array(n); (crypto||{}).getRandomValues?crypto.getRandomValues(arr):arr.forEach((_,i)=>arr[i]=Math.random()*1e9); for(let i=0;i<n;i++) s+=ALFA[arr[i]%ALFA.length]; return s; }
+  function slug(t){ return t.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,''); }
+
+  function gerar(){
+    const nomes=$('#nomes').value.split('\n').map(s=>s.trim()).filter(Boolean);
+    if(nomes.length===0){ alert('Cole pelo menos um nome.'); return; }
+    const usados={}; dados=[];
+    nomes.forEach((nome,idx)=>{
+      let login;
+      if(estiloLogin==='seq'){ login='aluno'+String(idx+1).padStart(2,'0'); }
+      else{
+        const p=nome.split(/\s+/).filter(Boolean);
+        login = p.length>1 ? slug(p[0])+'.'+slug(p[p.length-1]) : slug(p[0]||('aluno'+(idx+1)));
+        if(!login) login='aluno'+(idx+1);
+      }
+      let base=login, k=2; while(usados[login]){ login=base+k; k++; } usados[login]=1;
+      dados.push({ nome, login, senha:senha() });
+    });
+    render(); $('#saida').style.display='block'; $('#saida').scrollIntoView({behavior:'smooth'});
+  }
+
+  function render(){
+    $('#tab-corpo').innerHTML = dados.map((d,i)=>'<tr><td>'+(i+1)+'</td><td>'+esc(d.nome)+'</td><td class="cred">'+esc(d.login)+'</td><td class="cred">'+esc(d.senha)+'</td></tr>').join('');
+    const linhas = dados.map(d=>"    '"+jsesc(d.login)+"': { senha: '"+jsesc(d.senha)+"', nome: '"+jsesc(d.nome)+"' },");
+    const code = "  ALUNOS: {\n"+linhas.join('\n')+"\n  },";
+    $('#code').innerHTML = code
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+      .replace(/(ALUNOS|senha|nome)(:)/g,'<span class="k">$1</span>$2')
+      .replace(/'([^']*)'/g,"'<span class=\"s\">$1</span>'");
+    $('#code').dataset.raw = code;
+  }
+
+  function baixarCSV(){
+    let linhas=['Nome;Login;Senha'];
+    dados.forEach(d=>linhas.push([csv(d.nome),csv(d.login),csv(d.senha)].join(';')));
+    const blob=new Blob(["\uFEFF"+linhas.join('\n')],{type:'text/csv;charset=utf-8;'});
+    const url=URL.createObjectURL(blob),a=document.createElement('a');
+    a.href=url; a.download='credenciais_alunos.csv'; a.click(); URL.revokeObjectURL(url);
+  }
+  function copiarCodigo(){
+    const t=$('#code').dataset.raw||'';
+    navigator.clipboard.writeText(t).then(()=>{ const b=$('#btn-copia-code'); const o=b.textContent; b.textContent='Copiado!'; setTimeout(()=>b.textContent=o,1500); },()=>alert('Copie manualmente o texto.'));
+  }
+  function esc(s){const d=document.createElement('div');d.textContent=s==null?'':s;return d.innerHTML;}
+  function jsesc(s){return String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'");}
+  function csv(s){s=String(s==null?'':s);return /[;"\n]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s;}
+})();
+</script>
+</body>
+</html>

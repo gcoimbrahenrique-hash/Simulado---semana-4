@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Painel do Professor · Simulado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --grafite:#1A1A1F; --carvao:#2A2A33; --esmeralda:#047857; --champagne:#C9A86A; --marfim:#F8F7F4;
+    --esm-soft:rgba(4,120,87,.12); --champ-soft:rgba(201,168,106,.18);
+    --erro:#A23B30; --erro-soft:rgba(162,59,48,.12);
+    --card:#fff; --linha:#E7E3DA; --tinta:#1A1A1F; --tinta-suave:#5C5C66; --tinta-fraca:#9A9AA2;
+    --raio:14px; --sombra:0 1px 2px rgba(26,26,31,.04),0 8px 26px rgba(26,26,31,.06);
+    --disp:'Manrope',system-ui,sans-serif; --corpo:'Inter',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--corpo);color:var(--tinta);background:var(--marfim);line-height:1.5}
+  .num{font-variant-numeric:tabular-nums}
+  button{font-family:inherit;cursor:pointer}
+  h1,h2,h3{font-family:var(--disp)}
+  .hc{display:inline-block;color:var(--grafite)} .hc svg{display:block;width:100%;height:100%}
+
+  .login-wrap{min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(130% 130% at 50% -10%, #2A2A33 0%, #1A1A1F 62%, #141418 100%)}
+  .login-card{width:100%;max-width:400px;background:#fff;border-radius:20px;padding:36px;text-align:center;box-shadow:0 30px 90px rgba(0,0,0,.4)}
+  .login-card .hc{width:52px;height:52px;margin:0 auto 14px;color:var(--grafite)}
+  .login-card .marca{font-family:var(--disp);font-size:10.5px;letter-spacing:.3em;color:var(--tinta-suave);font-weight:500;margin-bottom:6px}
+  .login-card .marca .seg{color:var(--esmeralda)}
+  .login-card h1{font-size:20px;margin:0 0 22px;letter-spacing:.03em;font-weight:700}
+  .login-card input{width:100%;padding:13px 14px;border:1.5px solid var(--linha);border-radius:11px;font-size:15px;font-family:var(--corpo);background:#FCFBF9;margin-bottom:14px}
+  .login-card input:focus{outline:none;border-color:var(--champagne);box-shadow:0 0 0 4px var(--champ-soft)}
+  .btn{width:100%;padding:13px;border:none;border-radius:11px;background:var(--grafite);color:var(--marfim);font-weight:600;font-size:15px;transition:background .15s}
+  .btn:hover{background:#000}
+  .erro{display:none;margin-top:13px;padding:11px;background:var(--erro-soft);color:var(--erro);border-radius:9px;font-size:13.5px}
+  .erro.on{display:block}
+
+  #painel{display:none}
+  .topo{background:var(--grafite);color:var(--marfim);position:sticky;top:0;z-index:30}
+  .topo-in{max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 22px;flex-wrap:wrap}
+  .topo .ident{display:flex;align-items:center;gap:13px}
+  .topo .hc{width:30px;height:30px;color:var(--marfim)}
+  .topo .l1{font-family:var(--disp);font-size:9.5px;letter-spacing:.26em;font-weight:500}
+  .topo .l1 .seg{color:var(--esmeralda)}
+  .topo .l2{font-family:var(--disp);font-size:15px;font-weight:700}
+  .topo .acoes{display:flex;gap:9px;flex-wrap:wrap}
+  .tbtn{padding:9px 14px;border-radius:9px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:var(--marfim);font-weight:500;font-size:13px;transition:background .15s}
+  .tbtn:hover{background:rgba(255,255,255,.14)}
+  .tbtn.ouro{background:var(--champagne);border-color:var(--champagne);color:#2A2210;font-weight:600}
+  .tbtn.ouro:hover{filter:brightness(1.05)}
+  .tbtn.perigo:hover{background:rgba(162,59,48,.35);border-color:rgba(162,59,48,.6)}
+
+  .container{max-width:1240px;margin:0 auto;padding:26px 22px 80px}
+  .titulo-bloco{margin-bottom:22px}
+  .titulo-bloco h2{margin:0 0 3px;font-size:21px;font-weight:700}
+  .titulo-bloco p{margin:0;color:var(--tinta-suave);font-size:14px}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:28px}
+  .kpi{background:#fff;border:1px solid var(--linha);border-radius:var(--raio);padding:18px 20px;box-shadow:var(--sombra)}
+  .kpi .rot{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--tinta-suave);font-weight:600}
+  .kpi .val{font-family:var(--disp);font-size:30px;font-weight:700;margin-top:6px;line-height:1}
+  .kpi .val small{font-size:15px;color:var(--tinta-fraca);font-weight:500}
+  .kpi.ok .val{color:var(--esmeralda)}
+
+  .secao{background:#fff;border:1px solid var(--linha);border-radius:var(--raio);box-shadow:var(--sombra);margin-bottom:26px;overflow:hidden}
+  .secao-cab{padding:16px 20px;border-bottom:1px solid var(--linha);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .secao-cab h3{margin:0;font-size:15.5px;font-weight:700}
+  .secao-cab .dica{font-size:12.5px;color:var(--tinta-suave)}
+  .scroll{overflow:auto}
+  table{border-collapse:collapse;width:100%;font-size:13.5px}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid #F1EEE6;white-space:nowrap}
+  thead th{background:#FAF8F3;position:sticky;top:0;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--tinta-suave);font-weight:600;z-index:2}
+  tbody tr:hover{background:#FCFBF7}
+  .cnum{font-variant-numeric:tabular-nums;text-align:center}
+  .barra-mini{display:inline-block;width:70px;height:8px;border-radius:4px;background:#ECEAE2;vertical-align:middle;margin-right:8px;overflow:hidden}
+  .barra-mini > i{display:block;height:100%;border-radius:4px}
+  .pct-num{font-variant-numeric:tabular-nums;font-weight:600}
+  .tag{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11.5px;font-weight:600}
+  .tag.alta{background:var(--esm-soft);color:var(--esmeralda)}
+  .tag.media{background:var(--champ-soft);color:#9C7A2E}
+  .tag.baixa{background:var(--erro-soft);color:var(--erro)}
+  .gab{font-family:var(--disp);font-weight:700;color:var(--grafite)}
+
+  .matriz th.aluno-col,.matriz td.aluno-col{position:sticky;left:0;background:#fff;z-index:1;border-right:1px solid var(--linha);min-width:150px;white-space:nowrap}
+  .matriz thead th.aluno-col{background:#FAF8F3;z-index:3}
+  .matriz td.aluno-col{font-weight:500}
+  .matriz th.qh{text-align:center;font-variant-numeric:tabular-nums;padding:8px 6px;min-width:30px}
+  .cel-r{text-align:center;font-weight:700;font-family:var(--disp);padding:8px 6px}
+  .cel-r.c{background:var(--esm-soft);color:var(--esmeralda)}
+  .cel-r.e{background:var(--erro-soft);color:var(--erro)}
+  .cel-r.b{color:var(--tinta-fraca)}
+  .legenda{display:flex;gap:18px;padding:12px 20px;font-size:12.5px;color:var(--tinta-suave);flex-wrap:wrap}
+  .legenda span i{display:inline-block;width:18px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:6px;text-align:center;font-size:10px;line-height:14px;font-weight:700;font-family:var(--disp)}
+  .vazio{padding:50px 20px;text-align:center;color:var(--tinta-suave)}
+  .pendente{color:var(--tinta-fraca);font-style:italic}
+  @media (max-width:640px){ .topo .l2{display:none} .container{padding:18px 14px 60px} }
+</style>
+</head>
+<body>
+
+<svg style="position:absolute;width:0;height:0" aria-hidden="true"><symbol id="hc-mono" viewBox="-45 -35 90 88">
+  <g stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none">
+    <path d="M -36,-25 L -36,25"/><path d="M -16,-25 L -16,25"/><path d="M -36,0 L -16,0"/><path d="M 36,-11 A 22,22 0 1,0 36,11"/>
+  </g>
+  <g stroke="currentColor" stroke-width="0.7" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M -30,33 L 30,33"/><path d="M -30,40 L 30,40"/><path d="M -30,47 L 30,47"/>
+  </g>
+</symbol></svg>
+
+<div class="login-wrap" id="tela-login">
+  <div class="login-card">
+    <span class="hc"><svg><use href="#hc-mono"/></svg></span>
+    <div class="marca">HENRIQUE COIMBRA <span class="seg">· MENTORIA</span></div>
+    <h1>Painel do Professor</h1>
+    <input id="in-senha" type="password" placeholder="Senha do professor" autocomplete="current-password">
+    <button class="btn" id="btn-entrar">Acessar resultados</button>
+    <div class="erro" id="erro"></div>
+  </div>
+</div>
+
+<div id="painel">
+  <div class="topo">
+    <div class="topo-in">
+      <div class="ident">
+        <span class="hc"><svg><use href="#hc-mono"/></svg></span>
+        <div><div class="l1">HENRIQUE COIMBRA <span class="seg">· SIMULADO</span></div><div class="l2">Painel do Professor</div></div>
+      </div>
+      <div class="acoes">
+        <button class="tbtn" id="btn-atualizar">↻ Atualizar</button>
+        <button class="tbtn ouro" id="btn-csv">↓ Exportar CSV</button>
+        <button class="tbtn perigo" id="btn-zerar">Zerar resultados</button>
+        <button class="tbtn" id="btn-sair">Sair</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="titulo-bloco"><h2 id="p-titulo">Resultados</h2><p id="p-sub"></p></div>
+    <div class="cards" id="cards"></div>
+
+    <div class="secao">
+      <div class="secao-cab"><h3>Desempenho por aluno</h3><span class="dica">Ordenado da maior para a menor nota</span></div>
+      <div class="scroll"><table id="tab-alunos"></table></div>
+    </div>
+
+    <div class="secao">
+      <div class="secao-cab"><h3>Questões mais erradas</h3><span class="dica">Ordenado pela menor taxa de acerto da turma</span></div>
+      <div class="scroll"><table id="tab-questoes"></table></div>
+    </div>
+
+    <div class="secao">
+      <div class="secao-cab"><h3>Mapa de respostas (aluno × questão)</h3><span class="dica">Cada célula: certo, errado ou em branco</span></div>
+      <div class="scroll"><table class="matriz" id="tab-matriz"></table></div>
+      <div class="legenda">
+        <span><i class="cel-r c">C</i> acertou</span>
+        <span><i class="cel-r e">E</i> errou (mostra a letra marcada)</span>
+        <span><i class="cel-r b">–</i> em branco</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  const API='/api';
+  const LETRAS=['A','B','C','D','E','F','G','H'];
+  let SENHA=null, DADOS=null;
+  const $=s=>document.querySelector(s);
+
+  $('#btn-entrar').addEventListener('click',entrar);
+  $('#in-senha').addEventListener('keydown',e=>{if(e.key==='Enter')entrar();});
+  $('#btn-atualizar').addEventListener('click',()=>carregar());
+  $('#btn-sair').addEventListener('click',()=>location.reload());
+  $('#btn-csv').addEventListener('click',exportarCSV);
+  $('#btn-zerar').addEventListener('click',zerar);
+
+  async function entrar(){
+    const senha=$('#in-senha').value;
+    if(!senha){erro('Digite a senha.');return;}
+    const btn=$('#btn-entrar');btn.disabled=true;btn.textContent='Verificando…';
+    const ok=await carregar(senha);
+    if(ok){ $('#tela-login').style.display='none'; $('#painel').style.display='block'; }
+    else { btn.disabled=false; btn.textContent='Acessar resultados'; }
+  }
+  function erro(t){const e=$('#erro');e.textContent=t;e.className='erro on';}
+
+  async function carregar(senha){
+    senha=senha||SENHA;
+    try{
+      const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({acao:'resultados',prof_senha:senha})});
+      const d=await r.json();
+      if(!d.ok){ erro(d.erro||'Falha ao carregar.'); return false; }
+      SENHA=senha; DADOS=d; render(d); return true;
+    }catch(e){ erro('Erro de conexão com o servidor.'); return false; }
+  }
+
+  async function zerar(){
+    if(!confirm('Apagar TODOS os resultados deste simulado? Os alunos poderão refazer. Esta ação não pode ser desfeita.')) return;
+    try{
+      const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({acao:'zerar',prof_senha:SENHA})});
+      const d=await r.json();
+      if(d.ok){ alert(d.zerados+' registro(s) apagado(s).'); carregar(); }
+      else alert(d.erro||'Não foi possível zerar.');
+    }catch(e){ alert('Erro de conexão.'); }
+  }
+
+  function render(d){
+    $('#p-titulo').textContent=d.titulo;
+    $('#p-sub').textContent=(d.subtitulo||'')+' · '+d.total+' questões · 1h30';
+    const feitos=d.alunos.filter(a=>a.finalizado), total=d.total;
+    const medias=feitos.map(a=>a.acertos);
+    const media=feitos.length?(medias.reduce((x,y)=>x+y,0)/feitos.length):0;
+    const maior=feitos.length?Math.max(...medias):0, menor=feitos.length?Math.min(...medias):0;
+    $('#cards').innerHTML=
+      kpi('Provas enviadas',feitos.length+' <small>/ '+d.turma.length+'</small>')+
+      kpi('Média da turma',media.toFixed(1)+' <small>/ '+total+'</small>','ok')+
+      kpi('Maior nota',maior+' <small>/ '+total+'</small>')+
+      kpi('Menor nota',menor+' <small>/ '+total+'</small>');
+
+    const linhas=d.alunos.slice().sort((a,b)=>((!!b.finalizado)-(!!a.finalizado))||((b.acertos||0)-(a.acertos||0)));
+    let h='<thead><tr><th>#</th><th>Aluno</th><th>Login</th><th>Acertos</th><th>Aproveitamento</th><th>Tempo</th><th>Enviado em</th></tr></thead><tbody>';
+    if(linhas.length===0) h+='<tr><td colspan="7" class="vazio">Nenhum acesso registrado ainda.</td></tr>';
+    linhas.forEach((a,i)=>{
+      if(a.finalizado){
+        const pct=Math.round(a.acertos*100/total);
+        h+='<tr><td class="cnum">'+(i+1)+'</td><td>'+esc(a.nome)+'</td><td>'+esc(a.login)+'</td><td class="cnum">'+a.acertos+'/'+total+'</td><td>'+barra(pct)+'</td><td class="cnum">'+tempo(a)+'</td><td>'+dataHora(a.fim)+'</td></tr>';
+      } else {
+        h+='<tr><td class="cnum">–</td><td>'+esc(a.nome)+'</td><td>'+esc(a.login)+'</td><td colspan="4" class="pendente">em andamento (entrou, ainda não enviou)</td></tr>';
+      }
+    });
+    h+='</tbody>'; $('#tab-alunos').innerHTML=h;
+
+    const stats=d.questoes.map(q=>{
+      let ac=0,resp=0; feitos.forEach(a=>{const det=a.detalhe&&a.detalhe[q.id]; if(det){resp++; if(det.acertou)ac++;}});
+      return {q,ac,resp,pct:resp?Math.round(ac*100/resp):null};
+    }).sort((a,b)=>{ if(a.pct===null)return 1; if(b.pct===null)return -1; return a.pct-b.pct; });
+    let hq='<thead><tr><th>Questão</th><th>Tema</th><th>Gabarito</th><th>Acertos</th><th>Taxa de acerto</th><th>Comentário</th></tr></thead><tbody>';
+    if(feitos.length===0) hq+='<tr><td colspan="6" class="vazio">As estatísticas aparecem quando o primeiro aluno enviar a prova.</td></tr>';
+    stats.forEach(s=>{
+      const pct=s.pct;
+      const tag=pct===null?'':pct>=70?'<span class="tag alta">fácil p/ turma</span>':pct>=40?'<span class="tag media">atenção</span>':'<span class="tag baixa">crítica</span>';
+      hq+='<tr><td class="cnum">'+String(s.q.n).padStart(2,'0')+'</td><td>'+esc(s.q.tema)+'</td><td class="gab">'+s.q.correta_letra+'</td><td class="cnum">'+s.ac+'/'+s.resp+'</td><td>'+(pct===null?'<span class="pendente">—</span>':barra(pct))+' '+tag+'</td><td style="white-space:normal;max-width:360px;color:var(--tinta-suave);font-size:12.5px">'+esc(s.q.comentario)+'</td></tr>';
+    });
+    hq+='</tbody>'; $('#tab-questoes').innerHTML=hq;
+
+    let hm='<thead><tr><th class="aluno-col">Aluno</th>';
+    d.questoes.forEach(q=>hm+='<th class="qh">'+q.n+'</th>'); hm+='<th class="qh">✓</th></tr></thead><tbody>';
+    if(feitos.length===0) hm+='<tr><td class="aluno-col">—</td><td colspan="'+(d.questoes.length+1)+'" class="vazio">Sem envios ainda.</td></tr>';
+    feitos.slice().sort((a,b)=>(b.acertos||0)-(a.acertos||0)).forEach(a=>{
+      hm+='<tr><td class="aluno-col">'+esc(a.nome)+'</td>';
+      d.questoes.forEach(q=>{
+        const det=a.detalhe&&a.detalhe[q.id];
+        if(!det||det.marcada<0) hm+='<td class="cel-r b">–</td>';
+        else if(det.acertou) hm+='<td class="cel-r c">C</td>';
+        else hm+='<td class="cel-r e" title="marcou '+LETRAS[det.marcada]+', correta '+q.correta_letra+'">'+LETRAS[det.marcada]+'</td>';
+      });
+      hm+='<td class="cel-r" style="background:#FAF8F3">'+a.acertos+'</td></tr>';
+    });
+    hm+='</tbody>'; $('#tab-matriz').innerHTML=hm;
+  }
+
+  function kpi(rot,val,cls){return '<div class="kpi '+(cls||'')+'"><div class="rot">'+rot+'</div><div class="val">'+val+'</div></div>';}
+  function barra(pct){const cor=pct>=70?'var(--esmeralda)':pct>=40?'var(--champagne)':'var(--erro)';return '<span class="barra-mini"><i style="width:'+pct+'%;background:'+cor+'"></i></span><span class="pct-num">'+pct+'%</span>';}
+  function tempo(a){ if(!a.fim||!a.inicio)return '—'; let s=a.fim-a.inicio; if(s<0)s=0; const m=Math.floor(s/60),seg=s%60; return m+'min'+(seg<10?'0':'')+seg+'s'; }
+  function dataHora(ts){ if(!ts)return '—'; const d=new Date(ts*1000),p=n=>String(n).padStart(2,'0'); return p(d.getDate())+'/'+p(d.getMonth()+1)+' '+p(d.getHours())+':'+p(d.getMinutes()); }
+  function esc(s){const d=document.createElement('div');d.textContent=s==null?'':s;return d.innerHTML;}
+
+  function exportarCSV(){
+    if(!DADOS)return;
+    const d=DADOS, feitos=d.alunos.filter(a=>a.finalizado), sep=';'; let linhas=[];
+    let cab=['Nome','Login','Acertos','Total','Aproveitamento(%)','Tempo(s)','Enviado'];
+    d.questoes.forEach(q=>cab.push('Q'+q.n)); linhas.push(cab.join(sep));
+    feitos.forEach(a=>{
+      let s=a.fim&&a.inicio?(a.fim-a.inicio):'', pct=Math.round(a.acertos*100/d.total);
+      let row=[csv(a.nome),csv(a.login),a.acertos,d.total,pct,s,dataHora(a.fim)];
+      d.questoes.forEach(q=>{const det=a.detalhe&&a.detalhe[q.id]; row.push((!det||det.marcada<0)?'-':LETRAS[det.marcada]+(det.acertou?'(C)':'(E)'));});
+      linhas.push(row.join(sep));
+    });
+    let gab=['GABARITO','','','','','','']; d.questoes.forEach(q=>gab.push(q.correta_letra)); linhas.push(gab.join(sep));
+    const blob=new Blob(["\uFEFF"+linhas.join('\n')],{type:'text/csv;charset=utf-8;'});
+    const url=URL.createObjectURL(blob), a=document.createElement('a');
+    a.href=url; a.download='resultados_simulado.csv'; a.click(); URL.revokeObjectURL(url);
+  }
+  function csv(s){s=String(s==null?'':s);return /[;"\n]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s;}
+})();
+</script>
+</body>
+</html>

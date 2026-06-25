@@ -1,0 +1,10 @@
+{
+  "name": "simulado-henrique-coimbra",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Simulado online com correção automática e painel do professor.",
+  "dependencies": {
+    "@netlify/blobs": "^10.7.9"
+  }
+}

@@ -1,0 +1,13 @@
+# Configuração do Netlify para o Simulado — Henrique Coimbra
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# deixa o endereço bonito /api apontar para a função
+[[redirects]]
+  from = "/api"
+  to = "/.netlify/functions/api"
+  status = 200

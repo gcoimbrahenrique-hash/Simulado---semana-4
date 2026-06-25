@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Simulado · Henrique Coimbra Mentoria</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --grafite:#1A1A1F; --carvao:#2A2A33; --esmeralda:#047857; --champagne:#C9A86A; --marfim:#F8F7F4;
+    --esm-soft:rgba(4,120,87,.10); --champ-soft:rgba(201,168,106,.16);
+    --erro:#A23B30; --erro-soft:rgba(162,59,48,.10);
+    --card:#ffffff; --linha:#E7E3DA; --tinta:#1A1A1F; --tinta-suave:#5C5C66; --tinta-fraca:#9A9AA2;
+    --raio:14px; --sombra:0 1px 2px rgba(26,26,31,.04),0 8px 26px rgba(26,26,31,.06);
+    --disp:'Manrope',system-ui,sans-serif; --corpo:'Inter',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--corpo);color:var(--tinta);background:var(--marfim);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .num{font-variant-numeric:tabular-nums}
+  button{font-family:inherit;cursor:pointer}
+  h1,h2,h3,.disp{font-family:var(--disp)}
+
+  /* monograma HC (usa currentColor) */
+  .hc{display:inline-block;color:var(--grafite)}
+  .hc svg{display:block;width:100%;height:100%}
+
+  /* ===================== LOGIN ===================== */
+  .login-wrap{min-height:100vh;display:grid;place-items:center;padding:24px;
+    background:radial-gradient(130% 130% at 50% -10%, #2A2A33 0%, #1A1A1F 62%, #141418 100%)}
+  .login-card{width:100%;max-width:440px;background:var(--card);border-radius:20px;overflow:hidden;
+    box-shadow:0 30px 90px rgba(0,0,0,.4)}
+  .login-top{background:var(--grafite);color:var(--marfim);padding:36px 34px 28px;text-align:center}
+  .login-top .hc{width:60px;height:60px;color:var(--marfim);margin:0 auto 16px}
+  .login-top .marca{font-family:var(--disp);font-size:11px;letter-spacing:.32em;color:var(--marfim);font-weight:500}
+  .login-top .marca .seg{color:var(--esmeralda)}
+  .login-top h1{font-family:var(--disp);font-size:26px;letter-spacing:.2em;margin:16px 0 4px;font-weight:700}
+  .login-top p{margin:0;font-size:13px;color:#B6B6BF}
+  .login-body{padding:30px 34px 22px}
+  .campo{margin-bottom:16px}
+  .campo label{display:block;font-size:11px;font-weight:600;color:var(--tinta-suave);
+    text-transform:uppercase;letter-spacing:.08em;margin-bottom:7px}
+  .campo input{width:100%;padding:13px 14px;border:1.5px solid var(--linha);border-radius:11px;
+    font-size:15px;font-family:var(--corpo);background:#FCFBF9;transition:border-color .15s,box-shadow .15s}
+  .campo input:focus{outline:none;border-color:var(--champagne);box-shadow:0 0 0 4px var(--champ-soft)}
+  .btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:14px;border:none;
+    border-radius:11px;background:var(--grafite);color:var(--marfim);font-weight:600;font-size:15px;
+    letter-spacing:.01em;transition:transform .08s,background .15s}
+  .btn:hover{background:#000}
+  .btn:active{transform:translateY(1px)}
+  .btn[disabled]{opacity:.6;cursor:not-allowed}
+  .aviso{margin-top:14px;padding:12px 14px;border-radius:10px;font-size:13.5px;display:none}
+  .aviso.erro{display:block;background:var(--erro-soft);color:var(--erro);border:1px solid rgba(162,59,48,.25)}
+  .selo{display:inline-block;margin-top:18px;padding:7px 13px;border:1px solid var(--linha);border-radius:999px;
+    font-size:11.5px;color:var(--tinta-suave);background:#FCFBF9}
+  .login-rodape{text-align:center;font-size:11.5px;color:var(--tinta-fraca);padding:6px 34px 24px}
+
+  /* ===================== PROVA ===================== */
+  #app{display:none}
+  .barra{position:sticky;top:0;z-index:40;background:var(--grafite);color:var(--marfim);box-shadow:0 2px 18px rgba(0,0,0,.2)}
+  .barra-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:11px 20px}
+  .barra .ident{display:flex;align-items:center;gap:13px;min-width:0}
+  .barra .hc{width:30px;height:30px;color:var(--marfim);flex-shrink:0}
+  .barra .tit{min-width:0}
+  .barra .tit .l1{font-family:var(--disp);font-size:9.5px;letter-spacing:.26em;font-weight:500}
+  .barra .tit .l1 .seg{color:var(--esmeralda)}
+  .barra .tit .l2{font-size:13.5px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#D9D9DF}
+  .relogio{display:flex;align-items:center;gap:10px;flex-shrink:0}
+  .relogio .rotulo{font-size:9px;letter-spacing:.16em;color:#9A9AA2;text-transform:uppercase;text-align:right;line-height:1.3}
+  .relogio .tempo{font-family:var(--disp);font-size:25px;font-weight:500;letter-spacing:.02em;background:rgba(255,255,255,.07);
+    padding:5px 13px;border-radius:10px;border:1px solid rgba(255,255,255,.12);min-width:104px;text-align:center}
+  .relogio.aten .tempo{color:var(--champagne);border-color:rgba(201,168,106,.5);background:rgba(201,168,106,.14)}
+  .relogio.alerta .tempo{color:#F2C4BD;border-color:rgba(162,59,48,.55);background:rgba(162,59,48,.22)}
+  .relogio.alerta{animation:pulsa 1.4s ease-in-out infinite}
+  @keyframes pulsa{50%{opacity:.6}}
+  .progresso{height:3px;background:rgba(255,255,255,.1)}
+  .progresso > i{display:block;height:100%;width:100%;background:var(--champagne);transition:width 1s linear}
+
+  .palco{max-width:1100px;margin:0 auto;padding:26px 20px 140px;display:grid;grid-template-columns:minmax(0,1fr) 248px;gap:30px;align-items:start}
+  .coluna-q{min-width:0}
+  .cabecalho{background:var(--card);border:1px solid var(--linha);border-radius:var(--raio);padding:22px 24px;margin-bottom:22px;box-shadow:var(--sombra)}
+  .cabecalho h2{margin:0 0 4px;font-size:20px;font-weight:700;letter-spacing:.01em}
+  .cabecalho .sub{color:var(--tinta-suave);font-size:13.5px}
+  .cabecalho .ola{margin-top:14px;padding-top:14px;border-top:1px dashed var(--linha);font-size:13.5px;display:flex;flex-wrap:wrap;gap:9px;align-items:center}
+  .cabecalho .ola .badge{font-family:var(--disp);background:var(--esm-soft);color:var(--esmeralda);padding:3px 12px;border-radius:999px;font-size:12.5px;font-weight:500}
+  .cabecalho .ola .obs{color:var(--tinta-suave);font-size:13px}
+
+  .texto-base{background:#FBF6EC;border:1px solid var(--champ-soft);border-left:4px solid var(--champagne);border-radius:12px;padding:18px 20px;margin-bottom:22px}
+  .texto-base .ref{font-family:var(--disp);font-size:11px;font-weight:700;letter-spacing:.06em;color:#9C7A2E;text-transform:uppercase;margin-bottom:8px}
+  .texto-base p{margin:0;font-size:14.5px;text-align:justify;color:#3a3a42}
+
+  .questao{background:var(--card);border:1px solid var(--linha);border-radius:var(--raio);padding:20px 22px;margin-bottom:16px;box-shadow:var(--sombra);scroll-margin-top:84px}
+  .q-topo{display:flex;align-items:center;gap:11px;margin-bottom:13px}
+  .q-num{font-family:var(--disp);font-weight:700;font-size:13px;color:var(--marfim);background:var(--grafite);border-radius:8px;padding:4px 10px;letter-spacing:.04em}
+  .q-tema{font-size:11.5px;color:var(--tinta-suave);background:#F4F2EC;border:1px solid var(--linha);padding:3px 11px;border-radius:999px;font-weight:500}
+  .q-respondida{margin-left:auto;font-size:11px;color:var(--esmeralda);font-weight:600;display:none}
+  .questao.feita .q-respondida{display:inline}
+  .enunciado{font-size:15px;margin:0 0 15px;color:#26262e}
+  .alternativas{display:flex;flex-direction:column;gap:9px}
+  .alt{position:relative;display:flex;gap:12px;align-items:flex-start;padding:11px 13px;border:1.5px solid var(--linha);border-radius:11px;cursor:pointer;transition:border-color .12s,background .12s}
+  .alt:hover{border-color:var(--champagne);background:#FCFBF9}
+  .alt input{position:absolute;opacity:0;width:0;height:0}
+  .alt .letra{font-family:var(--disp);flex-shrink:0;width:25px;height:25px;border-radius:50%;border:1.5px solid var(--tinta-fraca);display:grid;place-items:center;font-size:12.5px;font-weight:700;color:var(--tinta-suave);transition:all .12s;margin-top:1px}
+  .alt .txt{font-size:14.5px;color:#2c2c34}
+  .alt.sel{border-color:var(--grafite);background:#F6F5F1}
+  .alt.sel .letra{background:var(--grafite);border-color:var(--grafite);color:var(--marfim)}
+  .alt input:focus-visible + .letra{box-shadow:0 0 0 4px var(--champ-soft)}
+
+  .mapa{position:sticky;top:78px;background:var(--card);border:1px solid var(--linha);border-radius:var(--raio);box-shadow:var(--sombra);overflow:hidden}
+  .mapa h3{margin:0;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta-suave);padding:15px 16px 11px;border-bottom:1px solid var(--linha);font-weight:700}
+  .mapa-grade{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;padding:15px 16px}
+  .cel{aspect-ratio:1;border:1.5px solid var(--linha);border-radius:8px;background:#FCFBF9;font-family:var(--disp);font-size:12.5px;font-weight:500;color:var(--tinta-suave);display:grid;place-items:center;transition:all .12s}
+  .cel:hover{border-color:var(--champagne)}
+  .cel.feita{background:var(--grafite);border-color:var(--grafite);color:var(--marfim);font-weight:700}
+  .mapa-legenda{padding:0 16px 14px;font-size:11.5px;color:var(--tinta-suave);display:flex;gap:14px}
+  .mapa-legenda i{display:inline-block;width:11px;height:11px;border-radius:3px;vertical-align:-1px;margin-right:5px}
+  .mapa-rodape{border-top:1px solid var(--linha);padding:14px 16px}
+  .mapa-rodape .cont{font-size:13px;color:var(--tinta-suave);margin-bottom:11px;text-align:center}
+  .mapa-rodape .cont b{font-family:var(--disp);color:var(--tinta);font-size:15px}
+  .btn-enviar{width:100%;padding:13px;border:none;border-radius:11px;background:var(--esmeralda);color:#fff;font-weight:600;font-size:14.5px;transition:background .15s,transform .08s}
+  .btn-enviar:hover{background:#03654a}
+  .btn-enviar:active{transform:translateY(1px)}
+
+  .barra-mob{display:none}
+  .modal-fundo{position:fixed;inset:0;background:rgba(20,20,24,.6);display:none;place-items:center;z-index:80;padding:20px;backdrop-filter:blur(2px)}
+  .modal-fundo.abre{display:grid}
+  .modal{background:#fff;border-radius:18px;max-width:430px;width:100%;padding:28px;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+  .modal .ic{width:52px;height:52px;border-radius:50%;background:var(--champ-soft);color:#9C7A2E;display:grid;place-items:center;margin:0 auto 16px;font-size:24px;font-weight:700;font-family:var(--disp)}
+  .modal h3{margin:0 0 8px;font-size:19px;font-weight:700}
+  .modal p{margin:0 0 8px;color:var(--tinta-suave);font-size:14px}
+  .modal .resumo{margin:16px 0 4px;padding:14px;background:#F6F5F1;border-radius:11px;font-size:14px}
+  .modal .resumo b{font-family:var(--disp);font-size:22px;display:block}
+  .modal .acoes{display:flex;gap:10px;margin-top:20px}
+  .modal .acoes button{flex:1;padding:13px;border-radius:11px;font-weight:600;font-size:14.5px;border:none}
+  .btn-voltar{background:#ECEAE3;color:var(--tinta)}
+  .btn-confirma{background:var(--esmeralda);color:#fff}
+  .btn-confirma:hover{background:#03654a}
+
+  #fim{display:none;min-height:100vh;place-items:center;padding:24px;background:radial-gradient(130% 130% at 50% -10%, #2A2A33 0%, #1A1A1F 62%, #141418 100%)}
+  .fim-card{background:#fff;border-radius:20px;max-width:480px;width:100%;padding:42px 36px;text-align:center;box-shadow:0 30px 90px rgba(0,0,0,.4)}
+  .fim-card .hc{width:48px;height:48px;margin:0 auto 18px;color:var(--grafite)}
+  .fim-card .check{width:64px;height:64px;border-radius:50%;background:var(--esm-soft);color:var(--esmeralda);display:grid;place-items:center;font-size:32px;margin:0 auto 18px}
+  .fim-card h2{margin:0 0 8px;font-size:23px;font-weight:700}
+  .fim-card p{margin:0;color:var(--tinta-suave);font-size:14.5px}
+  .nota{margin:24px 0 4px;padding:22px;background:#F6F5F1;border-radius:14px}
+  .nota .grande{font-family:var(--disp);font-size:42px;font-weight:700;line-height:1}
+  .nota .grande small{font-size:20px;color:var(--tinta-fraca);font-weight:500}
+  .nota .pct{margin-top:6px;color:var(--tinta-suave);font-size:14px}
+  .fim-card .lembrete{margin-top:22px;font-size:12.5px;color:var(--tinta-fraca)}
+
+  @media (max-width:860px){
+    .palco{grid-template-columns:1fr;padding-bottom:96px}
+    .mapa{display:none}
+    .barra-mob{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:50;background:#fff;border-top:1px solid var(--linha);box-shadow:0 -4px 20px rgba(0,0,0,.08);padding:11px 16px;gap:12px;align-items:center}
+    .barra-mob .cont{font-size:13px;color:var(--tinta-suave);flex:1}
+    .barra-mob .cont b{color:var(--tinta);font-size:15px;font-family:var(--disp)}
+    .barra-mob .btn-mapa{padding:11px 14px;border-radius:10px;border:1.5px solid var(--linha);background:#FCFBF9;font-weight:600;font-size:13.5px;color:var(--tinta)}
+    .barra-mob .btn-enviar{width:auto;padding:11px 18px}
+    .mapa.sheet-aberto{display:block;position:fixed;inset:auto 12px 78px 12px;top:auto;z-index:60;max-height:62vh;overflow:auto}
+    .relogio .tempo{font-size:21px;min-width:88px}
+    .barra .tit .l2{font-size:12px}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<svg style="position:absolute;width:0;height:0" aria-hidden="true"><symbol id="hc-mono" viewBox="-45 -35 90 88">
+  <g stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none">
+    <path d="M -36,-25 L -36,25"/><path d="M -16,-25 L -16,25"/><path d="M -36,0 L -16,0"/>
+    <path d="M 36,-11 A 22,22 0 1,0 36,11"/>
+  </g>
+  <g stroke="currentColor" stroke-width="0.7" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M -30,33 L 30,33"/><path d="M -30,40 L 30,40"/><path d="M -30,47 L 30,47"/>
+  </g>
+</symbol></svg>
+
+<!-- ===================== LOGIN ===================== -->
+<div class="login-wrap" id="tela-login">
+  <div class="login-card">
+    <div class="login-top">
+      <span class="hc"><svg><use href="#hc-mono"/></svg></span>
+      <div class="marca">HENRIQUE COIMBRA <span class="seg">· MENTORIA</span></div>
+      <h1>SIMULADO</h1>
+      <p>Acesso restrito aos mentorados</p>
+    </div>
+    <div class="login-body">
+      <div class="campo">
+        <label for="in-login">Login / matrícula</label>
+        <input id="in-login" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="seu login">
+      </div>
+      <div class="campo">
+        <label for="in-senha">Senha de acesso</label>
+        <input id="in-senha" type="password" autocomplete="current-password" placeholder="sua senha">
+      </div>
+      <button class="btn" id="btn-entrar">Entrar na prova</button>
+      <div class="aviso" id="aviso-login"></div>
+      <div style="text-align:center"><span class="selo">1h30 · 60 questões · uma única tentativa</span></div>
+    </div>
+    <div class="login-rodape">Concurso não é loteria. É método.</div>
+  </div>
+</div>
+
+<!-- ===================== PROVA ===================== -->
+<div id="app">
+  <header class="barra">
+    <div class="barra-in">
+      <div class="ident">
+        <span class="hc"><svg><use href="#hc-mono"/></svg></span>
+        <div class="tit">
+          <div class="l1">HENRIQUE COIMBRA <span class="seg">· SIMULADO</span></div>
+          <div class="l2" id="barra-titulo">Simulado</div>
+        </div>
+      </div>
+      <div class="relogio" id="relogio">
+        <div class="rotulo">tempo<br>restante</div>
+        <div class="tempo num" id="tempo">90:00</div>
+      </div>
+    </div>
+    <div class="progresso"><i id="prog-barra"></i></div>
+  </header>
+
+  <main class="palco">
+    <div class="coluna-q">
+      <div class="cabecalho">
+        <h2 id="cab-titulo">Simulado</h2>
+        <div class="sub" id="cab-sub"></div>
+        <div class="ola">
+          <span class="badge" id="cab-nome">Aluno</span>
+          <span class="obs">Responda com calma. Ao chegar a 00:00, a prova é enviada automaticamente.</span>
+        </div>
+      </div>
+      <div id="lista-questoes"></div>
+    </div>
+
+    <aside class="mapa" id="mapa">
+      <h3>Mapa de questões</h3>
+      <div class="mapa-grade" id="mapa-grade"></div>
+      <div class="mapa-legenda">
+        <span><i style="background:var(--grafite)"></i>respondida</span>
+        <span><i style="background:#FCFBF9;border:1.5px solid var(--linha)"></i>em branco</span>
+      </div>
+      <div class="mapa-rodape">
+        <div class="cont"><b id="cont-feitas">0</b> de <span id="cont-total">60</span> respondidas</div>
+        <button class="btn-enviar" id="btn-enviar-1">Finalizar e enviar</button>
+      </div>
+    </aside>
+  </main>
+
+  <div class="barra-mob">
+    <div class="cont"><b id="cont-feitas-m">0</b>/<span id="cont-total-m">60</span></div>
+    <button class="btn-mapa" id="btn-mapa">Mapa</button>
+    <button class="btn-enviar" id="btn-enviar-2">Enviar</button>
+  </div>
+</div>
+
+<div class="modal-fundo" id="modal">
+  <div class="modal">
+    <div class="ic">!</div>
+    <h3>Enviar a prova?</h3>
+    <p>O envio é <b>definitivo</b>. Você não poderá refazer nem alterar as respostas depois.</p>
+    <div class="resumo"><b id="modal-feitas">0 / 60</b>questões respondidas</div>
+    <p id="modal-branco" style="color:var(--erro);display:none"></p>
+    <div class="acoes">
+      <button class="btn-voltar" id="btn-cancela">Voltar à prova</button>
+      <button class="btn-confirma" id="btn-confirma">Enviar agora</button>
+    </div>
+  </div>
+</div>
+
+<div id="fim">
+  <div class="fim-card">
+    <span class="hc"><svg><use href="#hc-mono"/></svg></span>
+    <div class="check" id="fim-ic">✓</div>
+    <h2 id="fim-titulo">Prova enviada!</h2>
+    <p id="fim-msg">Suas respostas foram registradas com sucesso.</p>
+    <div class="nota" id="fim-nota" style="display:none">
+      <div class="grande"><span id="fim-acertos">0</span><small> / <span id="fim-total">60</span></small></div>
+      <div class="pct" id="fim-pct">0% de acerto</div>
+    </div>
+    <div class="lembrete">Pode fechar esta página. Em caso de dúvida, fale com a mentoria.</div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  const API = '/api';
+  const LETRAS = ['A','B','C','D','E','F','G','H'];
+  let estado = { login:null, senha:null, questoes:[], duracao:0, inicio:0, offset:0, respostas:{}, fimPrevisto:0, timer:null, enviada:false };
+  const $ = s => document.querySelector(s);
+  const el = (t,c)=>{const e=document.createElement(t);if(c)e.className=c;return e;};
+
+  $('#btn-entrar').addEventListener('click', entrar);
+  $('#in-senha').addEventListener('keydown', e=>{ if(e.key==='Enter') entrar(); });
+  $('#in-login').addEventListener('keydown', e=>{ if(e.key==='Enter') $('#in-senha').focus(); });
+
+  try{ const s=JSON.parse(localStorage.getItem('sim_sessao')||'null'); if(s&&s.login){ $('#in-login').value=s.login; } }catch(e){}
+
+  async function entrar(){
+    const login=$('#in-login').value.trim(), senha=$('#in-senha').value;
+    if(!login||!senha){ mostraAviso('Preencha login e senha.'); return; }
+    const btn=$('#btn-entrar'); btn.disabled=true; btn.textContent='Entrando…';
+    try{
+      const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({acao:'login',login,senha})});
+      const d=await r.json();
+      if(!d.ok){ mostraAviso(d.erro||'Não foi possível entrar.'); reset(btn); return; }
+      iniciarProva(login,senha,d);
+    }catch(e){ mostraAviso('Erro de conexão com o servidor. Verifique sua internet e tente novamente.'); reset(btn); }
+  }
+  function reset(btn){ btn.disabled=false; btn.textContent='Entrar na prova'; }
+  function mostraAviso(t){ const a=$('#aviso-login'); a.textContent=t; a.className='aviso erro'; }
+
+  function iniciarProva(login,senha,d){
+    estado.login=login; estado.senha=senha; estado.questoes=d.questoes; estado.duracao=d.duracao_min*60;
+    estado.inicio=d.inicio; estado.offset=d.agora-Math.floor(Date.now()/1000); estado.fimPrevisto=d.inicio+estado.duracao;
+    try{ estado.respostas=JSON.parse(localStorage.getItem('sim_resp_'+login)||'{}'); }catch(e){ estado.respostas={}; }
+    localStorage.setItem('sim_sessao', JSON.stringify({login}));
+    $('#barra-titulo').textContent=d.titulo; $('#cab-titulo').textContent=d.titulo;
+    $('#cab-sub').textContent=d.subtitulo||''; $('#cab-nome').textContent=d.nome;
+    $('#cont-total').textContent=d.questoes.length; $('#cont-total-m').textContent=d.questoes.length;
+    $('#tela-login').style.display='none'; $('#app').style.display='block'; window.scrollTo(0,0);
+    renderQuestoes(); renderMapa(); atualizaContador(); iniciaTimer();
+    window.addEventListener('beforeunload', guardaSaida);
+  }
+  function guardaSaida(e){ if(!estado.enviada){ e.preventDefault(); e.returnValue=''; return ''; } }
+
+  function renderQuestoes(){
+    const lista=$('#lista-questoes'); lista.innerHTML='';
+    estado.questoes.forEach(q=>{
+      if(q.texto_base){ const tb=el('div','texto-base'); tb.innerHTML='<div class="ref">'+(q.texto_ref||'Texto de apoio')+'</div><p>'+escapar(q.texto_base)+'</p>'; lista.appendChild(tb); }
+      const card=el('div','questao'); card.id='card-'+q.id; card.dataset.id=q.id;
+      const topo=el('div','q-topo');
+      topo.innerHTML='<span class="q-num">'+String(q.n).padStart(2,'0')+'</span><span class="q-tema">'+escapar(q.tema||'')+'</span><span class="q-respondida">✓ respondida</span>';
+      card.appendChild(topo);
+      const en=el('p','enunciado'); en.textContent=q.enunciado; card.appendChild(en);
+      const alts=el('div','alternativas');
+      q.alts.forEach((texto,i)=>{
+        const lab=el('label','alt');
+        lab.innerHTML='<input type="radio" name="'+q.id+'" value="'+i+'"><span class="letra">'+LETRAS[i]+'</span><span class="txt"></span>';
+        lab.querySelector('.txt').textContent=texto;
+        const input=lab.querySelector('input');
+        if(estado.respostas[q.id]===i){ input.checked=true; lab.classList.add('sel'); card.classList.add('feita'); }
+        input.addEventListener('change',()=>marcar(q.id,i,card));
+        alts.appendChild(lab);
+      });
+      card.appendChild(alts); lista.appendChild(card);
+    });
+  }
+  function marcar(qid,i,card){
+    estado.respostas[qid]=i;
+    card.querySelectorAll('.alt').forEach(a=>a.classList.remove('sel'));
+    card.querySelector('input[value="'+i+'"]').closest('.alt').classList.add('sel');
+    card.classList.add('feita');
+    try{ localStorage.setItem('sim_resp_'+estado.login, JSON.stringify(estado.respostas)); }catch(e){}
+    const cel=$('#cel-'+qid); if(cel) cel.classList.add('feita');
+    atualizaContador();
+  }
+  function renderMapa(){
+    const g=$('#mapa-grade'); g.innerHTML='';
+    estado.questoes.forEach(q=>{
+      const b=el('button','cel'); b.id='cel-'+q.id; b.textContent=q.n;
+      if(estado.respostas[q.id]!==undefined) b.classList.add('feita');
+      b.addEventListener('click',()=>{ document.getElementById('card-'+q.id).scrollIntoView({behavior:'smooth',block:'start'}); $('#mapa').classList.remove('sheet-aberto'); });
+      g.appendChild(b);
+    });
+  }
+  function atualizaContador(){ const n=Object.keys(estado.respostas).length; $('#cont-feitas').textContent=n; $('#cont-feitas-m').textContent=n; }
+
+  function agoraServidor(){ return Math.floor(Date.now()/1000)+estado.offset; }
+  function iniciaTimer(){ tique(); estado.timer=setInterval(tique,1000); }
+  function tique(){ let r=estado.fimPrevisto-agoraServidor(); if(r<=0){ render(0); tempoEsgotado(); return; } render(r); }
+  function render(r){
+    const m=Math.floor(r/60), s=r%60;
+    $('#tempo').textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+    $('#prog-barra').style.width=(Math.max(0,r/estado.duracao)*100)+'%';
+    const rel=$('#relogio'); rel.classList.toggle('aten', r<=600 && r>300); rel.classList.toggle('alerta', r<=300);
+  }
+  function tempoEsgotado(){ if(estado.timer) clearInterval(estado.timer); if(estado.enviada) return; enviar(true); }
+
+  $('#btn-enviar-1').addEventListener('click', abreModal);
+  $('#btn-enviar-2').addEventListener('click', abreModal);
+  $('#btn-mapa').addEventListener('click', ()=> $('#mapa').classList.toggle('sheet-aberto'));
+  $('#btn-cancela').addEventListener('click', ()=> $('#modal').classList.remove('abre'));
+  $('#btn-confirma').addEventListener('click', ()=>{ $('#modal').classList.remove('abre'); enviar(false); });
+
+  function abreModal(){
+    const n=Object.keys(estado.respostas).length, tot=estado.questoes.length;
+    $('#modal-feitas').textContent=n+' / '+tot;
+    const branco=$('#modal-branco');
+    if(n<tot){ branco.style.display='block'; branco.textContent='Você deixou '+(tot-n)+' questão(ões) em branco.'; } else branco.style.display='none';
+    $('#modal').classList.add('abre');
+  }
+  async function enviar(automatico){
+    if(estado.enviada) return; estado.enviada=true;
+    if(estado.timer) clearInterval(estado.timer);
+    window.removeEventListener('beforeunload', guardaSaida);
+    document.querySelectorAll('input,button').forEach(x=>x.disabled=true);
+    try{
+      const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({acao:'enviar',login:estado.login,senha:estado.senha,respostas:estado.respostas})});
+      const d=await r.json(); finalizar(d,automatico);
+    }catch(e){ finalizar({ok:false,erro:'rede'},automatico); }
+  }
+  function finalizar(d,automatico){
+    try{ localStorage.setItem('sim_feito_'+estado.login,'1'); localStorage.removeItem('sim_resp_'+estado.login); }catch(e){}
+    $('#app').style.display='none'; $('#fim').style.display='grid';
+    if(automatico){ $('#fim-titulo').textContent='Tempo esgotado'; $('#fim-msg').textContent='O tempo de 1h30 terminou e suas respostas foram enviadas automaticamente.'; }
+    if(d&&d.ok&&d.mostrar_nota){ $('#fim-nota').style.display='block'; $('#fim-acertos').textContent=d.acertos; $('#fim-total').textContent=d.total; $('#fim-pct').textContent=d.percentual+'% de acerto'; }
+    window.scrollTo(0,0);
+  }
+  function escapar(s){ const d=el('div'); d.textContent=s; return d.innerHTML; }
+})();
+</script>
+</body>
+</html>
