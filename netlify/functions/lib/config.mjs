@@ -10,7 +10,7 @@ export const CONFIG = {
   storeName: 'simulado-semana4',
 
   // Textos exibidos na prova e no painel:
-  PROVA_TITULO:    'Simulado Revisão — até a Semana 4',
+  PROVA_TITULO:    'Simulado Revisão 1 — Semana 4',
   PROVA_SUBTITULO: 'SEDES/DF · Técnico Administrativo · 60 questões',
 
   // Duração em minutos (90 = 1h30):
@@ -20,13 +20,22 @@ export const CONFIG = {
   MOSTRAR_NOTA_AO_ALUNO: true,
 
   // SENHA DO SEU PAINEL. TROQUE antes de aplicar.
-  PROF_SENHA: 'professor-troque-2024',
+  PROF_SENHA: 'Teste123@',
 
   // ALUNOS — use o gerador.html para criar esta lista automaticamente.
   // Formato:  'login': { senha: '...', nome: 'Nome do Aluno' },
-  ALUNOS: {
-    'aluno01': { senha: 'prova123', nome: 'Aluno de Exemplo 01' },
-    'aluno02': { senha: 'prova123', nome: 'Aluno de Exemplo 02' },
-    'aluno03': { senha: 'prova123', nome: 'Aluno de Exemplo 03' },
+    ALUNOS: {
+    'gabriel.costa': { senha: 'frtuy8', nome: 'Gabriel Castro da Costa' },
+    'gustavo.costa': { senha: 'cpiay7', nome: 'Gustavo Castro da Costa' },
+    'jussara.santos': { senha: 'wbrkvv', nome: 'Jussara Tafate Pereira dos Santos' },
+    'mylena.nobre': { senha: '7vxzyq', nome: 'Mylena Araujo da Silva Nobre' },
+    'davia.rodrigues': { senha: 'zfz6ka', nome: 'Dávia Regina Rodrigues' },
+    'matheus.santos': { senha: 'htzzet', nome: 'Matheus Magnus Torres dos Santos' },
+    'thiago.nobre': { senha: '6pkeji', nome: 'Thiago Nobre' },
+    'elissandra.anjos': { senha: 'epe6s3', nome: 'Elissandra de Souza dos Anjos' },
+    'tiago.silva': { senha: 's5mj5a', nome: 'Tiago Guimarães da Silva' },
+    'henrique.coimbra': { senha: 'dquuib', nome: 'Henrique Coimbra' },
+    'camila': { senha: 'by4h89', nome: 'Camila' },
+    'vitor': { senha: 'pxfj6h', nome: 'Vitor' },
   },
 };
