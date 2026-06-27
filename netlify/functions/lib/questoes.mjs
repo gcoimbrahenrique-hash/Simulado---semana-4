@@ -1,3 +1,10 @@
+/**
+ * BANCO DE QUESTÕES DO SIMULADO (gerado por montar_questoes.py)
+ * Este arquivo fica no servidor (netlify/functions/lib/) e NUNCA é
+ * enviado inteiro ao navegador do aluno: o api remove 'correta' e
+ * 'comentario' antes de mandar as questões para a prova.
+ * Gabarito: 0=A, 1=B, 2=C, 3=D, 4=E.
+ */
 export const QUESTOES = [
   {
     "id": "q1",
@@ -7,14 +14,14 @@ export const QUESTOES = [
     "texto_base": "A assistência social, prevista na Constituição Federal de 1988 como direito do cidadão e dever do Estado, consolidou-se no Brasil por meio do Sistema Único de Assistência Social (SUAS). No Distrito Federal, programas como o Cartão Prato Cheio e o Cartão Gás buscam enfrentar a insegurança alimentar e a vulnerabilidade social das famílias. Mais do que transferir renda, esses programas pretendem garantir mínimos sociais e reconstruir vínculos comunitários. Para que a política funcione, porém, não basta a norma: é preciso uma rede de equipamentos públicos — como os CRAS e os CREAS — e profissionais capazes de acolher, orientar e encaminhar quem procura o serviço. O atendimento de qualidade, nesse contexto, deixa de ser um detalhe e passa a ser parte essencial da efetivação do direito.",
     "enunciado": "Depreende-se das ideias do texto que",
     "alts": [
-      "a transferência de renda, isoladamente, é suficiente para efetivar o direito à assistência social.",
-      "a efetivação do direito à assistência social depende tanto da norma quanto de uma rede de serviços e de bom atendimento.",
-      "os programas Cartão Prato Cheio e Cartão Gás substituem a atuação dos CRAS e dos CREAS.",
-      "a Constituição de 1988 tratou a assistência social como mera liberalidade do Estado.",
-      "o atendimento ao público é apresentado como detalhe secundário na política de assistência."
+      "a qualidade do atendimento é o fator mais decisivo para a efetivação do direito, sobrepondo-se à própria norma legal.",
+      "a efetivação do direito à assistência social pressupõe tanto a previsão normativa quanto uma rede de serviços e o bom atendimento ao público.",
+      "os programas de transferência de renda, como o Cartão Prato Cheio e o Cartão Gás, eliminam a insegurança alimentar das famílias do Distrito Federal.",
+      "a efetivação do direito só se concretiza quando alcançada a plena reconstrução dos vínculos comunitários das famílias atendidas.",
+      "cabe ao poder público substituir integralmente as entidades privadas de assistência pelos equipamentos estatais, como os CRAS e os CREAS."
     ],
     "correta": 1,
-    "comentario": "O texto afirma que \"não basta a norma\" e que o atendimento de qualidade \"passa a ser parte essencial da efetivação do direito\"."
+    "comentario": "O texto soma norma, rede de serviços e atendimento. As demais extrapolam o texto: ele não coloca o atendimento acima da norma, fala em “buscam enfrentar” (não “eliminam”), não condiciona o direito à “plena” reconstrução de vínculos, nem propõe substituir as entidades privadas."
   },
   {
     "id": "q2",
@@ -35,52 +42,52 @@ export const QUESTOES = [
     "id": "q3",
     "n": 3,
     "tema": "Língua Portuguesa",
-    "enunciado": "No trecho \"esses programas pretendem garantir mínimos sociais\", a expressão \"esses programas\" retoma",
+    "enunciado": "No trecho “Mais do que transferir renda, esses programas pretendem garantir mínimos sociais e reconstruir vínculos comunitários”, a locução “Mais do que” exprime ideia de",
     "alts": [
-      "a Constituição Federal de 1988 e o SUAS.",
-      "os CRAS e os CREAS.",
-      "o Cartão Prato Cheio e o Cartão Gás.",
-      "os mínimos sociais e os vínculos comunitários.",
-      "os profissionais que acolhem e orientam."
+      "causa, apontando o motivo pelo qual se transfere renda às famílias.",
+      "condição, estabelecendo um requisito para a transferência de renda.",
+      "gradação, indicando que os objetivos do programa vão além da simples transferência de renda.",
+      "conclusão, encerrando o raciocínio iniciado no período anterior.",
+      "finalidade, indicando o propósito exclusivo da transferência de renda."
     ],
     "correta": 2,
-    "comentario": "O pronome demonstrativo retoma, por coesão, os programas citados imediatamente antes: Cartão Prato Cheio e Cartão Gás."
+    "comentario": "“Mais do que” estabelece gradação/acréscimo: os programas não apenas transferem renda, mas também garantem mínimos sociais e reconstroem vínculos — não exprime causa, condição, conclusão ou finalidade."
   },
   {
     "id": "q4",
     "n": 4,
     "tema": "Língua Portuguesa",
-    "enunciado": "No trecho \"passa a ser parte essencial da efetivação do direito\", a palavra \"a\", em \"passa a ser\", classifica-se como",
+    "enunciado": "No trecho “passa a ser parte essencial da efetivação do direito”, a palavra “a”, em “passa a ser”, classifica-se como",
     "alts": [
-      "artigo definido feminino.",
-      "pronome pessoal oblíquo.",
-      "sinal indicativo de crase.",
-      "preposição, integrante da regência verbal.",
-      "conjunção integrante."
+      "artigo definido feminino, que determina o substantivo seguinte.",
+      "pronome pessoal oblíquo átono, com função de objeto direto.",
+      "pronome demonstrativo, equivalente a “aquela”.",
+      "preposição, exigida pela regência da locução verbal “passar a”.",
+      "advérbio, com valor de intensidade."
     ],
     "correta": 3,
-    "comentario": "Em \"passar a (ser)\", o \"a\" é preposição exigida pela regência, não havendo artigo nem crase."
+    "comentario": "Em “passa a ser”, o “a” é preposição exigida pela regência verbal; não antecede substantivo (não é artigo), nem exerce função pronominal ou adverbial."
   },
   {
     "id": "q5",
     "n": 5,
     "tema": "Língua Portuguesa",
-    "enunciado": "Em \"programas como o Cartão Prato Cheio e o Cartão Gás buscam enfrentar a insegurança alimentar\", a forma verbal \"buscam\" está no plural porque",
+    "enunciado": "Em “programas como o Cartão Prato Cheio e o Cartão Gás buscam enfrentar a insegurança alimentar”, a forma verbal “buscam” está no plural porque",
     "alts": [
-      "concorda com o objeto direto \"a insegurança alimentar\".",
+      "concorda com o objeto direto “a insegurança alimentar”.",
       "trata-se de sujeito indeterminado.",
-      "o verbo \"buscar\" é impessoal nesse contexto.",
-      "concorda por atração com \"Cartão Gás\".",
-      "concorda com o núcleo do sujeito \"programas\"."
+      "o verbo “buscar” é impessoal nesse contexto.",
+      "concorda por atração com “Cartão Gás”.",
+      "concorda com o núcleo do sujeito “programas”."
     ],
     "correta": 4,
-    "comentario": "Concordância verbal: o verbo concorda com o núcleo do sujeito, \"programas\" (plural)."
+    "comentario": "Concordância verbal: o verbo concorda com o núcleo do sujeito, “programas” (plural)."
   },
   {
     "id": "q6",
     "n": 6,
     "tema": "Língua Portuguesa",
-    "enunciado": "No período \"Para que a política funcione, porém, não basta a norma\", o vocábulo \"porém\" é classificado como",
+    "enunciado": "No período “Para que a política funcione, porém, não basta a norma”, o vocábulo “porém” é classificado como",
     "alts": [
       "conjunção subordinativa causal.",
       "advérbio de intensidade.",
@@ -89,16 +96,16 @@ export const QUESTOES = [
       "pronome relativo."
     ],
     "correta": 2,
-    "comentario": "\"Porém\" estabelece relação de oposição/contraste, sendo conjunção coordenativa adversativa."
+    "comentario": "“Porém” estabelece relação de oposição/contraste, sendo conjunção coordenativa adversativa."
   },
   {
     "id": "q7",
     "n": 7,
     "tema": "Língua Portuguesa",
-    "enunciado": "As palavras \"vínculos\" e \"público\" recebem acento gráfico porque",
+    "enunciado": "As palavras “vínculos” e “público” recebem acento gráfico porque",
     "alts": [
       "são paroxítonas terminadas em ditongo.",
-      "são oxítonas terminadas em \"o\".",
+      "são oxítonas terminadas em “o”.",
       "obedecem à regra do hiato.",
       "são monossílabos tônicos.",
       "são proparoxítonas, e todas as proparoxítonas são acentuadas."
@@ -110,7 +117,7 @@ export const QUESTOES = [
     "id": "q8",
     "n": 8,
     "tema": "Língua Portuguesa",
-    "enunciado": "No trecho \"buscam enfrentar a insegurança alimentar\", o verbo \"enfrentar\" pode ser substituído, sem prejuízo do sentido, por",
+    "enunciado": "No trecho “buscam enfrentar a insegurança alimentar”, o verbo “enfrentar” pode ser substituído, sem prejuízo do sentido, por",
     "alts": [
       "ignorar.",
       "adiar.",
@@ -119,22 +126,22 @@ export const QUESTOES = [
       "omitir."
     ],
     "correta": 3,
-    "comentario": "\"Combater\" mantém o sentido de \"enfrentar\"; as demais alterariam ou inverteriam o significado."
+    "comentario": "“Combater” mantém o sentido de “enfrentar”; as demais alterariam ou inverteriam o significado."
   },
   {
     "id": "q9",
     "n": 9,
-    "tema": "Brasília e DF",
+    "tema": "Brasília e DF (RIDE)",
     "enunciado": "A respeito da Região Integrada de Desenvolvimento do DF e Entorno (RIDE), instituída pela LC federal nº 94/1998, assinale a opção correta.",
     "alts": [
-      "Abrange exclusivamente o território do Distrito Federal.",
-      "Substitui os Estados de Goiás e de Minas Gerais por um novo ente federativo.",
-      "Reúne o Distrito Federal e municípios de Goiás e de Minas Gerais para a integração e o desenvolvimento da região.",
-      "Tem natureza de município autônomo, com prefeito próprio.",
-      "Limita-se a ações de segurança pública no Plano Piloto."
+      "É composta apenas pelo Distrito Federal e por municípios de Goiás, sem participação de Minas Gerais.",
+      "Constitui novo ente da Federação, dotado de autonomia política e de competência legislativa própria.",
+      "Reúne o Distrito Federal e municípios de Goiás e de Minas Gerais, para a articulação da ação administrativa entre os entes.",
+      "Foi instituída pela Constituição de 1988, no mesmo ato que transferiu a capital para o Planalto Central.",
+      "Abrange a totalidade dos municípios dos Estados de Goiás e de Minas Gerais."
     ],
     "correta": 2,
-    "comentario": "A RIDE integra o DF e municípios goianos e mineiros do entorno, visando à articulação e ao desenvolvimento da região."
+    "comentario": "A RIDE integra o DF e municípios de Goiás e de Minas Gerais para articulação administrativa; não é ente federativo, não se restringe a Goiás, não abrange todos os municípios e foi criada pela LC 94/1998."
   },
   {
     "id": "q10",
@@ -142,74 +149,74 @@ export const QUESTOES = [
     "tema": "Brasília e DF",
     "enunciado": "A respeito de Brasília e do Distrito Federal, assinale a opção correta.",
     "alts": [
-      "Brasília foi inaugurada em 21 de abril de 1960 e tornou-se a capital federal do Brasil.",
-      "O Distrito Federal divide-se em municípios dotados de autonomia política.",
-      "Brasília perdeu o título de Patrimônio Cultural da Humanidade concedido pela UNESCO.",
-      "A capital federal localiza-se na Região Nordeste do país.",
-      "O DF é governado por um prefeito eleito para mandato de seis anos."
+      "O Distrito Federal não pode ser dividido em municípios, vedação que o distingue dos estados-membros.",
+      "Brasília foi inaugurada em 21 de abril de 1956, no início do governo de Juscelino Kubitschek.",
+      "O conjunto urbanístico de Brasília recebeu o título de Patrimônio Cultural da Humanidade da UNESCO no próprio ano de sua inauguração.",
+      "O Distrito Federal subdivide-se em municípios autônomos, dos quais Brasília é a capital.",
+      "O projeto urbanístico do Plano Piloto é de autoria de Oscar Niemeyer, autor também do traçado da cidade."
     ],
     "correta": 0,
-    "comentario": "Brasília foi inaugurada em 21/4/1960; o DF não se divide em municípios e mantém o título da UNESCO (1987)."
+    "comentario": "O DF não se divide em municípios (CF, art. 32). Brasília foi inaugurada em 1960 (não 1956); o título da UNESCO é de 1987; e o projeto urbanístico é de Lúcio Costa (Niemeyer assinou a arquitetura dos edifícios)."
   },
   {
     "id": "q11",
     "n": 11,
-    "tema": "Constituição / DF",
-    "enunciado": "Nos termos da Constituição Federal, a respeito do Distrito Federal, assinale a opção correta.",
+    "tema": "Direito Constitucional (DF)",
+    "enunciado": "Nos termos da Constituição Federal, a respeito das competências do Distrito Federal, assinale a opção correta.",
     "alts": [
-      "Pode ser dividido em Municípios, a critério do Governador.",
-      "Acumula as competências legislativas reservadas aos Estados e aos Municípios.",
-      "É subordinado administrativamente ao Estado de Goiás.",
-      "Não dispõe de Câmara Legislativa própria.",
-      "Integra a administração direta da União, sem autonomia."
+      "O Distrito Federal detém apenas as competências legislativas próprias dos municípios.",
+      "Ao Distrito Federal são atribuídas as competências legislativas reservadas aos estados e aos municípios.",
+      "As competências legislativas do Distrito Federal são exercidas pela Assembleia Legislativa de Goiás.",
+      "O Distrito Federal não dispõe de competência tributária própria, que depende de delegação da União.",
+      "A organização e a manutenção do Poder Judiciário e do Ministério Público do DF cabem ao próprio Distrito Federal."
     ],
     "correta": 1,
-    "comentario": "Ao DF é vedada a divisão em Municípios (art. 32) e cabem as competências legislativas reservadas a Estados e Municípios."
+    "comentario": "O art. 32, § 1º, atribui ao DF as competências legislativas reservadas a estados e municípios; o DF tem Câmara Legislativa e competência tributária próprias, e seu Judiciário e MP são organizados e mantidos pela União (art. 21, XIII)."
   },
   {
     "id": "q12",
     "n": 12,
-    "tema": "Lei Orgânica do DF",
-    "enunciado": "O Distrito Federal organiza-se em regiões administrativas (RAs). A respeito delas, assinale a opção correta.",
+    "tema": "Lei Orgânica do DF (RAs)",
+    "enunciado": "O Distrito Federal organiza-se em regiões administrativas (RAs). A respeito de sua estrutura, assinale a opção correta.",
     "alts": [
-      "São Municípios autônomos, com prefeito e câmara próprios.",
-      "O Distrito Federal pode ser dividido em Municípios, conforme a Lei Orgânica.",
-      "Cada região administrativa elege o seu próprio governador.",
-      "São subdivisões administrativas do DF, sem autonomia político-administrativa de ente federativo.",
-      "As regiões administrativas substituem o Governo do Distrito Federal."
+      "Cada região administrativa elege diretamente o seu administrador e a sua câmara de vereadores.",
+      "As regiões administrativas possuem personalidade jurídica e autonomia político-administrativa de ente federativo.",
+      "A criação de região administrativa independe de lei, bastando ato do administrador regional.",
+      "As regiões administrativas são criadas por lei, e o administrador regional é nomeado pelo Governador do DF.",
+      "As regiões administrativas detêm competência para instituir e arrecadar tributos próprios."
     ],
     "correta": 3,
-    "comentario": "O DF não se divide em Municípios; as RAs são subdivisões administrativas, sem autonomia de ente federativo."
+    "comentario": "As RAs são subdivisões administrativas criadas por lei; o administrador regional é nomeado pelo Governador (cargo de confiança), sem eleição própria, personalidade jurídica ou competência tributária autônoma."
   },
   {
     "id": "q13",
     "n": 13,
     "tema": "Lei Orgânica do DF",
-    "enunciado": "O Título VI da Lei Orgânica do DF trata \"Da Ordem Social e do Meio Ambiente\". A respeito dela, assinale a opção correta.",
+    "enunciado": "Conforme a Lei Orgânica do DF (Título VI — Da Ordem Social), a respeito da seguridade social, assinale a opção correta.",
     "alts": [
-      "Integra a ordem social a organização dos Poderes do Distrito Federal.",
-      "Integra a ordem social o regime tributário e orçamentário do DF.",
-      "Integram a ordem social as regras do processo legislativo distrital.",
-      "Integra a ordem social a disciplina das licitações e dos contratos administrativos.",
-      "Integra a ordem social a assistência social, prestada a quem dela necessitar, independentemente de contribuição."
+      "A assistência social, no âmbito da ordem social, exige contribuição prévia do beneficiário para a sua concessão.",
+      "A saúde é assegurada apenas mediante contraprestação financeira do usuário ao sistema distrital.",
+      "A seguridade social compreende somente a saúde e a previdência, excluída a assistência social.",
+      "A assistência social destina-se exclusivamente aos trabalhadores que contribuem para a seguridade social.",
+      "A previdência social, diferentemente da assistência social, organiza-se sob a forma de regime contributivo."
     ],
     "correta": 4,
-    "comentario": "A assistência social integra a ordem social e é prestada a quem dela necessitar, independentemente de contribuição."
+    "comentario": "A previdência é contributiva; a assistência social e a saúde não exigem contribuição (prestadas a quem necessitar/universal). A seguridade social abrange saúde, previdência e assistência."
   },
   {
     "id": "q14",
     "n": 14,
-    "tema": "Lei Orgânica do DF",
-    "enunciado": "Conforme a Lei Orgânica do DF (Da Ordem Social), a respeito da saúde, assinale a opção correta.",
+    "tema": "Lei Orgânica do DF (Saúde)",
+    "enunciado": "Conforme a Lei Orgânica do DF (Da Ordem Social), a respeito do direito à saúde, assinale a opção correta.",
     "alts": [
-      "É serviço exclusivamente privado, sem participação do poder público.",
-      "É restrita aos servidores públicos do Distrito Federal.",
-      "É direito de todos e dever do poder público, garantida mediante políticas que visem ao acesso universal e igualitário.",
-      "É prestada apenas mediante contribuição prévia do usuário.",
-      "É competência exclusiva da União, vedada ao Distrito Federal."
+      "As ações e os serviços de saúde são executados exclusivamente por órgãos públicos, vedada a participação complementar da iniciativa privada.",
+      "O atendimento à saúde prioriza as atividades curativas, atribuindo caráter secundário às ações preventivas.",
+      "O atendimento à saúde deve ser integral, com prioridade para as atividades preventivas, sem prejuízo dos serviços assistenciais.",
+      "A assistência à saúde é livre à iniciativa privada, que dela participa em caráter exclusivo no Distrito Federal.",
+      "O acesso às ações e aos serviços de saúde pode ser condicionado à capacidade contributiva do usuário."
     ],
     "correta": 2,
-    "comentario": "Na ordem social, a saúde é direito de todos e dever do poder público, com acesso universal e igualitário."
+    "comentario": "A saúde tem atendimento integral, com prioridade para as ações preventivas; a iniciativa privada participa de forma complementar (não exclusiva nem vedada) e o acesso é universal, não condicionado a contribuição."
   },
   {
     "id": "q15",
@@ -232,14 +239,14 @@ export const QUESTOES = [
     "tema": "LC 840/2011",
     "enunciado": "De acordo com a LC nº 840/2011, a respeito dos deveres do servidor público, assinale a opção correta.",
     "alts": [
-      "Constitui dever valer-se do cargo para obter proveito pessoal.",
-      "Constitui dever recusar fé a documentos públicos.",
-      "Constitui dever delegar a pessoa estranha à repartição atribuição de sua responsabilidade.",
-      "Constitui dever opor resistência injustificada ao andamento de processos.",
-      "Constitui dever exercer com zelo e dedicação as atribuições do cargo e ser leal às instituições a que servir."
+      "Constitui dever cumprir as ordens superiores, ainda que manifestamente ilegais.",
+      "Constitui dever representar contra ilegalidade somente quando expressamente solicitado pela chefia.",
+      "Constitui dever guardar sigilo sobre todos os assuntos da repartição, inclusive os de acesso público.",
+      "Constitui dever atender com preferência aos cidadãos que tenham vínculo pessoal com o servidor.",
+      "Constitui dever do servidor levar ao conhecimento da autoridade superior as irregularidades de que tiver ciência em razão do cargo."
     ],
     "correta": 4,
-    "comentario": "Exercer com zelo e ser leal às instituições são deveres; as demais alternativas descrevem proibições funcionais."
+    "comentario": "É dever levar as irregularidades ao conhecimento da autoridade. O servidor deve cumprir ordens, salvo as manifestamente ilegais; o sigilo recai apenas sobre o que o exigir; e a impessoalidade veda preferências pessoais."
   },
   {
     "id": "q17",
@@ -260,31 +267,31 @@ export const QUESTOES = [
     "id": "q18",
     "n": 18,
     "tema": "Lei Maria da Penha",
-    "enunciado": "Quanto às medidas protetivas de urgência da Lei Maria da Penha, assinale a opção correta.",
+    "enunciado": "Quanto às medidas protetivas de urgência da Lei nº 11.340/2006, assinale a opção correta.",
     "alts": [
-      "Só podem ser concedidas após o trânsito em julgado de sentença penal condenatória.",
-      "Dependem exclusivamente de requerimento do Ministério Público, vedada a iniciativa da ofendida.",
-      "Não podem obrigar o agressor a manter distância da vítima.",
-      "Podem incluir o afastamento do agressor do lar e a proibição de aproximação da ofendida.",
-      "Aplicam-se apenas a casais legalmente casados."
+      "O encaminhamento da ofendida e de seus dependentes a programa de proteção é medida que obriga o agressor.",
+      "A recondução da ofendida ao respectivo domicílio, após o afastamento do agressor, é medida que obriga o agressor.",
+      "A restrição de visitas do agressor aos dependentes é medida protetiva dirigida exclusivamente à ofendida.",
+      "A proibição de aproximação da ofendida e a suspensão da posse de arma de fogo são medidas que obrigam o agressor.",
+      "As medidas protetivas de urgência só podem ser deferidas após a oitiva prévia do agressor pelo juiz."
     ],
     "correta": 3,
-    "comentario": "Entre as medidas que obrigam o agressor estão o afastamento do lar e a proibição de aproximação; podem ser concedidas de imediato e a ofendida pode requerê-las."
+    "comentario": "Proibição de aproximação e suspensão de posse de arma obrigam o agressor. Encaminhamento a programa e recondução ao domicílio são medidas dirigidas à ofendida; e o juiz pode deferi-las de imediato, sem oitiva prévia do agressor."
   },
   {
     "id": "q19",
     "n": 19,
     "tema": "Lei Maria da Penha",
-    "enunciado": "Conforme a Lei nº 11.340/2006, a respeito do âmbito da violência doméstica e familiar contra a mulher, assinale a opção correta.",
+    "enunciado": "Conforme a Lei nº 11.340/2006, a respeito do âmbito de incidência da violência doméstica e familiar contra a mulher, assinale a opção correta.",
     "alts": [
-      "Configura-se somente a violência ocorrida em logradouro público.",
-      "Configura-se a que ocorre no âmbito da unidade doméstica, da família ou em qualquer relação íntima de afeto.",
-      "Exige-se a coabitação atual entre as partes.",
-      "Exige-se vínculo de parentesco consanguíneo entre as partes.",
-      "Configura-se unicamente a ocorrida no ambiente de trabalho."
+      "A unidade doméstica compreende apenas o espaço de convívio de pessoas unidas por vínculo de parentesco natural ou civil.",
+      "A relação íntima de afeto configura-se independentemente de coabitação, atual ou pretérita, entre o agressor e a ofendida.",
+      "A configuração da violência doméstica exige a coabitação entre o agressor e a ofendida no momento do fato.",
+      "As relações pessoais protegidas pela lei dependem da orientação sexual da ofendida.",
+      "O conceito de família, para a lei, restringe-se aos indivíduos unidos por laços consanguíneos."
     ],
     "correta": 1,
-    "comentario": "O art. 5º define o âmbito: unidade doméstica, família e relação íntima de afeto, independentemente de coabitação."
+    "comentario": "A relação íntima de afeto independe de coabitação (art. 5º, III). A unidade doméstica inclui pessoas sem parentesco que convivam no espaço; as relações independem de orientação sexual (parágrafo único); e a família abrange laços naturais, por afinidade ou por vontade expressa."
   },
   {
     "id": "q20",
@@ -304,22 +311,22 @@ export const QUESTOES = [
   {
     "id": "q21",
     "n": 21,
-    "tema": "SUAS / Assistência Social",
+    "tema": "Assistência Social (PNAS)",
     "enunciado": "De acordo com a PNAS/2004 e a CF/1988, a respeito da assistência social, assinale a opção correta.",
     "alts": [
-      "É política contributiva, custeada por contribuições dos beneficiários.",
-      "É benefício concedido exclusivamente a trabalhadores formais.",
-      "É ação de caráter assistencialista, desvinculada de direitos.",
-      "É direito do cidadão e dever do Estado, política de seguridade social não contributiva, prestada a quem dela necessitar.",
-      "É serviço privado, prestado mediante pagamento de mensalidade."
+      "É política de seguridade social de caráter contributivo, custeada por contribuições dos próprios beneficiários.",
+      "Integra a seguridade social como espécie do regime geral de previdência social, exigindo filiação prévia.",
+      "Destina-se exclusivamente às famílias inseridas no mercado formal de trabalho.",
+      "É política de seguridade social não contributiva, direito do cidadão e dever do Estado, prestada a quem dela necessitar.",
+      "Tem natureza de benefício discricionário, concedido conforme a conveniência do gestor, sem caráter de direito."
     ],
     "correta": 3,
-    "comentario": "A assistência social é política de seguridade social, não contributiva, direito do cidadão e dever do Estado (CF, arts. 203-204; PNAS/2004)."
+    "comentario": "A assistência social é política de seguridade social não contributiva (CF, art. 203), direito do cidadão e dever do Estado, distinta da previdência (contributiva) e independente de vínculo de trabalho."
   },
   {
     "id": "q22",
     "n": 22,
-    "tema": "SUAS / Assistência Social",
+    "tema": "SUAS",
     "enunciado": "No SUAS, a respeito da Proteção Social Básica (PSB) e da Proteção Social Especial (PSE), assinale a opção correta.",
     "alts": [
       "A PSB destina-se a famílias cujos direitos já foram violados, com vínculos rompidos.",
@@ -334,7 +341,7 @@ export const QUESTOES = [
   {
     "id": "q23",
     "n": 23,
-    "tema": "SUAS / Assistência Social",
+    "tema": "SUAS",
     "enunciado": "No SUAS, a respeito do equipamento responsável pela Proteção Social Básica, assinale a opção correta.",
     "alts": [
       "O CRAS é a unidade estatal da PSB que oferta o PAIF.",
@@ -349,7 +356,7 @@ export const QUESTOES = [
   {
     "id": "q24",
     "n": 24,
-    "tema": "SUAS / Assistência Social",
+    "tema": "SUAS",
     "enunciado": "A respeito das seguranças socioassistenciais afiançadas pelo SUAS, assinale a opção correta.",
     "alts": [
       "Incluem-se as seguranças de emprego formal, de previdência e de crédito bancário.",
@@ -364,22 +371,22 @@ export const QUESTOES = [
   {
     "id": "q25",
     "n": 25,
-    "tema": "SUAS / Assistência Social",
-    "enunciado": "A respeito da matricialidade sociofamiliar, princípio do SUAS, assinale a opção correta.",
+    "tema": "SUAS",
+    "enunciado": "A respeito da matricialidade sociofamiliar, princípio organizativo do SUAS, assinale a opção correta.",
     "alts": [
-      "O atendimento deve priorizar o indivíduo isolado, desconsiderando o grupo familiar.",
-      "A família é tomada como foco central das ações e dos serviços socioassistenciais.",
-      "Apenas as famílias de alta renda são acompanhadas pelo SUAS.",
-      "A política organiza-se exclusivamente por critérios geográficos, sem referência à família.",
-      "A responsabilidade pela proteção social cabe somente às famílias, e não ao Estado."
+      "Consiste em adotar o território como unidade de planejamento e organização da rede de serviços.",
+      "Consiste em tomar a família como núcleo central de referência para o planejamento e a oferta dos serviços socioassistenciais.",
+      "Consiste na primazia da responsabilidade do Estado na condução da política de assistência social.",
+      "Consiste no comando único das ações em cada esfera de governo.",
+      "Consiste na participação da população, por meio de organizações representativas, no controle das ações."
     ],
     "correta": 1,
-    "comentario": "A matricialidade sociofamiliar coloca a família como centro do planejamento e da oferta dos serviços do SUAS."
+    "comentario": "A matricialidade sociofamiliar coloca a família no centro do planejamento e da oferta. As demais descrevem, respectivamente, a territorialização, a primazia estatal, o comando único e a participação social."
   },
   {
     "id": "q26",
     "n": 26,
-    "tema": "SUAS / Assistência Social",
+    "tema": "SUAS",
     "enunciado": "Conforme a NOB/SUAS 2012, a respeito da vigilância socioassistencial, assinale a opção correta.",
     "alts": [
       "É a função de ouvidoria geral do sistema.",
@@ -394,17 +401,17 @@ export const QUESTOES = [
   {
     "id": "q27",
     "n": 27,
-    "tema": "SUAS / Assistência Social",
-    "enunciado": "São objetivos da assistência social, nos termos da LOAS e da PNAS. Assinale a opção correta.",
+    "tema": "LOAS",
+    "enunciado": "A respeito dos objetivos da assistência social, nos termos da LOAS (Lei nº 8.742/1993), assinale a opção correta.",
     "alts": [
-      "Constitui objetivo a concessão de aposentadoria por tempo de contribuição.",
-      "Constitui objetivo o financiamento de empreendimentos privados com fins lucrativos.",
-      "Constitui objetivo a cobrança de mensalidades dos usuários dos serviços.",
-      "Constitui objetivo a substituição integral das políticas de saúde e educação.",
+      "Constitui objetivo a descentralização político-administrativa entre as esferas de governo.",
+      "Constitui objetivo a universalização dos direitos sociais, tornando contributiva a assistência.",
+      "Constitui objetivo o respeito à dignidade e à autonomia do cidadão.",
+      "Constitui objetivo a igualdade de direitos no acesso ao atendimento, vedada qualquer discriminação.",
       "Constitui objetivo a proteção à família, à maternidade, à infância, à adolescência e à velhice."
     ],
     "correta": 4,
-    "comentario": "Entre os objetivos da assistência social está a proteção à família, à maternidade, à infância, à adolescência e à velhice (LOAS, art. 2º)."
+    "comentario": "A proteção à família, à maternidade, à infância, à adolescência e à velhice é objetivo (art. 2º). Descentralização é diretriz (art. 5º); universalização, respeito à dignidade/autonomia e igualdade de acesso são princípios (art. 4º) — troca clássica de objetivo por diretriz/princípio."
   },
   {
     "id": "q28",
@@ -412,14 +419,14 @@ export const QUESTOES = [
     "tema": "Programas do DF",
     "enunciado": "A respeito do Programa Cartão Prato Cheio (Lei Distrital nº 7.009/2021), assinale a opção correta.",
     "alts": [
-      "É financiamento bancário com juros de mercado para abertura de microempresas.",
-      "É programa de provimento alimentar direto, em caráter emergencial, voltado a famílias em insegurança alimentar e vulnerabilidade social.",
-      "É benefício previdenciário pago a aposentados do DF.",
-      "É programa de bolsas para estudantes de ensino superior.",
-      "É auxílio exclusivo para servidores públicos do DF."
+      "É auxílio financeiro destinado especificamente à aquisição de gás de cozinha (GLP) pelas famílias.",
+      "É benefício de provimento alimentar, em caráter temporário, voltado a famílias em insegurança alimentar e vulnerabilidade social.",
+      "É benefício eventual concedido em razão de nascimento ou de morte de membro da família.",
+      "É transferência de renda condicionada à frequência escolar das crianças, nos moldes do Bolsa Família.",
+      "É linha de microcrédito produtivo orientado para a abertura de pequenos negócios."
     ],
     "correta": 1,
-    "comentario": "O Cartão Prato Cheio é programa de provimento alimentar direto, emergencial, para famílias em insegurança alimentar."
+    "comentario": "O Prato Cheio é benefício de provimento alimentar, temporário, para famílias em insegurança alimentar. Auxílio para GLP é o Cartão Gás; nascimento/morte são benefícios eventuais; condicionalidade escolar e microcrédito são de outros programas."
   },
   {
     "id": "q29",
@@ -427,19 +434,19 @@ export const QUESTOES = [
     "tema": "Programas do DF",
     "enunciado": "A respeito do Programa Cartão Gás (Lei Distrital nº 6.938/2021), assinale a opção correta.",
     "alts": [
-      "Subsidia a aquisição de combustível para veículos das famílias.",
-      "Custeia contas de energia elétrica de grandes empresas.",
-      "Financia a compra de eletrodomésticos de luxo.",
-      "Concede auxílio financeiro para a aquisição de gás de cozinha (GLP) por famílias de baixa renda.",
-      "Fornece vale-transporte a turistas."
+      "Consiste no fornecimento gratuito de botijões de GLP, entregues no domicílio das famílias beneficiárias.",
+      "Subsidia a aquisição de gás natural canalizado para as residências do Distrito Federal.",
+      "Concede o auxílio condicionado à frequência escolar das crianças e dos adolescentes da família.",
+      "Concede auxílio financeiro às famílias de baixa renda do DF para a aquisição de gás de cozinha (GLP), em botijão.",
+      "Repassa o benefício diretamente às revendedoras de gás, sem qualquer transferência financeira às famílias."
     ],
     "correta": 3,
-    "comentario": "O Cartão Gás concede auxílio financeiro para a compra de gás de cozinha (GLP) a famílias de baixa renda do DF."
+    "comentario": "O Cartão Gás é auxílio financeiro às famílias de baixa renda para comprar GLP (botijão). Não é entrega gratuita, não cobre gás natural canalizado, não é condicionado à frequência escolar e o recurso é repassado à família (cartão), não às revendedoras."
   },
   {
     "id": "q30",
     "n": 30,
-    "tema": "SUAS / Assistência Social",
+    "tema": "SUAS",
     "enunciado": "No SUAS, a respeito da Proteção Social Especial (PSE) de alta complexidade, assinale a opção correta.",
     "alts": [
       "Integra-a o serviço de acolhimento institucional (abrigo) para pessoas com vínculos familiares rompidos.",
@@ -470,16 +477,16 @@ export const QUESTOES = [
     "id": "q32",
     "n": 32,
     "tema": "Direito Constitucional",
-    "enunciado": "Nos termos do art. 5º da CF/1988, sobre direitos e deveres individuais e coletivos, assinale a opção correta.",
+    "enunciado": "Nos termos do art. 5º da CF/1988, a respeito da inviolabilidade do domicílio, assinale a opção correta.",
     "alts": [
-      "É admitida a pena de morte como regra geral no Brasil.",
-      "Ninguém pode manifestar livremente o pensamento, ainda que identificado.",
-      "A lei penal retroage sempre, inclusive para prejudicar o réu.",
-      "A prática de tortura é permitida em interrogatórios policiais.",
-      "A casa é asilo inviolável do indivíduo, ressalvadas as hipóteses constitucionais."
+      "A inviolabilidade do domicílio é absoluta, não admitindo qualquer exceção constitucional.",
+      "O ingresso na casa durante o dia independe de determinação judicial em qualquer hipótese.",
+      "Em caso de flagrante delito, é vedado o ingresso no domicílio sem prévia autorização judicial.",
+      "A proteção do domicílio alcança apenas a residência fixa, excluído qualquer outro compartimento habitado.",
+      "A casa é asilo inviolável: ninguém nela pode penetrar sem consentimento do morador, salvo em flagrante delito, desastre, para prestar socorro ou, durante o dia, por determinação judicial."
     ],
     "correta": 4,
-    "comentario": "A inviolabilidade do domicílio é garantia do art. 5º, ressalvadas as exceções (flagrante, desastre, socorro e, de dia, por ordem judicial)."
+    "comentario": "O art. 5º, XI, admite o ingresso em flagrante, desastre, socorro ou, de dia, por ordem judicial; logo a garantia não é absoluta, o flagrante dispensa ordem judicial e o conceito de “casa” abrange compartimentos habitados."
   },
   {
     "id": "q33",
@@ -502,14 +509,14 @@ export const QUESTOES = [
     "tema": "Direito Administrativo",
     "enunciado": "A respeito dos princípios expressos da Administração Pública (art. 37, caput, da CF/1988), assinale a opção correta.",
     "alts": [
-      "São a legalidade, a razoabilidade, a motivação, a ampla defesa e a celeridade.",
-      "São a supremacia, a indisponibilidade, a economicidade, a isonomia e a segurança.",
-      "São a moralidade, a proporcionalidade, a hierarquia, a autotutela e a presunção.",
+      "São a legalidade, a impessoalidade, a moralidade, a publicidade e a eficácia.",
+      "São a legalidade, a impessoalidade, a moralidade, a probidade e a eficiência.",
+      "São a legalidade, a isonomia, a moralidade, a publicidade e a eficiência.",
       "São a legalidade, a impessoalidade, a moralidade, a publicidade e a eficiência.",
-      "São a publicidade, a gratuidade, a oralidade, a informalidade e a oficialidade."
+      "São a legalidade, a impessoalidade, a razoabilidade, a publicidade e a eficiência."
     ],
     "correta": 3,
-    "comentario": "O art. 37, caput, traz os princípios expressos LIMPE: legalidade, impessoalidade, moralidade, publicidade e eficiência."
+    "comentario": "O art. 37, caput, traz o LIMPE: legalidade, impessoalidade, moralidade, publicidade e eficiência. As demais trocam um termo (eficácia, probidade, isonomia, razoabilidade) — pegadinha de substituição sutil."
   },
   {
     "id": "q35",
@@ -517,14 +524,14 @@ export const QUESTOES = [
     "tema": "Direito Constitucional",
     "enunciado": "Acerca dos servidores públicos na CF/1988, assinale a opção correta.",
     "alts": [
-      "Todos os cargos públicos são de livre nomeação e exoneração, dispensado o concurso.",
-      "A investidura em cargo ou emprego público depende de aprovação prévia em concurso público, ressalvadas as nomeações para cargo em comissão.",
-      "É vedada, em qualquer hipótese, a acumulação remunerada de cargos públicos.",
-      "Os cargos em comissão destinam-se exclusivamente a servidores efetivos.",
-      "O estágio probatório é incompatível com o regime estatutário."
+      "O prazo de validade do concurso público é de até quatro anos, prorrogável por igual período.",
+      "A investidura em cargo ou emprego público depende de aprovação prévia em concurso público, ressalvadas as nomeações para cargo em comissão declarado em lei de livre nomeação e exoneração.",
+      "A acumulação remunerada de cargos públicos é, em regra, permitida, salvo vedação expressa em lei.",
+      "A contratação por tempo determinado, para necessidade temporária de excepcional interesse público, exige prévio concurso público.",
+      "Os cargos em comissão destinam-se exclusivamente a servidores ocupantes de cargo efetivo."
     ],
     "correta": 1,
-    "comentario": "O art. 37, II, exige concurso público para investidura, ressalvadas as nomeações para cargo em comissão de livre nomeação e exoneração."
+    "comentario": "O art. 37, II, exige concurso, ressalvado o cargo em comissão. O prazo do concurso é de até 2 anos, prorrogável uma vez; a acumulação é, em regra, vedada; a contratação temporária (art. 37, IX) dispensa concurso; e cargos em comissão admitem livre nomeação (só as funções de confiança são privativas de efetivos)."
   },
   {
     "id": "q36",
@@ -532,14 +539,14 @@ export const QUESTOES = [
     "tema": "Direito Constitucional",
     "enunciado": "Conforme o art. 5º da CF/1988, a respeito do acesso à informação, assinale a opção correta.",
     "alts": [
-      "É vedada a manifestação do pensamento em qualquer hipótese.",
-      "É permitido o anonimato na manifestação do pensamento.",
-      "É proibido o direito de resposta proporcional ao agravo.",
+      "O acesso à informação depende da comprovação de interesse pessoal, direto e legítimo do requerente.",
+      "É vedado o sigilo da fonte em qualquer hipótese, ainda que necessário ao exercício profissional.",
+      "O direito de acesso à informação não alcança os documentos produzidos pelos órgãos públicos.",
       "É assegurado a todos o acesso à informação, resguardado o sigilo da fonte quando necessário ao exercício profissional.",
-      "É dispensada a observância da intimidade e da vida privada."
+      "O acesso a informações de interesse coletivo pode ser negado por simples conveniência da administração."
     ],
     "correta": 3,
-    "comentario": "O art. 5º, XIV, assegura o acesso à informação e resguarda o sigilo da fonte, quando necessário ao exercício profissional."
+    "comentario": "O art. 5º, XIV, assegura o acesso à informação e resguarda o sigilo da fonte; o acesso independe de interesse pessoal, alcança documentos públicos e só se restringe nas hipóteses constitucionais e legais de sigilo."
   },
   {
     "id": "q37",
@@ -644,7 +651,7 @@ export const QUESTOES = [
       "A posse deverá ocorrer no prazo de 5 dias úteis, contados da homologação."
     ],
     "correta": 3,
-    "comentario": "Na LC nº 840/2011, a posse ocorre no prazo de 30 dias, contados da publicação do ATO DE NOMEAÇÃO (e não do ato de provimento, fórmula da Lei nº 8.112/1990)."
+    "comentario": "Na LC nº 840/2011, a posse ocorre no prazo de 30 dias, contados da publicação do ato de nomeação (e não do ato de provimento, fórmula da Lei nº 8.112/1990)."
   },
   {
     "id": "q44",
@@ -695,16 +702,16 @@ export const QUESTOES = [
     "id": "q47",
     "n": 47,
     "tema": "Atendimento ao público",
-    "enunciado": "Diante de um usuário irritado e impaciente, a respeito da técnica de atendimento, assinale a opção correta.",
+    "enunciado": "Diante de um usuário irritado e impaciente, a respeito da conduta adequada de atendimento, assinale a opção correta.",
     "alts": [
-      "Recomenda-se reagir com a mesma irritação para impor respeito.",
-      "Recomenda-se ignorar o usuário até que ele se acalme sozinho.",
-      "Recomenda-se encerrar o atendimento imediatamente, sem explicação.",
-      "Recomenda-se transferir a culpa para outro setor de forma ríspida.",
-      "Recomenda-se manter o controle emocional, ouvir com atenção e responder com cortesia."
+      "Recomenda-se interromper o usuário para corrigir de imediato as suas percepções equivocadas.",
+      "Recomenda-se prometer a solução pretendida, ainda que fora da competência do setor, para acalmá-lo.",
+      "Recomenda-se adotar postura estritamente formal e silenciosa, evitando qualquer demonstração de empatia.",
+      "Recomenda-se encaminhar o usuário a outro setor sem orientá-lo, a fim de encerrar logo o atendimento.",
+      "Recomenda-se manter o controle emocional, praticar a escuta ativa e responder com cortesia e objetividade."
     ],
     "correta": 4,
-    "comentario": "O controle emocional, a escuta ativa e a cortesia são técnicas adequadas para administrar conflitos no atendimento."
+    "comentario": "Controle emocional, escuta ativa e cortesia administram o conflito. Interromper, prometer o que não se pode cumprir, omitir empatia ou repassar sem orientar agravam a insatisfação do usuário."
   },
   {
     "id": "q48",
@@ -712,14 +719,14 @@ export const QUESTOES = [
     "tema": "Redação Oficial",
     "enunciado": "De acordo com o Manual de Redação Oficial, a respeito das qualidades das comunicações oficiais, assinale a opção correta.",
     "alts": [
-      "Exige-se a pessoalidade, com a expressão das opiniões pessoais do redator.",
-      "Recomenda-se o rebuscamento e o uso de regionalismos.",
-      "Admite-se a ambiguidade proposital no texto.",
-      "A impessoalidade impõe a ausência de impressões individuais do redator, tratando-se de assuntos do serviço público.",
-      "Prefere-se a informalidade no tratamento."
+      "A clareza consiste em redigir com o menor número possível de palavras, ainda que à custa do entendimento.",
+      "A impessoalidade consiste em empregar linguagem cerimoniosa e rebuscada, própria do trato formal.",
+      "A formalidade consiste na ausência de impressões pessoais e de marcas individuais do redator.",
+      "A concisão consiste em transmitir o máximo de informação com o mínimo de palavras, sem prejuízo da clareza.",
+      "A objetividade consiste em admitir mais de uma interpretação, a fim de conferir flexibilidade ao texto."
     ],
     "correta": 3,
-    "comentario": "A impessoalidade é princípio da redação oficial: o texto trata de assuntos do serviço público, sem marcas pessoais do redator."
+    "comentario": "Concisão = máxima informação com o mínimo de palavras, sem perder a clareza. As demais trocam os conceitos: clareza visa ao entendimento; ausência de marcas pessoais é a impessoalidade; linguagem formal é a formalidade/padrão culto; e a objetividade evita a ambiguidade, não a admite."
   },
   {
     "id": "q49",
@@ -727,14 +734,14 @@ export const QUESTOES = [
     "tema": "Redação Oficial",
     "enunciado": "Quanto ao fecho das comunicações oficiais, assinale a opção correta.",
     "alts": [
-      "Emprega-se \"Respeitosamente\" para autoridades de hierarquia superior e \"Atenciosamente\" para as de mesma hierarquia ou inferior.",
-      "Emprega-se sempre \"Cordialmente\", em qualquer situação.",
-      "Emprega-se \"Atenciosamente\" apenas para o Presidente da República.",
-      "Emprega-se o fecho \"Saudações\", obrigatório em ofícios.",
+      "Emprega-se “Respeitosamente” para autoridades de hierarquia superior e “Atenciosamente” para as de mesma hierarquia ou inferior.",
+      "Emprega-se sempre “Cordialmente”, em qualquer situação.",
+      "Emprega-se “Atenciosamente” apenas para o Presidente da República.",
+      "Emprega-se o fecho “Saudações”, obrigatório em ofícios.",
       "Emprega-se qualquer expressão, pois o fecho é facultativo."
     ],
     "correta": 0,
-    "comentario": "O padrão prevê \"Respeitosamente\" (autoridade superior) e \"Atenciosamente\" (mesma hierarquia ou inferior)."
+    "comentario": "O padrão prevê “Respeitosamente” (autoridade superior) e “Atenciosamente” (mesma hierarquia ou inferior)."
   },
   {
     "id": "q50",
@@ -749,7 +756,7 @@ export const QUESTOES = [
       "O arquivo corrente reúne os documentos que aguardam prazos de guarda ou destinação."
     ],
     "correta": 0,
-    "comentario": "O arquivo CORRENTE reúne documentos de uso frequente, com valor primário/administrativo imediato; o intermediário aguarda prazos e o permanente guarda os de valor histórico."
+    "comentario": "O arquivo corrente reúne documentos de uso frequente, com valor primário/administrativo imediato; o intermediário aguarda prazos e o permanente guarda os de valor histórico."
   },
   {
     "id": "q51",
@@ -757,29 +764,29 @@ export const QUESTOES = [
     "tema": "Arquivologia",
     "enunciado": "A respeito dos instrumentos de gestão documental, assinale a opção correta.",
     "alts": [
-      "A lista de chamada define os prazos de guarda dos documentos.",
-      "A folha de rosto define a destinação final dos documentos de arquivo.",
-      "A ata de reunião estabelece os prazos de guarda documental.",
-      "A planilha de custos determina a eliminação dos documentos.",
+      "O plano (ou código) de classificação define os prazos de guarda e a destinação final dos documentos.",
+      "A tabela de temporalidade organiza os documentos por assunto ou função, sem fixar prazos de guarda.",
+      "O inventário documental estabelece os prazos de guarda e a eliminação dos documentos de arquivo.",
+      "A classificação documental determina, por si só, a eliminação imediata dos documentos correntes.",
       "A tabela de temporalidade define os prazos de guarda e a destinação final dos documentos (eliminação ou guarda permanente)."
     ],
     "correta": 4,
-    "comentario": "A tabela de temporalidade estabelece prazos de guarda e a destinação (eliminação ou recolhimento) dos documentos."
+    "comentario": "A tabela de temporalidade fixa prazos e destinação. O plano de classificação organiza por assunto/função (não define prazos); inventário e classificação não determinam eliminação — pegadinha que troca os instrumentos."
   },
   {
     "id": "q52",
     "n": 52,
     "tema": "Arquivologia",
-    "enunciado": "No âmbito da gestão de documentos, a respeito do protocolo, assinale a opção correta.",
+    "enunciado": "No âmbito da gestão de documentos, a respeito das atividades de protocolo, assinale a opção correta.",
     "alts": [
-      "Competem ao protocolo o recebimento, o registro, a distribuição e o controle da tramitação de documentos.",
-      "Tais atividades são típicas do arquivo permanente.",
-      "Tais atividades são típicas do inventário patrimonial.",
-      "Tais atividades são típicas do almoxarifado.",
-      "Tais atividades são típicas do pregão eletrônico."
+      "Competem ao protocolo o recebimento, o registro, a autuação, a distribuição e o controle da tramitação dos documentos.",
+      "Compete ao protocolo definir os prazos de guarda e a destinação final dos documentos.",
+      "Compete ao protocolo a guarda definitiva dos documentos de valor histórico e probatório.",
+      "Compete ao protocolo decidir sobre a eliminação dos documentos ao fim do prazo de guarda.",
+      "Compete ao protocolo a classificação dos documentos por assunto, dispensando o plano de classificação."
     ],
     "correta": 0,
-    "comentario": "O protocolo executa recebimento, registro, autuação, distribuição e controle da tramitação dos documentos."
+    "comentario": "O protocolo recebe, registra, autua, distribui e controla a tramitação. Prazos e destinação cabem à tabela de temporalidade; a guarda definitiva, ao arquivo permanente; a eliminação depende da tabela; e a classificação por assunto segue o plano de classificação."
   },
   {
     "id": "q53",
@@ -845,16 +852,16 @@ export const QUESTOES = [
     "id": "q57",
     "n": 57,
     "tema": "Patrimônio",
-    "enunciado": "No controle do patrimônio público, a respeito do ato de identificar o bem permanente com número de registro, assinale a opção correta.",
+    "enunciado": "No controle do patrimônio público, a respeito do ato de identificar individualmente o bem permanente com número de registro, assinale a opção correta.",
     "alts": [
-      "Denomina-se empenho.",
-      "Denomina-se tombamento (registro patrimonial).",
-      "Denomina-se liquidação.",
-      "Denomina-se penhora.",
-      "Denomina-se inexigibilidade."
+      "Denomina-se incorporação: o ato de inclusão contábil do bem no patrimônio.",
+      "Denomina-se tombamento patrimonial: o registro e a numeração do bem permanente para fins de controle.",
+      "Denomina-se carga patrimonial: o ato de atribuir a guarda do bem a um responsável.",
+      "Denomina-se baixa patrimonial: o ato de exclusão do bem dos registros.",
+      "Denomina-se inventário: o levantamento periódico do conjunto dos bens."
     ],
     "correta": 1,
-    "comentario": "O tombamento patrimonial consiste no registro e na numeração do bem permanente para controle; não se confunde com o tombamento cultural."
+    "comentario": "O tombamento patrimonial (não confundir com o cultural) identifica individualmente o bem por número de registro. Incorporação é a inclusão contábil; carga é a atribuição a um responsável; baixa é a exclusão; inventário é o levantamento do conjunto."
   },
   {
     "id": "q58",
