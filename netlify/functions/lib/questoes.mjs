@@ -14,14 +14,14 @@ export const QUESTOES = [
     "texto_base": "O Serviço de Proteção e Atendimento Integral à Família (Paif) atua como eixo articulador da proteção social básica, com o objetivo de integrar ações de fortalecimento da função protetiva das famílias, respeitando os valores, as crenças e as identidades, de prevenir a ruptura dos vínculos, de promover o acesso a direitos e de contribuir na melhoria da qualidade de vida. O acesso a esse serviço se dá por meio das unidades socioassistenciais localizadas em diversas regiões administrativas do Distrito Federal. A principal delas é o Centro de Referência de Assistência Social (Cras), que realiza os atendimentos às famílias por meio de escuta qualificada, acompanhamento sociofamiliar, visitas domiciliares e atividades coletivas. Ademais, presta informações sobre os direitos sociais, orientação para emissão de documentos, acesso a benefícios e encaminhamentos intersetoriais, entre outros. Atualmente, cerca de 29 mil pessoas são atendidas mensalmente nos 32 Cras do Distrito Federal. Em 2014, o número de atendimentos foi superior a isso. Entre 2016 e 2019, os registros apresentaram números menores, o que pode ser atribuído a fatores operacionais e de gestão, como a insuficiência de servidores, o que comprometeu a capacidade de oferta do Paif. Além disso, mudanças nos critérios de registro e a migração para novos sistemas de informação podem ter causado sub-registro, resultando em uma redução artificial nas estatísticas. A partir de 2020, formalizou-se o registro dos atendimentos pelos servidores por meio da Nota Técnica CPSB nº 01/2020, que ressaltava o caráter indispensável do registro das informações relativas ao atendimento das famílias no Sistema Integrado de Desenvolvimento Social (Sids). Dessa forma, houve melhora na qualidade dos dados registrados, o que, aliado ao aumento gradual nos anos seguintes, impulsionou novamente a elevação dos números. Internet: <www.sedes.df.gov.br> (com adaptações).",
     "enunciado": "Depreende-se do texto que",
     "alts": [
-      "a insuficiência de servidores foi a única causa da redução dos números de atendimento entre 2016 e 2019.",
-      "a queda nos registros entre 2016 e 2019 comprova que o Paif foi extinto naquele período.",
+      "a insuficiência de servidores foi a principal causa da redução dos números de atendimento entre 2016 e 2019.",
+      "a queda nos registros entre 2016 e 2019 comprova que o Paif fracassou naquele período.",
       "a redução dos registros de atendimento entre 2016 e 2019 pode ter decorrido tanto de fatores de gestão quanto de mudanças no modo de registrar os atendimentos.",
       "a migração para novos sistemas de informação tornou definitivamente inviável o registro dos atendimentos.",
       "a partir de 2020, os atendimentos passaram a superar todos os números já registrados na história do Paif."
     ],
     "correta": 2,
-    "comentario": "O texto atribui a redução a fatores operacionais e de gestão e a mudanças nos critérios de registro/migração de sistemas. As demais extrapolam o texto: ele não fala em causa única, em extinção do Paif, em inviabilidade definitiva, nem em recorde histórico após 2020."
+    "comentario": "O texto atribui a redução tanto a fatores operacionais e de gestão (como a insuficiência de servidores) quanto a mudanças nos critérios de registro e à migração de sistemas. As demais extrapolam o texto: ele não elege a insuficiência de servidores como causa principal, não fala em fracasso do Paif, em inviabilidade definitiva, nem em recorde histórico após 2020."
   },
   {
     "id": "q2",
@@ -59,14 +59,14 @@ export const QUESTOES = [
     "tema": "Língua Portuguesa",
     "enunciado": "No trecho “ressaltava o caráter indispensável do registro das informações”, a palavra “indispensável” pode ser substituída, sem prejuízo do sentido, por",
     "alts": [
-      "recomendável.",
-      "habitual.",
-      "provisório.",
-      "acessório.",
+      "urgente.",
+      "absoluto.",
+      "suficiente.",
+      "relevante.",
       "imprescindível."
     ],
     "correta": 4,
-    "comentario": "“Indispensável” equivale a “imprescindível” (essencial/obrigatório). “Recomendável” enfraquece a ideia, e as demais (habitual, provisório, acessório) alteram o sentido."
+    "comentario": "“Indispensável” equivale a “imprescindível” (essencial, que não se pode dispensar). “Urgente” remete a tempo; “absoluto” e “suficiente” alteram o sentido; e “relevante” é mais fraco do que “indispensável”."
   },
   {
     "id": "q5",
@@ -104,14 +104,14 @@ export const QUESTOES = [
     "tema": "Língua Portuguesa",
     "enunciado": "Assinale a opção que reescreve, com correção gramatical e preservação do sentido, o trecho “A partir de 2020, formalizou-se o registro dos atendimentos pelos servidores”.",
     "alts": [
-      "A partir de 2020, formalizaram-se o registro dos atendimentos pelos servidores.",
-      "A partir de 2020, o registro dos atendimentos passou a ser formalizado pelos servidores.",
-      "A partir de 2020, os servidores deixaram de registrar os atendimentos.",
-      "Antes de 2020, o registro dos atendimentos já era obrigatório para os servidores.",
-      "A partir de 2020, o registro dos atendimentos foi formalizado apenas pelas famílias."
+      "A partir de 2020 formalizou-se o registro dos atendimentos pelos servidores.",
+      "O registro dos atendimentos foi formalizado, a partir de 2020.",
+      "A partir de 2020, os servidores passaram a registrar os atendimentos.",
+      "A partir de 2020, o registro dos atendimentos já era obrigatório para os servidores.",
+      "A partir de 2020, formalizaram-se o registro dos atendimentos pelos servidores."
     ],
     "correta": 1,
-    "comentario": "A reescrita na voz passiva analítica preserva o sentido. “Formalizaram-se” erra a concordância (sujeito singular “o registro”); as demais alteram o sentido."
+    "comentario": "A voz passiva analítica “foi formalizado” preserva o sentido e dispensa a proeminência do agente. A primeira opção apenas repete o trecho, sem reescrevê-lo, e omite a vírgula do adjunto adverbial; a terceira desloca o foco para a voz ativa; a quarta altera o sentido (sugere obrigação preexistente); e a última erra a concordância (“formalizaram-se” com o sujeito singular “o registro”)."
   },
   {
     "id": "q8",
@@ -119,11 +119,11 @@ export const QUESTOES = [
     "tema": "Brasília e DF (RIDE)",
     "enunciado": "A respeito da Região Integrada de Desenvolvimento do Distrito Federal e Entorno (RIDE), assinale a opção correta.",
     "alts": [
-      "Foi criada por lei distrital e abrange apenas o Distrito Federal e municípios goianos limítrofes.",
+      "Foi criada por lei distrital e abrange o Distrito Federal e municípios goianos limítrofes.",
       "Constitui região metropolitana dotada de autonomia política e de competência legislativa própria.",
-      "Tem a sua gestão atribuída exclusivamente ao Governo do Distrito Federal, sem participação da União.",
+      "Tem a sua gestão atribuída ao Governo do Distrito Federal, sem participação da União.",
       "Foi instituída por lei complementar federal e reúne o Distrito Federal e municípios de Goiás e de Minas Gerais, sem constituir novo ente da Federação.",
-      "Destina-se exclusivamente à integração das ações de segurança pública entre o DF e o seu entorno."
+      "Destina-se à integração das ações de segurança pública entre o DF e o seu entorno."
     ],
     "correta": 3,
     "comentario": "A RIDE foi criada por lei complementar federal e reúne o DF e municípios de Goiás e de Minas Gerais, para a articulação do desenvolvimento regional; não é ente federativo nem região metropolitana, conta com coordenação da União e não se restringe à segurança pública."
@@ -138,7 +138,7 @@ export const QUESTOES = [
       "O Poder Judiciário e o Ministério Público que atuam no Distrito Federal são organizados e mantidos pelo próprio DF.",
       "Ao Distrito Federal são atribuídas as competências legislativas reservadas aos estados e aos municípios.",
       "O Distrito Federal rege-se por Constituição própria, elaborada por uma assembleia constituinte distrital.",
-      "Ao Distrito Federal compete apenas a legislação de interesse local, à semelhança dos municípios."
+      "Ao Distrito Federal compete a legislação de interesse local, cabendo a legislação estadual à União."
     ],
     "correta": 2,
     "comentario": "O art. 32, § 1º, atribui ao DF as competências legislativas reservadas a estados e municípios. É vedado dividi-lo em municípios; seu Judiciário e MP são mantidos pela União (art. 21, XIII); e ele se rege por Lei Orgânica, não por Constituição."
@@ -182,7 +182,7 @@ export const QUESTOES = [
       "Consiste em um conjunto de propostas de políticas públicas — elaboradas por órgãos governamentais, não governamentais e pela sociedade civil — para garantir a igualdade das mulheres e combater a discriminação de gênero.",
       "É um benefício financeiro mensal pago diretamente às mulheres chefes de família inscritas no Cadastro Único.",
       "Tem natureza de norma penal, destinando-se a definir crimes e penas relativos à violência contra a mulher.",
-      "Aplica-se exclusivamente às servidoras públicas do Distrito Federal.",
+      "Aplica-se às servidoras públicas do Distrito Federal, e não à população feminina em geral.",
       "É plano de âmbito nacional, de competência exclusiva da União."
     ],
     "correta": 0,
@@ -258,7 +258,7 @@ export const QUESTOES = [
       "A calúnia, a difamação e a injúria contra a mulher não constituem forma de violência prevista na Lei Maria da Penha.",
       "Cabe à autoridade policial determinar que a mulher em situação de violência doméstica seja incluída, por prazo certo, no cadastro de programas assistenciais do governo.",
       "Ao autor de violência doméstica pode ser imposto o ressarcimento das despesas com serviços de saúde prestados à vítima pelo SUS, cujo cumprimento poderá configurar atenuante ou ensejar a substituição da pena aplicada.",
-      "A violência vicária consiste exclusivamente na violência patrimonial praticada contra a própria mulher, sem atingir terceiros a ela ligados."
+      "A violência vicária consiste na violência patrimonial praticada diretamente contra a própria mulher, sem atingir terceiros a ela ligados."
     ],
     "correta": 0,
     "comentario": "É possível assegurar a manutenção do vínculo trabalhista, por até seis meses, quando necessário o afastamento do trabalho (art. 9º, § 2º, II). Calúnia, difamação e injúria são violência moral; a inclusão no cadastro cabe ao juiz; o ressarcimento ao SUS não gera atenuante nem substituição; e a violência vicária atinge pessoas queridas à mulher."
@@ -270,7 +270,7 @@ export const QUESTOES = [
     "enunciado": "Nos termos da Lei nº 11.340/2006 (Lei Maria da Penha), a respeito do atendimento e da inquirição da mulher em situação de violência, assinale a opção correta.",
     "alts": [
       "É direito da mulher o atendimento policial e pericial especializado, ininterrupto e prestado por servidores exclusivamente do sexo feminino.",
-      "A autoridade policial deverá permitir que o contato entre a mulher e o investigado ocorra apenas por interposta pessoa a ele relacionada.",
+      "A autoridade policial deverá permitir que o contato entre a mulher e o investigado ocorra por interposta pessoa a ele relacionada.",
       "A autoridade policial deverá garantir o mínimo contato direto entre a mulher e o investigado.",
       "A inquirição da mulher deverá ser realizada pessoalmente pela autoridade policial, vedada a intermediação por qualquer outro profissional.",
       "A inquirição da mulher será feita em recinto especialmente projetado para esse fim, que conterá os equipamentos próprios e adequados à idade da ofendida."
@@ -391,7 +391,7 @@ export const QUESTOES = [
     "alts": [
       "As Comissões Intergestores têm caráter deliberativo, cabendo-lhes aprovar em definitivo a política, em substituição aos conselhos.",
       "O cofinanciamento das ações é responsabilidade isolada de cada município, sem participação da União e dos estados.",
-      "A habilitação dos municípios em níveis de gestão depende apenas do número de habitantes, sem relação com a estrutura instalada.",
+      "A habilitação dos municípios em níveis de gestão depende do número de habitantes, sem relação com a estrutura instalada.",
       "A vigilância socioassistencial é atribuição privativa do conselho de assistência social, vedada a sua realização pelo órgão gestor.",
       "O SUAS organiza-se em níveis de gestão, com pactuação nas Comissões Intergestores (CIT e CIB) e deliberação nos conselhos de assistência social."
     ],
@@ -464,7 +464,7 @@ export const QUESTOES = [
     "tema": "Segurança Alimentar (SISAN)",
     "enunciado": "A respeito da segurança alimentar e nutricional (SAN), no âmbito do SISAN, assinale a opção correta.",
     "alts": [
-      "Resume-se ao fornecimento de cestas básicas apenas em situações de calamidade.",
+      "Resume-se ao fornecimento de cestas básicas em situações de calamidade pública.",
       "Consiste na fiscalização sanitária dos restaurantes e estabelecimentos comerciais.",
       "Tem por objeto o controle dos preços dos gêneros alimentícios no mercado.",
       "Consiste no direito de todos ao acesso regular e permanente a alimentos de qualidade, em quantidade suficiente, sem comprometer outras necessidades essenciais.",
@@ -479,7 +479,7 @@ export const QUESTOES = [
     "tema": "Assistência Social (DF)",
     "enunciado": "A respeito do Conselho de Assistência Social do Distrito Federal (CAS/DF), assinale a opção correta.",
     "alts": [
-      "É órgão colegiado de natureza apenas consultiva, cabendo-lhe opinar sobre a política, sem poder de deliberação.",
+      "É órgão colegiado de natureza consultiva, cabendo-lhe opinar sobre a política, sem poder de deliberação.",
       "É órgão colegiado e permanente, de composição paritária entre governo e sociedade civil, com atribuições deliberativas e de controle da política de assistência social.",
       "Tem composição majoritariamente governamental, reservando-se à sociedade civil um terço das vagas.",
       "Cabe-lhe executar diretamente os serviços socioassistenciais, em substituição aos CRAS e CREAS.",
@@ -616,7 +616,7 @@ export const QUESTOES = [
     "alts": [
       "A autoexecutoriedade é o atributo do poder de polícia que permite ao agente público empregar a força, se necessário, para executar a medida.",
       "A coercibilidade consiste na prerrogativa de a Administração, por vontade própria, modificar imediatamente a ordem jurídica, impondo desde logo obrigações aos particulares.",
-      "O poder de polícia desenvolve-se em quatro fases — ordem, consentimento, fiscalização e sanção —, sendo indelegável apenas a fase de consentimento.",
+      "O poder de polícia desenvolve-se em quatro fases — ordem, consentimento, fiscalização e sanção —, sendo indelegáveis as fases de consentimento e de fiscalização.",
       "Segundo a doutrina, o fundamento do poder de polícia é o princípio da predominância (supremacia) do interesse público sobre o particular.",
       "A polícia judiciária incide, basicamente, sobre as atividades dos particulares."
     ],
@@ -676,7 +676,7 @@ export const QUESTOES = [
     "alts": [
       "Na hipótese de acumulação lícita de cargos, o servidor poderá aproveitar o prazo e a pontuação do estágio probatório de um cargo para o outro.",
       "A recondução consiste na reinvestidura do servidor no cargo anteriormente ocupado quando invalidada a sua demissão por decisão administrativa ou judicial, com o restabelecimento dos direitos.",
-      "Quando houver conveniência para o serviço, a penalidade de suspensão poderá ser convertida em multa, e o servidor ficará obrigado a cumprir integralmente a jornada de trabalho.",
+      "Quando houver conveniência para o serviço, a penalidade de suspensão poderá ser convertida em multa, ficando o servidor afastado de suas funções durante o período.",
       "As denúncias anônimas sobre infração disciplinar serão desconsideradas, sendo indispensável, para o início das investigações, a representação por escrito com a identificação do denunciante.",
       "Se um servidor cometer assédio sexual e outro cometer assédio moral, ambos estarão sujeitos à mesma pena máxima de suspensão."
     ],
@@ -690,7 +690,7 @@ export const QUESTOES = [
     "enunciado": "À luz da LC nº 840/2011, a respeito da responsabilidade do servidor, assinale a opção correta.",
     "alts": [
       "A responsabilidade penal exclui automaticamente a responsabilidade administrativa pelo mesmo fato.",
-      "O recebimento de vantagem indevida é mero descumprimento de dever, punível apenas com advertência.",
+      "O recebimento de vantagem indevida constitui mero descumprimento de dever, punível com advertência.",
       "A ausência ao serviço sem autorização é conduta atípica, não sujeita a qualquer penalidade.",
       "A absolvição no processo administrativo impede a responsabilização penal pelo mesmo fato.",
       "As responsabilidades civil, penal e administrativa são independentes entre si e podem cumular-se pelo mesmo fato."
@@ -705,7 +705,7 @@ export const QUESTOES = [
     "enunciado": "A respeito das qualidades do atendimento ao público, assinale a opção correta.",
     "alts": [
       "A cortesia caracteriza-se pelo tratamento formal, impessoal e distante dos interesses do solicitante.",
-      "A eficiência caracteriza-se, exclusivamente, pela satisfação do cidadão quanto às informações solicitadas.",
+      "A eficiência caracteriza-se pela satisfação do cidadão quanto às informações solicitadas.",
       "A presteza caracteriza-se pela priorização das tarefas internas em relação ao atendimento do público.",
       "A presteza caracteriza-se pelo atendimento ágil e disposto, com vontade de ajudar e de resolver a demanda do cidadão.",
       "A urbanidade caracteriza-se, essencialmente, pela mera agilidade do atendimento prestado."
@@ -721,7 +721,7 @@ export const QUESTOES = [
     "alts": [
       "O usuário tem direito à obtenção de informações precisas e ao atendimento conforme normas e prazos, observados os princípios da regularidade, da continuidade e da cortesia.",
       "As manifestações dos usuários, por envolverem juízo de valor, dispensam tratamento e resposta pela administração.",
-      "A avaliação da qualidade do serviço público é vedada ao usuário, por competir exclusivamente ao órgão prestador.",
+      "A avaliação da qualidade do serviço público é vedada ao usuário, por competir ao próprio órgão prestador.",
       "A administração pode exigir, como regra, o reconhecimento de firma e a autenticação dos documentos apresentados pelo usuário.",
       "O atendimento deve priorizar a conveniência interna do órgão, ainda que em prejuízo da continuidade do serviço."
     ],
