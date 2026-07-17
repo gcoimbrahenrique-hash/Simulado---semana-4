@@ -95,6 +95,22 @@
   .legenda span i{display:inline-block;width:18px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:6px;text-align:center;font-size:10px;line-height:14px;font-weight:700;font-family:var(--disp)}
   .vazio{padding:50px 20px;text-align:center;color:var(--tinta-suave)}
   .pendente{color:var(--tinta-fraca);font-style:italic}
+  .disc-enun{padding:14px 20px;border-bottom:1px solid var(--linha);font-size:13px;color:var(--tinta-suave);background:#FAF8F3}
+  .disc-item{border-bottom:1px solid #F1EEE6;padding:16px 20px}
+  .disc-item:last-child{border-bottom:none}
+  .disc-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+  .disc-head .nome{font-weight:600}
+  .disc-head .login{font-size:12px;color:var(--tinta-fraca)}
+  .disc-head .chars{font-size:12px;color:var(--tinta-fraca);margin-left:auto}
+  .disc-texto{white-space:pre-wrap;background:#FCFBF9;border:1px solid var(--linha);border-radius:10px;padding:14px 16px;font-size:14px;line-height:1.7;max-height:340px;overflow:auto;color:#2c2c34}
+  .disc-texto.disc-vazia,.disc-item.disc-vazia{font-style:italic;color:var(--tinta-fraca)}
+  .disc-nota{display:flex;align-items:center;gap:10px;margin-top:10px;flex-wrap:wrap}
+  .disc-nota label{font-size:12.5px;color:var(--tinta-suave)}
+  .disc-nota input.nnum{width:92px;padding:8px 10px;border:1.5px solid var(--linha);border-radius:9px;font-family:var(--corpo);font-size:14px}
+  .disc-nota input.obs{flex:1;min-width:200px;padding:8px 10px;border:1.5px solid var(--linha);border-radius:9px;font-family:var(--corpo);font-size:13.5px}
+  .disc-nota button{padding:8px 14px;border:none;border-radius:9px;background:var(--esmeralda);color:#fff;font-weight:600;font-size:13px}
+  .disc-nota button:hover{background:#03654a}
+  .disc-nota .status{font-size:12.5px}
   @media (max-width:640px){ .topo .l2{display:none} .container{padding:18px 14px 60px} }
 </style>
 </head>
@@ -159,6 +175,12 @@
         <span><i class="cel-r b">–</i> em branco</span>
       </div>
     </div>
+
+    <div class="secao" id="secao-discursiva" style="display:none">
+      <div class="secao-cab"><h3>Redações — prova discursiva</h3><span class="dica">Leia e atribua a nota de cada aluno</span></div>
+      <div id="disc-enunciado" class="disc-enun"></div>
+      <div id="disc-lista"></div>
+    </div>
   </div>
 </div>
 
@@ -209,7 +231,7 @@
 
   function render(d){
     $('#p-titulo').textContent=d.titulo;
-    $('#p-sub').textContent=(d.subtitulo||'')+' · '+d.total+' questões · 1h30';
+    $('#p-sub').textContent=(d.subtitulo||'')+' · '+d.total+' questões objetivas';
     const feitos=d.alunos.filter(a=>a.finalizado), total=d.total;
     const medias=feitos.map(a=>a.acertos);
     const media=feitos.length?(medias.reduce((x,y)=>x+y,0)/feitos.length):0;
@@ -260,6 +282,44 @@
       hm+='<td class="cel-r" style="background:#FAF8F3">'+a.acertos+'</td></tr>';
     });
     hm+='</tbody>'; $('#tab-matriz').innerHTML=hm;
+
+    renderDiscursiva(d);
+  }
+
+  function renderDiscursiva(d){
+    const sec=$('#secao-discursiva');
+    if(!d.discursiva){ sec.style.display='none'; return; }
+    sec.style.display='block';
+    $('#disc-enunciado').textContent = d.discursiva.enunciado || '';
+    const feitos=d.alunos.filter(a=>a.finalizado);
+    const lista=$('#disc-lista'); lista.innerHTML='';
+    if(feitos.length===0){ lista.innerHTML='<div class="disc-item disc-vazia">Nenhuma redação enviada ainda.</div>'; return; }
+    feitos.slice().sort((a,b)=>String(a.nome||'').localeCompare(String(b.nome||''))).forEach(a=>{
+      const texto=(a.discursiva||'').trim();
+      const item=document.createElement('div'); item.className='disc-item';
+      let h='<div class="disc-head"><span class="nome">'+esc(a.nome)+'</span><span class="login">'+esc(a.login)+'</span><span class="chars">'+(texto?texto.length+' caracteres':'—')+'</span></div>';
+      h+= texto ? '<div class="disc-texto">'+esc(texto)+'</div>' : '<div class="disc-texto disc-vazia">(em branco)</div>';
+      const notaVal=(a.nota_discursiva===undefined||a.nota_discursiva===null)?'':a.nota_discursiva;
+      h+='<div class="disc-nota"><label>Nota:</label>'
+        +'<input type="number" class="nnum" step="0.1" min="0" value="'+notaVal+'">'
+        +'<input type="text" class="obs" placeholder="observação (opcional)">'
+        +'<button>Salvar nota</button><span class="status"></span></div>';
+      item.innerHTML=h;
+      item.querySelector('input.obs').value=a.obs_discursiva||'';
+      const btn=item.querySelector('button');
+      btn.addEventListener('click', async ()=>{
+        const nota=item.querySelector('input.nnum').value;
+        const obs=item.querySelector('input.obs').value;
+        const st=item.querySelector('.status'); st.textContent='salvando…'; st.style.color='var(--tinta-fraca)';
+        try{
+          const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({acao:'salvar_nota',prof_senha:SENHA,login:a.login,nota:nota,obs:obs})});
+          const dd=await r.json();
+          if(dd.ok){ st.textContent='✓ salvo'; st.style.color='var(--esmeralda)'; a.nota_discursiva=dd.nota_discursiva; a.obs_discursiva=obs; }
+          else { st.textContent=dd.erro||'erro'; st.style.color='var(--erro)'; }
+        }catch(e){ st.textContent='erro de conexão'; st.style.color='var(--erro)'; }
+      });
+      lista.appendChild(item);
+    });
   }
 
   function kpi(rot,val,cls){return '<div class="kpi '+(cls||'')+'"><div class="rot">'+rot+'</div><div class="val">'+val+'</div></div>';}
@@ -271,15 +331,23 @@
   function exportarCSV(){
     if(!DADOS)return;
     const d=DADOS, feitos=d.alunos.filter(a=>a.finalizado), sep=';'; let linhas=[];
+    const temDisc=!!d.discursiva;
     let cab=['Nome','Login','Acertos','Total','Aproveitamento(%)','Tempo(s)','Enviado'];
-    d.questoes.forEach(q=>cab.push('Q'+q.n)); linhas.push(cab.join(sep));
+    if(temDisc) cab.push('NotaDiscursiva');
+    d.questoes.forEach(q=>cab.push('Q'+q.n));
+    if(temDisc) cab.push('Redacao');
+    linhas.push(cab.join(sep));
     feitos.forEach(a=>{
       let s=a.fim&&a.inicio?(a.fim-a.inicio):'', pct=Math.round(a.acertos*100/d.total);
       let row=[csv(a.nome),csv(a.login),a.acertos,d.total,pct,s,dataHora(a.fim)];
+      if(temDisc) row.push(a.nota_discursiva==null?'':a.nota_discursiva);
       d.questoes.forEach(q=>{const det=a.detalhe&&a.detalhe[q.id]; row.push((!det||det.marcada<0)?'-':LETRAS[det.marcada]+(det.acertou?'(C)':'(E)'));});
+      if(temDisc) row.push(csv(a.discursiva||''));
       linhas.push(row.join(sep));
     });
-    let gab=['GABARITO','','','','','','']; d.questoes.forEach(q=>gab.push(q.correta_letra)); linhas.push(gab.join(sep));
+    let gab=['GABARITO','','','','','','']; if(temDisc) gab.push('');
+    d.questoes.forEach(q=>gab.push(q.correta_letra)); if(temDisc) gab.push('');
+    linhas.push(gab.join(sep));
     const blob=new Blob(["\uFEFF"+linhas.join('\n')],{type:'text/csv;charset=utf-8;'});
     const url=URL.createObjectURL(blob), a=document.createElement('a');
     a.href=url; a.download='resultados_simulado.csv'; a.click(); URL.revokeObjectURL(url);
