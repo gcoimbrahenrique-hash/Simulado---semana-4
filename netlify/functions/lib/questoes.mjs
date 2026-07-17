@@ -10,902 +10,902 @@ export const QUESTOES = [
     "id": "q1",
     "n": 1,
     "tema": "Língua Portuguesa",
-    "texto_ref": "Texto para responder às questões de 1 a 7.",
-    "texto_base": "O Serviço de Proteção e Atendimento Integral à Família (Paif) atua como eixo articulador da proteção social básica, com o objetivo de integrar ações de fortalecimento da função protetiva das famílias, respeitando os valores, as crenças e as identidades, de prevenir a ruptura dos vínculos, de promover o acesso a direitos e de contribuir na melhoria da qualidade de vida. O acesso a esse serviço se dá por meio das unidades socioassistenciais localizadas em diversas regiões administrativas do Distrito Federal. A principal delas é o Centro de Referência de Assistência Social (Cras), que realiza os atendimentos às famílias por meio de escuta qualificada, acompanhamento sociofamiliar, visitas domiciliares e atividades coletivas. Ademais, presta informações sobre os direitos sociais, orientação para emissão de documentos, acesso a benefícios e encaminhamentos intersetoriais, entre outros. Atualmente, cerca de 29 mil pessoas são atendidas mensalmente nos 32 Cras do Distrito Federal. Em 2014, o número de atendimentos foi superior a isso. Entre 2016 e 2019, os registros apresentaram números menores, o que pode ser atribuído a fatores operacionais e de gestão, como a insuficiência de servidores, o que comprometeu a capacidade de oferta do Paif. Além disso, mudanças nos critérios de registro e a migração para novos sistemas de informação podem ter causado sub-registro, resultando em uma redução artificial nas estatísticas. A partir de 2020, formalizou-se o registro dos atendimentos pelos servidores por meio da Nota Técnica CPSB nº 01/2020, que ressaltava o caráter indispensável do registro das informações relativas ao atendimento das famílias no Sistema Integrado de Desenvolvimento Social (Sids). Dessa forma, houve melhora na qualidade dos dados registrados, o que, aliado ao aumento gradual nos anos seguintes, impulsionou novamente a elevação dos números. Internet: <www.sedes.df.gov.br> (com adaptações).",
+    "texto_ref": "Texto para responder às questões de 1 a 9.",
+    "texto_base": "A decisão do Ministério do Desenvolvimento Social e Combate à Fome (MDS), por intermédio da Secretaria Nacional de Assistência Social (SNAS) e do Conselho Nacional de Assistência Social (CNAS), de elaborar, aprovar e tornar pública a presente Política Nacional de Assistência Social (PNAS), demonstra a intenção de construir coletivamente o redesenho desta política, na perspectiva de implementação do Sistema Único de Assistência Social (SUAS). Esta iniciativa, decididamente, traduz o cumprimento das deliberações da IV Conferência Nacional de Assistência Social, realizada em Brasília, em dezembro de 2003, e denota o compromisso do MDS/SNAS e do CNAS em materializar as diretrizes da Lei Orgânica da Assistência Social (LOAS).\n\nA versão preliminar foi apresentada ao CNAS, em 23 de junho de 2004, pelo MDS/SNAS, tendo sido amplamente divulgada e discutida em todos os Estados brasileiros nos diversos encontros, seminários, reuniões, oficinas e palestras que garantiram o caráter democrático e descentralizado do debate. Este processo culminou com um amplo debate na Reunião Descentralizada e Participativa do CNAS, realizada entre os dias 20 e 22 de setembro de 2004, na qual foi aprovada, por unanimidade, por aquele colegiado.\n\nRessalta-se a riqueza desse processo, com inúmeras contribuições recebidas dos Conselhos de Assistência Social, do Fórum Nacional de Secretários de Assistência Social (FONSEAS), do Colegiado de Gestores, de Associações de Municípios, de Fóruns Estaduais e Regionais, de Secretarias de Assistência Social, de Universidades e entidades de assistência social, além de estudantes, pesquisadores e demais sujeitos.\n\nTal conquista, em tão breve tempo, leva a uma rápida constatação: a disponibilidade e o anseio dos atores sociais em efetivá-la como política pública de Estado, definida em lei. Muitos, às vezes e ainda, confundem a assistência social com clientelismo, assistencialismo, caridade ou ações pontuais, que nada têm a ver com políticas públicas e com o compromisso do Estado com a sociedade. O MDS/SNAS e o CNAS estão empenhados em estabelecer políticas permanentes e, agora, com a perspectiva prioritária de implantar o SUAS, para integrar o Governo Federal com os Estados, o Distrito Federal e os Municípios em uma ação conjunta. Com isso, busca-se impedir políticas de protecionismo, garantindo aquelas estabelecidas por meio de normas jurídicas universais. Este é o compromisso do MDS, que integra três frentes de atuação na defesa do direito à renda, à segurança alimentar e à assistência social, compromisso também do CNAS.\n\nA Política Nacional de Assistência Social ora aprovada expressa exatamente a materialidade do conteúdo da Assistência Social como um pilar do Sistema de Proteção Social Brasileiro no âmbito da Seguridade Social.\n\nEste é um momento histórico e assim devemos concebê-lo, ensejando todos os esforços na operacionalização desta política. Trata-se, portanto, de transformar em ações diretas os pressupostos da Constituição Federal de 1988 e da LOAS, por meio de definições, de princípios e de diretrizes que nortearão sua implementação, cumprindo uma urgente, necessária e nova agenda para a cidadania no Brasil.\n\nBRASIL. Ministério do Desenvolvimento Social. Política Nacional de Assistência Social (PNAS/2004). Internet: <www.mds.gov.br> (com adaptações).",
     "enunciado": "Depreende-se do texto que",
     "alts": [
-      "a insuficiência de servidores foi a principal causa da redução dos números de atendimento entre 2016 e 2019.",
-      "a queda nos registros entre 2016 e 2019 comprova que o Paif fracassou naquele período.",
-      "a redução dos registros de atendimento entre 2016 e 2019 pode ter decorrido tanto de fatores de gestão quanto de mudanças no modo de registrar os atendimentos.",
-      "a migração para novos sistemas de informação tornou definitivamente inviável o registro dos atendimentos.",
-      "a partir de 2020, os atendimentos passaram a superar todos os números já registrados na história do Paif."
+      "a PNAS organiza a proteção social em proteção básica e proteção especial, conforme os níveis de complexidade.",
+      "o SUAS adota a matricialidade sociofamiliar como um de seus eixos estruturantes.",
+      "os benefícios eventuais da assistência social são prestados em razão de nascimento e de morte, em caráter suplementar.",
+      "o Benefício de Prestação Continuada assegura um salário-mínimo à pessoa idosa ou com deficiência de baixa renda.",
+      "a aprovação da PNAS resultou de um processo participativo e descentralizado, amplamente discutido nos estados e no CNAS."
     ],
-    "correta": 2,
-    "comentario": "O texto atribui a redução tanto a fatores operacionais e de gestão (como a insuficiência de servidores) quanto a mudanças nos critérios de registro e à migração de sistemas. As demais extrapolam o texto: ele não elege a insuficiência de servidores como causa principal, não fala em fracasso do Paif, em inviabilidade definitiva, nem em recorde histórico após 2020."
+    "correta": 4,
+    "comentario": "O texto descreve o processo participativo e descentralizado de elaboração e de aprovação da PNAS (discussão em todos os estados e aprovação por unanimidade no CNAS). As demais afirmações, embora corretas quanto à assistência social, não encontram previsão no texto."
   },
   {
     "id": "q2",
     "n": 2,
     "tema": "Língua Portuguesa",
-    "enunciado": "No trecho “Dessa forma, houve melhora na qualidade dos dados registrados”, a expressão “Dessa forma” estabelece relação de",
+    "enunciado": "Conforme o texto, é correto afirmar que",
     "alts": [
-      "oposição entre a melhora e os fatos relatados antes.",
-      "conclusão, indicando o resultado decorrente do que se afirmou anteriormente.",
-      "condição para que a melhora viesse a ocorrer.",
-      "comparação entre dois períodos distintos.",
-      "finalidade da formalização do registro dos atendimentos."
+      "muitos ainda confundem a assistência social com clientelismo, assistencialismo, caridade ou ações pontuais.",
+      "a assistência social é prestada a quem dela necessitar, independentemente de contribuição.",
+      "o controle social da política é exercido pelos conselhos de assistência social, de composição paritária.",
+      "os serviços socioassistenciais organizam-se a partir do território, segundo o princípio da territorialização.",
+      "a proteção social básica é ofertada, prioritariamente, pelos Centros de Referência de Assistência Social."
     ],
-    "correta": 1,
-    "comentario": "“Dessa forma” introduz conclusão/consequência: a melhora resulta da formalização do registro (Nota Técnica/Sids) mencionada antes."
+    "correta": 0,
+    "comentario": "O texto afirma expressamente que muitos ainda confundem a assistência social com clientelismo, assistencialismo, caridade ou ações pontuais. As demais, embora verdadeiras quanto à política, não têm previsão no texto."
   },
   {
     "id": "q3",
     "n": 3,
     "tema": "Língua Portuguesa",
-    "enunciado": "No trecho “A principal delas é o Centro de Referência de Assistência Social (Cras)”, o pronome “delas” retoma",
+    "enunciado": "No trecho “a intenção de construir coletivamente o redesenho desta política”, a expressão “desta política” refere-se",
     "alts": [
-      "as regiões administrativas do Distrito Federal.",
-      "as famílias atendidas pelo Paif.",
-      "as unidades socioassistenciais localizadas em diversas regiões administrativas do Distrito Federal.",
-      "as ações de fortalecimento da função protetiva das famílias.",
-      "as informações sobre os direitos sociais prestadas pelo serviço."
+      "à Lei Orgânica da Assistência Social (LOAS).",
+      "ao Sistema Único de Assistência Social (SUAS).",
+      "à IV Conferência Nacional de Assistência Social.",
+      "à Política Nacional de Assistência Social (PNAS).",
+      "à Política Nacional de Segurança Alimentar e Nutricional."
     ],
-    "correta": 2,
-    "comentario": "Por coesão, “delas” retoma “as unidades socioassistenciais” citadas imediatamente antes; o Cras é a principal dessas unidades."
+    "correta": 3,
+    "comentario": "Por coesão, “desta política” retoma a Política Nacional de Assistência Social (PNAS), cujo redesenho coletivo é o objeto da decisão narrada no período."
   },
   {
     "id": "q4",
     "n": 4,
     "tema": "Língua Portuguesa",
-    "enunciado": "No trecho “ressaltava o caráter indispensável do registro das informações”, a palavra “indispensável” pode ser substituída, sem prejuízo do sentido, por",
+    "enunciado": "No trecho “e denota o compromisso do MDS/SNAS”, o vocábulo “denota” pode ser substituído, sem prejuízo do sentido, por",
     "alts": [
-      "urgente.",
-      "absoluto.",
-      "suficiente.",
-      "relevante.",
-      "imprescindível."
+      "contesta.",
+      "patenteia.",
+      "elucida.",
+      "desvenda.",
+      "cientifica."
     ],
-    "correta": 4,
-    "comentario": "“Indispensável” equivale a “imprescindível” (essencial, que não se pode dispensar). “Urgente” remete a tempo; “absoluto” e “suficiente” alteram o sentido; e “relevante” é mais fraco do que “indispensável”."
+    "correta": 1,
+    "comentario": "“Denotar” significa tornar patente, revelar, manifestar — sentido preservado por “patentear”. “Contestar” é o oposto; “elucidar” (esclarecer), “desvendar” (revelar o que estava oculto) e “cientificar” (dar ciência, informar) deslocam o sentido."
   },
   {
     "id": "q5",
     "n": 5,
     "tema": "Língua Portuguesa",
-    "enunciado": "Na oração “cerca de 29 mil pessoas são atendidas mensalmente nos 32 Cras”, a forma verbal “são atendidas” encontra-se na",
+    "enunciado": "Em “tendo sido amplamente divulgada e discutida em todos os Estados”, as formas “divulgada” e “discutida” concordam com",
     "alts": [
-      "voz ativa, tendo “pessoas” como objeto direto.",
-      "voz passiva sintética, formada com o pronome “se”.",
-      "voz passiva analítica, concordando com o sujeito “cerca de 29 mil pessoas”.",
-      "voz reflexiva, em que o sujeito pratica e recebe a própria ação.",
-      "forma nominal de gerúndio, sem sujeito determinado."
+      "“o CNAS”, a quem foi apresentada.",
+      "“os Estados brasileiros”.",
+      "“o MDS/SNAS”, agente da apresentação.",
+      "“os diversos encontros, seminários e reuniões”.",
+      "“A versão preliminar”, sujeito da oração."
     ],
-    "correta": 2,
-    "comentario": "“São atendidas” é voz passiva analítica (verbo ser + particípio), com sujeito paciente “cerca de 29 mil pessoas”; não há voz ativa, passiva sintética (com “se”), reflexiva nem gerúndio."
+    "correta": 4,
+    "comentario": "Os particípios “divulgada” e “discutida” concordam, em gênero e número, com o sujeito “A versão preliminar” (feminino singular) — não com os demais termos da frase."
   },
   {
     "id": "q6",
     "n": 6,
     "tema": "Língua Portuguesa",
-    "enunciado": "Em “o número de atendimentos foi superior a isso”, a preposição “a” é exigida",
+    "enunciado": "O trecho “na defesa do direito à renda, à segurança alimentar e à assistência social” foi reescrito de cinco formas. Considerando apenas a correção gramatical e o paralelismo no emprego do acento grave (crase), assinale a opção correta.",
     "alts": [
-      "pela regência do adjetivo “superior”, que pede complemento introduzido pela preposição “a”.",
-      "pelo verbo “foi”, que rege objeto indireto.",
-      "pela presença de artigo definido antes do pronome “isso”.",
-      "por se tratar de locução adverbial de intensidade.",
-      "pela ocorrência de crase diante do pronome “isso”."
+      "na defesa do direito à renda, a segurança alimentar e à assistência social.",
+      "na defesa do direito a renda, à segurança alimentar e a assistência social.",
+      "na defesa do direito à renda, à segurança alimentar e à assistência social.",
+      "na defesa do direito à renda, à segurança alimentar e a assistência social.",
+      "na defesa do direito a renda, a segurança alimentar e a assistência social."
     ],
-    "correta": 0,
-    "comentario": "“Superior” rege complemento com a preposição “a” (superior a algo). Não há crase diante de pronome demonstrativo (“isso”), nem artigo, nem objeto indireto do verbo “ser”."
+    "correta": 2,
+    "comentario": "Os três termos (renda, segurança e assistência) são femininos e regidos por “direito a”, exigindo o acento grave em todos, por paralelismo. Só a opção C crasea os três de modo uniforme; as demais omitem a crase de um ou mais termos, quebrando o paralelismo."
   },
   {
     "id": "q7",
     "n": 7,
     "tema": "Língua Portuguesa",
-    "enunciado": "Assinale a opção que reescreve, com correção gramatical e preservação do sentido, o trecho “A partir de 2020, formalizou-se o registro dos atendimentos pelos servidores”.",
+    "enunciado": "No trecho “a presente Política Nacional de Assistência Social”, o termo “presente” classifica-se como",
     "alts": [
-      "A partir de 2020 formalizou-se o registro dos atendimentos pelos servidores.",
-      "O registro dos atendimentos foi formalizado, a partir de 2020.",
-      "A partir de 2020, os servidores passaram a registrar os atendimentos.",
-      "A partir de 2020, o registro dos atendimentos já era obrigatório para os servidores.",
-      "A partir de 2020, formalizaram-se o registro dos atendimentos pelos servidores."
+      "substantivo, núcleo do sujeito da oração.",
+      "advérbio, indicando tempo.",
+      "adjetivo, com o valor de “atual / ora referida”.",
+      "verbo, no presente do indicativo.",
+      "preposição, a ligar dois termos."
     ],
-    "correta": 1,
-    "comentario": "A voz passiva analítica “foi formalizado” preserva o sentido e dispensa a proeminência do agente. A primeira opção apenas repete o trecho, sem reescrevê-lo, e omite a vírgula do adjunto adverbial; a terceira desloca o foco para a voz ativa; a quarta altera o sentido (sugere obrigação preexistente); e a última erra a concordância (“formalizaram-se” com o sujeito singular “o registro”)."
+    "correta": 2,
+    "comentario": "Em “a presente Política”, “presente” é adjetivo: caracteriza o substantivo “Política” com o sentido de “atual / ora apresentada”."
   },
   {
     "id": "q8",
     "n": 8,
-    "tema": "Brasília e DF (RIDE)",
-    "enunciado": "A respeito da Região Integrada de Desenvolvimento do Distrito Federal e Entorno (RIDE), assinale a opção correta.",
+    "tema": "Língua Portuguesa",
+    "enunciado": "Conforme o texto, a aprovação da Política Nacional de Assistência Social pelo CNAS deu-se",
     "alts": [
-      "Foi criada por lei distrital e abrange o Distrito Federal e municípios goianos limítrofes.",
-      "Constitui região metropolitana dotada de autonomia política e de competência legislativa própria.",
-      "Tem a sua gestão atribuída ao Governo do Distrito Federal, sem participação da União.",
-      "Foi instituída por lei complementar federal e reúne o Distrito Federal e municípios de Goiás e de Minas Gerais, sem constituir novo ente da Federação.",
-      "Destina-se à integração das ações de segurança pública entre o DF e o seu entorno."
+      "por maioria simples dos conselheiros, durante a IV Conferência Nacional de Assistência Social.",
+      "mediante referendo popular nos estados, após consulta pública nacional.",
+      "por decreto do Ministério do Desenvolvimento Social, dispensada a deliberação do CNAS.",
+      "na reunião de 23 de junho de 2004, data da apresentação da versão preliminar.",
+      "por unanimidade, na Reunião Descentralizada e Participativa realizada em setembro de 2004."
     ],
-    "correta": 3,
-    "comentario": "A RIDE foi criada por lei complementar federal e reúne o DF e municípios de Goiás e de Minas Gerais, para a articulação do desenvolvimento regional; não é ente federativo nem região metropolitana, conta com coordenação da União e não se restringe à segurança pública."
+    "correta": 4,
+    "comentario": "O texto afirma que o processo culminou na Reunião Descentralizada e Participativa do CNAS, realizada entre 20 e 22 de setembro de 2004, na qual a PNAS foi aprovada por unanimidade. A IV Conferência (2003) e a apresentação da versão preliminar (23/6/2004) são fatos diversos, e não houve referendo nem aprovação por decreto."
   },
   {
     "id": "q9",
     "n": 9,
-    "tema": "Direito Constitucional (DF)",
-    "enunciado": "Nos termos da Constituição Federal, a respeito do Distrito Federal, assinale a opção correta.",
+    "tema": "Língua Portuguesa",
+    "enunciado": "Assinale a opção que reescreve, com correção e preservação do sentido, o trecho “A Política Nacional de Assistência Social ora aprovada expressa exatamente a materialidade do conteúdo da Assistência Social”.",
     "alts": [
-      "O Distrito Federal pode subdividir-se em municípios, mediante lei aprovada por sua Câmara Legislativa.",
-      "O Poder Judiciário e o Ministério Público que atuam no Distrito Federal são organizados e mantidos pelo próprio DF.",
-      "Ao Distrito Federal são atribuídas as competências legislativas reservadas aos estados e aos municípios.",
-      "O Distrito Federal rege-se por Constituição própria, elaborada por uma assembleia constituinte distrital.",
-      "Ao Distrito Federal compete a legislação de interesse local, cabendo a legislação estadual à União."
+      "A Política Nacional de Assistência Social, que será aprovada, expressará a materialidade do conteúdo da assistência social.",
+      "A materialidade do conteúdo da assistência social aprovou a Política Nacional de Assistência Social.",
+      "A Política Nacional de Assistência Social recém-aprovada exprime, com exatidão, a materialidade do conteúdo da assistência social.",
+      "A Política Nacional de Assistência Social expressa, de modo aproximado, parte do conteúdo da assistência social.",
+      "Aprovou-se a Política Nacional de Assistência Social para que ela venha a expressar a materialidade da assistência social."
     ],
     "correta": 2,
-    "comentario": "O art. 32, § 1º, atribui ao DF as competências legislativas reservadas a estados e municípios. É vedado dividi-lo em municípios; seu Judiciário e MP são mantidos pela União (art. 21, XIII); e ele se rege por Lei Orgânica, não por Constituição."
+    "comentario": "“ora aprovada” equivale a “recém-aprovada” e “exatamente” a “com exatidão” — a reescrita preserva o sentido. As demais alteram o tempo verbal, invertem o sujeito, trocam “exatamente” por “de modo aproximado” ou introduzem ideia de finalidade."
   },
   {
     "id": "q10",
     "n": 10,
-    "tema": "Lei Orgânica do DF (RAs)",
-    "enunciado": "A respeito das regiões administrativas (RAs) do Distrito Federal, assinale a opção correta.",
+    "tema": "RIDE (LC 94/1998)",
+    "enunciado": "Acerca da Lei Complementar nº 94/1998 e da Região Integrada de Desenvolvimento do Distrito Federal e Entorno (RIDE/DF), assinale a alternativa INCORRETA.",
     "alts": [
-      "Constituem um terceiro nível da Federação, situado abaixo dos estados e acima dos municípios.",
-      "Cada região administrativa dispõe de câmara legislativa própria, com competência para editar leis locais.",
-      "São criadas por lei, e os respectivos administradores regionais são nomeados, em comissão, pelo Governador do Distrito Federal.",
-      "A criação de novas regiões administrativas depende de aprovação por referendo popular.",
-      "Os administradores regionais são escolhidos pelo voto direto dos moradores de cada região."
+      "Entre 2010 e 2022, a maioria dos municípios do entorno do DF (RIDE/DF) cresceu demograficamente em ritmo superior ao do próprio Distrito Federal.",
+      "Algumas das causas da falta de acesso a bens materiais por parte da população dos municípios da RIDE remontam ao período colonial do Brasil.",
+      "A RIDE é uma região integrada de desenvolvimento econômico, com efeitos articuladores da ação administrativa da União, dos estados de Goiás e de Minas Gerais e do Distrito Federal.",
+      "Água Fria de Goiás é um município situado ao sul do Distrito Federal, limítrofe a Santo Antônio do Descoberto e a Luziânia, integrando a RIDE e a área metropolitana de Brasília.",
+      "Estão entre as áreas de interesse da RIDE os serviços públicos de saneamento básico — em especial o abastecimento de água, a limpeza pública e a coleta e o tratamento de esgoto —, o transporte, a habitação popular e a segurança pública."
     ],
-    "correta": 2,
-    "comentario": "As RAs são subdivisões administrativas criadas por lei; o administrador regional é cargo em comissão nomeado pelo Governador. Não são ente federativo, não têm poder legislativo próprio nem administrador eleito."
+    "correta": 3,
+    "comentario": "A questão pede a INCORRETA: Água Fria de Goiás situa-se ao norte do DF, não faz limite com Santo Antônio do Descoberto e Luziânia e, embora integre a RIDE, não compõe a área metropolitana de Brasília. As demais afirmações estão corretas."
   },
   {
     "id": "q11",
     "n": 11,
-    "tema": "RIDE (LC 94/1998)",
-    "enunciado": "Acerca da Lei Complementar nº 94/1998, que autoriza a criação da Região Integrada de Desenvolvimento do Distrito Federal e Entorno (RIDE/DF) e a instituição do Programa Especial de Desenvolvimento do Entorno do DF, assinale a alternativa INCORRETA.",
+    "tema": "Geografia do DF",
+    "enunciado": "Sobre aspectos geográficos do Distrito Federal, assinale a opção correta.",
     "alts": [
-      "Águas Lindas de Goiás integra a Região Integrada de Desenvolvimento do Distrito Federal e Entorno.",
-      "Mimoso de Goiás passou a integrar a RIDE somente após a edição da LC nº 163/2018.",
-      "A LC nº 163/2018 incluiu na RIDE municípios goianos como Alto Paraíso de Goiás, Cavalcante e Niquelândia.",
-      "Cristalina, Luziânia e Formosa, no estado de Goiás, integram a RIDE.",
-      "O município de Anápolis, em Goiás, não consta do rol de municípios que integram a RIDE."
+      "O DF localiza-se na Região Sudeste, inserido no segundo maior bioma da América do Sul, o Cerrado.",
+      "O DF apresenta clima equatorial, quente e úmido durante a maior parte do ano.",
+      "O DF é a segunda menor unidade da Federação, criada para abrigar a capital do País, e a única que não possui municípios.",
+      "A capital federal, Brasília, foi inaugurada em 1956 pelo então presidente da República Juscelino Kubitschek.",
+      "O DF situa-se na Região Centro-Oeste e tem como bioma predominante o Cerrado, marcado por estações seca e chuvosa bem definidas."
     ],
-    "correta": 1,
-    "comentario": "A questão pede a INCORRETA: Mimoso de Goiás já integrava a RIDE desde a sua criação, pela LC nº 94/1998, e não “somente após” a LC nº 163/2018. As demais são corretas."
+    "correta": 4,
+    "comentario": "O DF fica na Região Centro-Oeste, em pleno Cerrado, com clima tropical de duas estações bem definidas. A Região Sudeste e o clima equatorial estão errados; o DF é a menor unidade da Federação; e Brasília foi inaugurada em 1960, não em 1956."
   },
   {
     "id": "q12",
     "n": 12,
     "tema": "II PDPM (DF)",
-    "enunciado": "A respeito do II Plano Distrital de Políticas para as Mulheres (II PDPM — Decreto nº 42.590/2021), assinale a opção correta.",
+    "enunciado": "O eixo 9 do II Plano Distrital de Políticas para as Mulheres (II PDPM — Decreto nº 42.590/2021) promove a igualdade de direitos e de oportunidades, especificamente, para mulheres",
     "alts": [
-      "Consiste em um conjunto de propostas de políticas públicas — elaboradas por órgãos governamentais, não governamentais e pela sociedade civil — para garantir a igualdade das mulheres e combater a discriminação de gênero.",
-      "É um benefício financeiro mensal pago diretamente às mulheres chefes de família inscritas no Cadastro Único.",
-      "Tem natureza de norma penal, destinando-se a definir crimes e penas relativos à violência contra a mulher.",
-      "Aplica-se às servidoras públicas do Distrito Federal, e não à população feminina em geral.",
-      "É plano de âmbito nacional, de competência exclusiva da União."
+      "rurais e quilombolas.",
+      "jovens, idosas e com deficiência.",
+      "chefes de família.",
+      "servidoras públicas.",
+      "empreendedoras."
     ],
-    "correta": 0,
-    "comentario": "Conforme o art. 1º, o II PDPM é um conjunto de propostas de políticas públicas — de órgãos governamentais, não governamentais e da sociedade civil — para garantir a igualdade das mulheres e combater a discriminação de gênero; não é benefício financeiro, norma penal nem plano nacional."
+    "correta": 1,
+    "comentario": "O eixo 9 do II PDPM é “Igualdade para Mulheres Jovens, Mulheres Idosas e Mulheres com Deficiência” (Decreto nº 42.590/2021). Os demais grupos correspondem a recortes de outros eixos do plano."
   },
   {
     "id": "q13",
     "n": 13,
-    "tema": "II PDPM (DF)",
-    "enunciado": "No II PDPM (Decreto nº 42.590/2021), o eixo de enfrentamento de todas as formas de violência contra as mulheres tem por objetivo",
+    "tema": "Lei Orgânica do DF",
+    "enunciado": "Conforme a Lei Orgânica do DF, a respeito da assistência social, assinale a opção correta.",
     "alts": [
-      "promover a autonomia econômica das mulheres e a igualdade no mundo do trabalho.",
-      "assegurar a saúde integral das mulheres e os seus direitos sexuais e reprodutivos.",
-      "estabelecer princípios, diretrizes, projetos e políticas de prevenção e de combate à violência, bem como de assistência e de garantia de direitos às mulheres em situação de violência.",
-      "ampliar a participação das mulheres nos espaços de poder e de decisão.",
-      "garantir a igualdade de direitos para as mulheres do campo e da floresta."
+      "Será prestada a quem dela necessitar e tem, entre os seus objetivos, a proteção à família, à maternidade, à infância, à adolescência e à velhice.",
+      "Organiza-se de modo a tomar o indivíduo isolado como foco da intervenção, em vez do grupo familiar.",
+      "Adota a centralização das ações na esfera federal como diretriz de organização da política.",
+      "Compreende, entre os seus objetivos, a concessão de aposentadorias às famílias de baixa renda.",
+      "Volta-se à habilitação e à reabilitação da pessoa com deficiência, vedada a sua integração à vida comunitária."
     ],
-    "correta": 2,
-    "comentario": "O eixo de enfrentamento da violência tem por objetivo estabelecer princípios, diretrizes, projetos e políticas de prevenção e combate à violência e de assistência e garantia de direitos; as demais correspondem a outros eixos do II PDPM."
+    "correta": 0,
+    "comentario": "A LODF, em simetria com a CF (art. 203), fixa como objetivo a proteção à família, à maternidade, à infância, à adolescência e à velhice. O foco é a família (matricialidade); a diretriz é a descentralização; aposentadoria é da previdência; e a pessoa com deficiência tem direito à integração comunitária."
   },
   {
     "id": "q14",
     "n": 14,
     "tema": "Lei Orgânica do DF",
-    "enunciado": "De acordo com a Lei Orgânica do Distrito Federal, constituem, respectivamente, a base e o objetivo da ordem social",
+    "enunciado": "Conforme a Lei Orgânica do DF, em consonância com a Constituição Federal, a respeito da saúde, assinale a opção correta.",
     "alts": [
-      "o bem-estar social (base) e a justiça social (objetivo).",
-      "a livre concorrência (base) e o pleno emprego (objetivo).",
-      "a dignidade da pessoa humana (base) e o primado do trabalho (objetivo).",
-      "o primado do trabalho (base) e o bem-estar e a justiça sociais (objetivo).",
-      "o primado do capital (base) e a justiça social (objetivo)."
+      "Tem por diretriz o atendimento prioritariamente curativo, relegando as ações preventivas a plano secundário.",
+      "Integra a assistência social, sendo as suas ações prestadas nos CRAS e nos CREAS.",
+      "É direito de todos e dever do Estado, garantida mediante políticas que visem ao acesso universal e igualitário e à redução do risco de doença.",
+      "Organiza-se de forma centralizada na esfera federal, vedada a atuação complementar do Distrito Federal.",
+      "Admite a participação da iniciativa privada de forma preponderante, em substituição à rede pública."
     ],
-    "correta": 3,
-    "comentario": "Em simetria com a CF, a ordem social tem por base o primado do trabalho e por objetivo o bem-estar e a justiça sociais (art. 200 da LODF)."
+    "correta": 2,
+    "comentario": "A saúde é direito de todos e dever do Estado, com acesso universal e igualitário e redução do risco de doença (CF, art. 196). O atendimento prioriza as ações preventivas; a saúde não integra a assistência social; e a iniciativa privada participa de forma complementar, não preponderante."
   },
   {
     "id": "q15",
     "n": 15,
     "tema": "LC 840/2011",
-    "enunciado": "Com base na Lei Complementar nº 840/2011, assinale a opção correta.",
+    "enunciado": "Segundo a LC nº 840/2011, são requisitos básicos para a investidura em cargo público do Distrito Federal, EXCETO:",
     "alts": [
-      "Em regra, o servidor efetivo sujeita-se ao regime de trabalho de trinta e seis horas semanais.",
-      "É permitido aplicar ao regime de trabalho interpretação por analogia, extensão ou semelhança de atribuições.",
-      "O servidor matriculado em curso da educação superior, comprovada a incompatibilidade de horário, terá direito a horário especial, sem exigência de compensação para o cumprimento integral do regime semanal.",
-      "O servidor que faltar ao serviço por mais de quinze dias consecutivos incorrerá em abandono de cargo.",
-      "Em situações excepcionais e temporárias do serviço, a jornada de trabalho pode ser ampliada, como serviço extraordinário, em até duas horas."
+      "o pleno exercício dos direitos políticos.",
+      "a quitação com as obrigações militares e eleitorais.",
+      "o nível de escolaridade exigido para o exercício do cargo.",
+      "a nacionalidade brasileira e a residência no Distrito Federal.",
+      "a aptidão física e mental."
     ],
-    "correta": 4,
-    "comentario": "A jornada pode ser ampliada, como serviço extraordinário, em até duas horas. A regra geral é de quarenta horas semanais (não trinta e seis); veda-se a interpretação por analogia; o horário especial do estudante exige compensação; e o abandono de cargo configura-se com mais de trinta dias consecutivos."
+    "correta": 3,
+    "comentario": "A residência no Distrito Federal não é requisito de investidura (é a exceção pedida). São requisitos a nacionalidade brasileira, o gozo dos direitos políticos, a quitação militar e eleitoral, o nível de escolaridade exigido, a idade mínima de 18 anos e a aptidão física e mental."
   },
   {
     "id": "q16",
     "n": 16,
     "tema": "Lei Maria da Penha",
-    "enunciado": "Considerando as disposições da Lei Maria da Penha (Lei nº 11.340/2006), assinale a opção correta.",
+    "enunciado": "Constitui violência física, nos termos da Lei Maria da Penha,",
     "alts": [
-      "As medidas protetivas de urgência serão concedidas independentemente da tipificação penal da violência, do ajuizamento de ação penal ou cível, da existência de inquérito policial ou do registro de boletim de ocorrência.",
-      "O juiz determinará, por prazo indeterminado, a inclusão da mulher em situação de violência doméstica e familiar no cadastro de programas assistenciais do governo federal, estadual e municipal.",
-      "Inclui-se na competência dos Juizados de Violência Doméstica e Familiar contra a Mulher a pretensão relacionada à partilha de bens.",
-      "O nome do autor do fato que configure ato de violência doméstica ficará sob sigilo nos autos do processo.",
-      "O juiz terá o prazo de cinco dias, contados do recebimento do pedido, para decidir sobre as medidas protetivas de urgência."
+      "qualquer conduta que ofenda a integridade ou a saúde corporal da mulher.",
+      "a conduta que lhe cause dano emocional e diminuição da autoestima.",
+      "a retenção, a subtração ou a destruição de seus bens e documentos.",
+      "a calúnia, a difamação ou a injúria.",
+      "o constrangimento a presenciar relação sexual não desejada."
     ],
     "correta": 0,
-    "comentario": "As medidas protetivas independem de tipificação penal, ação, inquérito ou boletim de ocorrência (art. 19, § 5º). A inclusão no cadastro é por prazo certo; a partilha de bens é excluída dos Juizados; o sigilo recai sobre o nome da ofendida; e o prazo do juiz é de 48 horas."
+    "comentario": "A violência física (art. 7º, I) é a conduta que ofende a integridade ou a saúde corporal; as demais alternativas descrevem as violências psicológica, patrimonial, moral e sexual."
   },
   {
     "id": "q17",
     "n": 17,
     "tema": "Lei Maria da Penha",
-    "enunciado": "Conforme as disposições da Lei nº 11.340/2006 (Lei Maria da Penha), assinale a opção correta.",
+    "enunciado": "Conforme a Lei nº 11.340/2006 (Lei Maria da Penha), assinale a alternativa INCORRETA.",
     "alts": [
-      "Para a preservação da integridade física e psicológica da vítima, é possível à justiça determinar a manutenção do vínculo trabalhista da mulher, quando necessário o seu afastamento do local de trabalho.",
-      "A calúnia, a difamação e a injúria contra a mulher não constituem forma de violência prevista na Lei Maria da Penha.",
-      "Cabe à autoridade policial determinar que a mulher em situação de violência doméstica seja incluída, por prazo certo, no cadastro de programas assistenciais do governo.",
-      "Ao autor de violência doméstica pode ser imposto o ressarcimento das despesas com serviços de saúde prestados à vítima pelo SUS, cujo cumprimento poderá configurar atenuante ou ensejar a substituição da pena aplicada.",
-      "A violência vicária consiste na violência patrimonial praticada diretamente contra a própria mulher, sem atingir terceiros a ela ligados."
+      "A mulher em situação de violência doméstica e familiar tem prioridade para matricular os seus dependentes em instituição de educação básica mais próxima de seu domicílio, ou transferi-los para ela, mediante apresentação dos documentos que comprovem o registro da ocorrência policial ou o processo em curso.",
+      "As medidas protetivas de urgência, após a sua concessão, serão registradas em banco de dados mantido pelo Conselho Nacional de Justiça, garantido o acesso dos órgãos de assistência social apenas após 48 horas, com vistas à fiscalização das medidas.",
+      "A violência psicológica é forma de violência doméstica e familiar contra a mulher, entendida como qualquer conduta que lhe cause dano emocional e diminuição da autoestima ou que lhe prejudique e perturbe o pleno desenvolvimento ou que vise a degradar ou a controlar as suas ações, comportamentos, crenças e decisões.",
+      "A assistência à mulher em situação de violência doméstica e familiar será prestada em caráter prioritário no Sistema Único de Saúde (SUS) e no Sistema Único de Segurança Pública (Susp), de forma articulada e conforme os princípios e as diretrizes previstos na LOAS.",
+      "Caberá ao Ministério Público, sem prejuízo de outras atribuições, nos casos de violência doméstica e familiar contra a mulher, quando necessário, requisitar serviços públicos de assistência social, entre outros."
     ],
-    "correta": 0,
-    "comentario": "É possível assegurar a manutenção do vínculo trabalhista, por até seis meses, quando necessário o afastamento do trabalho (art. 9º, § 2º, II). Calúnia, difamação e injúria são violência moral; a inclusão no cadastro cabe ao juiz; o ressarcimento ao SUS não gera atenuante nem substituição; e a violência vicária atinge pessoas queridas à mulher."
+    "correta": 1,
+    "comentario": "A questão pede a INCORRETA: pelo art. 38-A, o acesso ao banco de dados das medidas protetivas é instantâneo, não havendo prazo de 48 horas. As demais reproduzem corretamente dispositivos da Lei nº 11.340/2006."
   },
   {
     "id": "q18",
     "n": 18,
     "tema": "Lei Maria da Penha",
-    "enunciado": "Nos termos da Lei nº 11.340/2006 (Lei Maria da Penha), a respeito do atendimento e da inquirição da mulher em situação de violência, assinale a opção correta.",
+    "enunciado": "Acerca da aplicação da Lei Maria da Penha, assinale a opção correta.",
     "alts": [
-      "É direito da mulher o atendimento policial e pericial especializado, ininterrupto e prestado por servidores exclusivamente do sexo feminino.",
-      "A autoridade policial deverá permitir que o contato entre a mulher e o investigado ocorra por interposta pessoa a ele relacionada.",
-      "A autoridade policial deverá garantir o mínimo contato direto entre a mulher e o investigado.",
-      "A inquirição da mulher deverá ser realizada pessoalmente pela autoridade policial, vedada a intermediação por qualquer outro profissional.",
-      "A inquirição da mulher será feita em recinto especialmente projetado para esse fim, que conterá os equipamentos próprios e adequados à idade da ofendida."
+      "Tais crimes são tratados como infrações de menor potencial ofensivo, de competência dos juizados especiais.",
+      "É admitida a aplicação de penas de cesta básica ou de multa isolada ao agressor.",
+      "Aos crimes praticados com violência doméstica e familiar contra a mulher não se aplica a Lei nº 9.099/1995 (Juizados Especiais Criminais).",
+      "A renúncia à representação pela ofendida pode ser feita livremente perante a autoridade policial.",
+      "A configuração da violência doméstica pressupõe vínculo de parentesco entre a vítima e o agressor."
     ],
-    "correta": 4,
-    "comentario": "Pelo art. 10-A, a inquirição ocorre em recinto apropriado, com equipamentos adequados à idade. O atendimento especializado é preferencialmente por servidoras (não exclusivamente); deve-se evitar o contato; e a inquirição pode ser conduzida por profissional especializado."
+    "correta": 2,
+    "comentario": "O art. 41 veda a aplicação da Lei nº 9.099/1995 a esses crimes (logo, não são de menor potencial ofensivo); o art. 17 veda penas de cesta básica/multa isolada; a renúncia à representação só perante o juiz (art. 16); e a lei independe de vínculo de parentesco."
   },
   {
     "id": "q19",
     "n": 19,
     "tema": "Lei Distrital 7.484/2024",
-    "enunciado": "A respeito da Lei Distrital nº 7.484/2024, que reestruturou a carreira da assistência social do DF, assinale a opção correta.",
+    "enunciado": "Conforme a Lei Distrital nº 7.484/2024, o ingresso na Carreira Pública de Desenvolvimento e Assistência Social dá-se mediante concurso público, exigindo-se, para o cargo de Técnico,",
     "alts": [
-      "A carreira passou a denominar-se Carreira de Gestão Social do Distrito Federal.",
-      "A lei criou a Carreira de Analistas em Políticas Públicas do Distrito Federal.",
-      "A carreira foi renomeada para Carreira Única de Servidores Sociais.",
-      "A antiga Carreira Pública de Assistência Social passou a denominar-se Carreira Pública de Desenvolvimento e Assistência Social.",
-      "A lei instituiu a Carreira de Assistentes Administrativos da SEDES."
+      "diploma de curso superior, com registro em conselho de classe.",
+      "diploma de curso superior em serviço social, com registro no respectivo conselho de classe.",
+      "comprovação de experiência profissional prévia de, no mínimo, cinco anos.",
+      "certificado de conclusão do ensino médio expedido por instituição reconhecida.",
+      "certificado de conclusão de curso técnico de nível médio na área de assistência social."
     ],
     "correta": 3,
-    "comentario": "O art. 1º reestruturou a Carreira Pública de Assistência Social, que passou a chamar-se Carreira Pública de Desenvolvimento e Assistência Social."
+    "comentario": "O art. 4º exige, para o Técnico em Desenvolvimento e Assistência Social, certificado de conclusão do ensino médio; o nível superior é requisito do Especialista e o fundamental, do Auxiliar."
   },
   {
     "id": "q20",
     "n": 20,
     "tema": "Primeiros socorros",
-    "enunciado": "A respeito dos primeiros socorros a um adulto consciente com obstrução grave das vias aéreas (engasgo), assinale a opção correta.",
+    "enunciado": "A manobra de Heimlich (tração abdominal) é procedimento de primeiros socorros para a asfixia por obstrução das vias respiratórias superiores por corpo estranho. Considere os itens a seguir quanto à sua CONTRAINDICAÇÃO. I. Crianças com menos de um ano de idade. II. Adultos conscientes. III. Idosos. Está CORRETO o que se afirma em",
     "alts": [
-      "Enquanto a vítima ainda tosse com vigor, deve-se aplicar de imediato a manobra de Heimlich.",
-      "Quando a vítima não consegue falar nem tossir, indica-se a manobra de Heimlich (compressões abdominais).",
-      "Deve-se iniciar a ventilação boca a boca antes de qualquer tentativa de desobstrução.",
-      "Deve-se introduzir os dedos às cegas no fundo da garganta para remover o corpo estranho.",
-      "Em adulto consciente, devem-se iniciar de imediato as compressões torácicas, como na parada cardíaca."
+      "apenas o item II.",
+      "apenas os itens I e III.",
+      "apenas os itens II e III.",
+      "apenas o item I.",
+      "todos os itens."
     ],
-    "correta": 1,
-    "comentario": "Na obstrução grave (a vítima não fala nem tosse), aplica-se a manobra de Heimlich. Se ela ainda tosse com força, estimula-se a tosse; a varredura digital às cegas é contraindicada; e ventilação/compressões torácicas aplicam-se à parada cardiorrespiratória, não ao engasgo em vítima consciente."
+    "correta": 3,
+    "comentario": "A manobra de Heimlich é contraindicada em crianças com menos de um ano (item I) — nelas, empregam-se golpes nas costas e compressões torácicas. Em adultos conscientes (item II) e em idosos (item III) a manobra é, ao contrário, indicada. Logo, está correto apenas o item I."
   },
   {
     "id": "q21",
     "n": 21,
-    "tema": "LOAS",
-    "enunciado": "A respeito dos objetivos da assistência social na LOAS (Lei nº 8.742/1993), assinale a opção INCORRETA.",
+    "tema": "SUAS (PNAS/2004)",
+    "enunciado": "Segundo a Política Nacional de Assistência Social (PNAS/2004), o processo de gestão do SUAS prevê bases organizacionais. Assinale a opção que NÃO constitui uma dessas bases.",
     "alts": [
-      "A vigilância socioassistencial, que visa a analisar territorialmente a capacidade protetiva das famílias e a ocorrência de vulnerabilidades, de ameaças, de vitimizações e de danos.",
-      "A proteção à família, à maternidade, à infância, à adolescência e à velhice.",
-      "A promoção da integração ao mercado de trabalho.",
-      "A garantia de um salário-mínimo de benefício mensal à pessoa com deficiência e ao idoso que comprovem não possuir meios de prover a própria manutenção ou de tê-la provida por sua família.",
-      "A universalização dos direitos sociais, a fim de tornar o destinatário da ação assistencial alcançável pelas demais políticas públicas."
+      "Proteção social.",
+      "Matricialidade sociofamiliar.",
+      "Descentralização político-administrativa e territorialização.",
+      "Novas bases para a relação entre o Estado e a sociedade civil.",
+      "Financiamento."
     ],
-    "correta": 4,
-    "comentario": "A questão pede a INCORRETA: a universalização dos direitos sociais é princípio (art. 4º), e não objetivo. As demais são objetivos do art. 2º da LOAS."
+    "correta": 0,
+    "comentario": "As bases organizacionais da gestão do SUAS (PNAS/2004) incluem a matricialidade sociofamiliar; a descentralização político-administrativa e a territorialização; as novas bases para a relação entre Estado e sociedade civil; o financiamento; o controle social; a participação popular; a política de recursos humanos; e a informação, o monitoramento e a avaliação. A “proteção social” é a finalidade/organização dos serviços, não uma base organizacional de gestão."
   },
   {
     "id": "q22",
     "n": 22,
-    "tema": "LOAS",
-    "enunciado": "Segundo a LOAS (Lei nº 8.742/1993), constitui PRINCÍPIO da assistência social:",
+    "tema": "NOB/SUAS 2012",
+    "enunciado": "De acordo com a NOB/SUAS 2012, os níveis de gestão dos Municípios e do Distrito Federal no SUAS são",
     "alts": [
-      "a descentralização político-administrativa para os estados, o Distrito Federal e os municípios, com comando único das ações em cada esfera de governo.",
-      "a divulgação ampla dos benefícios, serviços, programas e projetos assistenciais, bem como dos recursos oferecidos pelo poder público e dos critérios para a sua concessão.",
-      "a participação da população, por meio de organizações representativas, na formulação das políticas e no controle das ações em todos os níveis.",
-      "a primazia da responsabilidade do Estado na condução da política de assistência social em cada esfera de governo.",
-      "a habilitação e a reabilitação das pessoas com deficiência e a promoção de sua integração à vida comunitária."
+      "gestão simples, gestão intermediária e gestão avançada.",
+      "gestão federal, estadual e municipal.",
+      "gestão direta e gestão indireta.",
+      "gestão contributiva e gestão não contributiva.",
+      "gestão inicial, gestão básica e gestão plena."
     ],
-    "correta": 1,
-    "comentario": "A divulgação ampla é princípio (art. 4º). A descentralização/comando único, a participação popular e a primazia do Estado são diretrizes (art. 5º); a habilitação e a reabilitação da pessoa com deficiência são objetivo (art. 2º)."
+    "correta": 4,
+    "comentario": "A NOB/SUAS 2012 estabelece três níveis de gestão para Municípios/DF — inicial, básica e plena —, conforme o cumprimento de requisitos de gestão do sistema (não se confundem com as esferas de governo nem com as formas direta/indireta)."
   },
   {
     "id": "q23",
     "n": 23,
     "tema": "LOAS",
-    "enunciado": "Conforme as disposições da LOAS (Lei nº 8.742/1993), assinale a opção INCORRETA.",
+    "enunciado": "No âmbito da LOAS, a vigilância socioassistencial, como objetivo da assistência social, destina-se a",
     "alts": [
-      "Consideram-se entidades e organizações de assistência social aquelas sem fins lucrativos que, isolada ou cumulativamente, prestam atendimento e assessoramento aos beneficiários, bem como as que atuam na defesa e na garantia de direitos.",
-      "As proteções sociais básica e especial serão ofertadas precipuamente no Centro de Referência de Assistência Social (Cras) e no Centro de Referência Especializado de Assistência Social (Creas), respectivamente, e pelas entidades sem fins lucrativos de assistência social.",
-      "O Creas é a unidade pública municipal, de base territorial, localizada em áreas com maiores índices de vulnerabilidade e risco social, destinada à articulação dos serviços socioassistenciais no seu território de abrangência.",
-      "São de assessoramento as entidades que, de forma continuada, permanente e planejada, prestam serviços e executam programas voltados ao fortalecimento dos movimentos sociais e das organizações de usuários e à formação de lideranças.",
-      "São de defesa e garantia de direitos as entidades que, de forma continuada, permanente e planejada, prestam serviços e executam projetos voltados à defesa e à efetivação dos direitos socioassistenciais e à promoção da cidadania."
+      "executar diretamente os serviços de proteção social básica nas unidades do território.",
+      "defender os direitos dos usuários e assessorá-los no acesso a benefícios e serviços.",
+      "conceder e operacionalizar os benefícios eventuais às famílias em vulnerabilidade.",
+      "analisar territorialmente a capacidade protetiva das famílias e a ocorrência de vulnerabilidades, riscos e violações de direitos, para orientar a oferta de serviços.",
+      "exercer o controle social e a fiscalização da política por meio dos conselhos."
     ],
-    "correta": 2,
-    "comentario": "A questão pede a INCORRETA: a descrição de unidade territorial em áreas de maior vulnerabilidade, destinada à articulação dos serviços no território, é a do CRAS — não a do CREAS (art. 6º-C). As demais reproduzem corretamente os arts. 3º e 6º-C da LOAS."
+    "correta": 3,
+    "comentario": "A vigilância socioassistencial (LOAS, art. 2º, II) produz e analisa informações territoriais sobre vulnerabilidades, riscos e violações, subsidiando a oferta de serviços; as demais alternativas descrevem outras funções/objetivos do SUAS."
   },
   {
     "id": "q24",
     "n": 24,
-    "tema": "SUAS (PNAS/2004)",
-    "enunciado": "Conforme a Política Nacional de Assistência Social (PNAS/2004), a respeito dos eixos estruturantes do SUAS, assinale a opção correta.",
+    "tema": "LOAS",
+    "enunciado": "A organização da assistência social, segundo a LOAS, rege-se por diretrizes. A respeito delas, assinale a opção correta.",
     "alts": [
-      "A matricialidade sociofamiliar consiste em organizar os serviços a partir do território, e a territorialização, em tomar o indivíduo isolado como unidade de atenção.",
-      "A proteção social básica e a proteção social especial constituem, elas próprias, os dois eixos estruturantes do SUAS.",
-      "A territorialização consiste em organizar os serviços por faixa etária dos usuários, independentemente do local em que residem.",
-      "A matricialidade sociofamiliar e a territorialização são eixos estruturantes: a família é a referência das ações, e o território, a base de organização dos serviços.",
-      "A vigilância socioassistencial e a matricialidade sociofamiliar equivalem ao monitoramento individual e isolado de cada beneficiário."
+      "A vigilância socioassistencial e a defesa de direitos constituem diretrizes de organização da política.",
+      "A descentralização político-administrativa e a participação da população, por meio de organizações representativas, na formulação e no controle das ações são diretrizes da política.",
+      "A universalização dos direitos sociais e o respeito à dignidade do cidadão figuram como diretrizes da política.",
+      "A matricialidade sociofamiliar e a territorialização são diretrizes expressamente previstas na LOAS.",
+      "A primazia da responsabilidade do Estado e o comando único em cada esfera de governo são princípios da assistência social."
     ],
-    "correta": 3,
-    "comentario": "Matricialidade sociofamiliar (família como referência) e territorialização (organização a partir do território) são eixos do SUAS. As demais invertem conceitos ou confundem eixos com níveis de proteção."
+    "correta": 1,
+    "comentario": "São diretrizes (LOAS, art. 5º): descentralização político-administrativa, participação da população e primazia da responsabilidade do Estado, com comando único em cada esfera. Vigilância e defesa de direitos são objetivos (art. 2º); universalização e respeito à dignidade são princípios (art. 4º); matricialidade/territorialização são eixos da PNAS."
   },
   {
     "id": "q25",
     "n": 25,
     "tema": "SUAS",
-    "enunciado": "A respeito dos níveis de proteção do SUAS, assinale a opção correta.",
+    "enunciado": "No SUAS, o Centro de Referência de Assistência Social (CRAS) caracteriza-se por ser",
     "alts": [
-      "Os serviços de acolhimento institucional integram a proteção social básica.",
-      "Os serviços de acolhimento integram a proteção social especial de média complexidade.",
-      "O acolhimento institucional é função da vigilância socioassistencial.",
-      "Os serviços de acolhimento institucional (abrigo, casa-lar, residência inclusiva) integram a proteção social especial de alta complexidade.",
-      "Os serviços de acolhimento integram a atenção primária à saúde."
+      "unidade privada de execução da proteção social especial de alta complexidade.",
+      "a unidade da proteção social especial responsável pela oferta do PAEFI.",
+      "unidade pública estatal, porta de entrada da proteção social básica, responsável pela oferta do PAIF e pela organização dos serviços no território.",
+      "equipamento da proteção social especial, voltado ao atendimento de direitos já violados.",
+      "equipamento da rede de saúde voltado à atenção primária no território."
     ],
-    "correta": 3,
-    "comentario": "Os serviços de acolhimento, que garantem proteção integral a quem teve vínculos rompidos, situam-se na PSE de alta complexidade — não na básica nem na média."
+    "correta": 2,
+    "comentario": "O CRAS é unidade pública estatal, porta de entrada da PSB, que oferta o PAIF e organiza a rede no território; o PAEFI e a PSE são do CREAS, e a atenção primária à saúde é de outra política (UBS)."
   },
   {
     "id": "q26",
     "n": 26,
-    "tema": "NOB/SUAS 2012",
-    "enunciado": "A respeito da NOB/SUAS 2012, assinale a opção correta.",
+    "tema": "SUAS",
+    "enunciado": "Um adolescente em situação de trabalho infantil e sua família passam a ser acompanhados em razão de direitos violados. No SUAS, esse acompanhamento, de média complexidade, é prestado pelo",
     "alts": [
-      "As Comissões Intergestores têm caráter deliberativo, cabendo-lhes aprovar em definitivo a política, em substituição aos conselhos.",
-      "O cofinanciamento das ações é responsabilidade isolada de cada município, sem participação da União e dos estados.",
-      "A habilitação dos municípios em níveis de gestão depende do número de habitantes, sem relação com a estrutura instalada.",
-      "A vigilância socioassistencial é atribuição privativa do conselho de assistência social, vedada a sua realização pelo órgão gestor.",
-      "O SUAS organiza-se em níveis de gestão, com pactuação nas Comissões Intergestores (CIT e CIB) e deliberação nos conselhos de assistência social."
+      "CRAS, por meio do PAIF, no âmbito da proteção social básica.",
+      "CREAS, por meio do Serviço de Proteção e Atendimento Especializado a Famílias e Indivíduos (PAEFI).",
+      "Restaurante Comunitário, no âmbito da política de segurança alimentar.",
+      "Conselho Tutelar, em substituição à rede socioassistencial.",
+      "serviço de acolhimento institucional, no âmbito da alta complexidade."
     ],
-    "correta": 4,
-    "comentario": "A NOB/SUAS 2012 estrutura níveis de gestão, com pactuação nas Comissões Intergestores e deliberação nos conselhos. As CIT/CIB pactuam (não substituem os conselhos); o cofinanciamento é partilhado pelos três entes; a habilitação considera a estrutura e a gestão; e a vigilância socioassistencial é função da gestão."
+    "correta": 1,
+    "comentario": "Direitos já violados, sem rompimento de vínculos, são atendidos na PSE de média complexidade pelo CREAS, via PAEFI; o CRAS/PAIF é da básica e o acolhimento é de alta complexidade."
   },
   {
     "id": "q27",
     "n": 27,
-    "tema": "PAIF",
-    "enunciado": "A respeito do Serviço de Proteção e Atendimento Integral à Família (PAIF), assinale a opção correta.",
+    "tema": "SUAS",
+    "enunciado": "São seguranças socioassistenciais afiançadas pelo SUAS, entre outras, as de",
     "alts": [
-      "Destina-se ao atendimento exclusivo de indivíduos com direitos já violados.",
-      "É o trabalho social com famílias, continuado e preventivo, ofertado pelo CRAS para fortalecer a função protetiva e prevenir a ruptura de vínculos.",
-      "Tem por objeto a concessão de aposentadorias às famílias atendidas.",
-      "Consiste na internação de idosos em unidades de acolhimento.",
-      "Consiste na fiscalização da concessão de benefícios previdenciários."
+      "renda mínima vitalícia e aposentadoria por idade aos beneficiários.",
+      "acesso universal a leitos hospitalares e a medicamentos.",
+      "emprego formal e salário mínimo aos usuários atendidos.",
+      "moradia própria e crédito habitacional subsidiado.",
+      "acolhida, convívio (ou convivência) familiar e comunitário e desenvolvimento da autonomia."
     ],
-    "correta": 1,
-    "comentario": "O PAIF é o trabalho social continuado e preventivo com famílias, no CRAS, para fortalecer vínculos e a função protetiva — não atende direitos já violados (PSE) nem concede benefícios previdenciários."
+    "correta": 4,
+    "comentario": "O SUAS afiança seguranças de acolhida, de convívio/convivência familiar e comunitário e de desenvolvimento da autonomia (além da segurança de sobrevivência/renda) — não se confundem com garantias da previdência, da saúde, do trabalho ou da habitação."
   },
   {
     "id": "q28",
     "n": 28,
     "tema": "Programas do DF",
-    "enunciado": "De acordo com a ordem de prioridade atualmente prevista no Decreto nº 42.873/2021, devem ser atendidas em primeiro lugar as",
+    "enunciado": "Além do crédito em cartão, a Lei Distrital nº 7.009/2021 (Programa Cartão Prato Cheio) autoriza a concessão de",
     "alts": [
-      "famílias com pessoas idosas.",
-      "famílias com pessoas com deficiência.",
-      "famílias com crianças de zero a seis anos.",
-      "famílias em situação de insegurança alimentar e nutricional grave.",
-      "pessoas em situação de rua com Plano Individual de Acompanhamento."
+      "cesta básica in natura e cesta verde.",
+      "bolsa em pecúnia mensal de uso livre.",
+      "cartão de transporte público.",
+      "auxílio-gás, como benefício substitutivo.",
+      "vouchers para restaurantes populares."
     ],
-    "correta": 3,
-    "comentario": "Pela ordem vigente do art. 2º, § 2º, do Decreto nº 42.873/2021 (com a redação do Decreto nº 48.095/2025), atendem-se em primeiro lugar as famílias em situação de insegurança alimentar e nutricional grave."
+    "correta": 0,
+    "comentario": "Conforme o art. 2º, § 3º, da Lei nº 7.009/2021, além do crédito, autorizam-se a concessão de cesta básica in natura e de cesta verde; as demais opções não constam do programa."
   },
   {
     "id": "q29",
     "n": 29,
     "tema": "Programas do DF",
-    "enunciado": "Nos termos do Decreto nº 42.376/2021, o cadastro e o monitoramento dos estabelecimentos comerciais interessados em participar do Programa Cartão Gás são realizados",
+    "enunciado": "Segundo o Decreto nº 42.376/2021, o benefício do Programa Cartão Gás é concedido mediante",
     "alts": [
-      "pela Secretaria de Estado de Economia do Distrito Federal.",
-      "pelo BRB.",
-      "pela Sedes.",
-      "pela Central 156.",
-      "pelo Governo Federal."
+      "saque em espécie em qualquer agência do BRB.",
+      "depósito mensal na conta-salário do beneficiário.",
+      "entrega física de botijões de gás, por meio de conveniados.",
+      "repasse pecuniário bimestral, creditado em nome do responsável familiar registrado no Cadastro Único.",
+      "compensação (desconto) na fatura de energia elétrica."
     ],
-    "correta": 0,
-    "comentario": "Conforme o art. 11 do Decreto nº 42.376/2021, o cadastro e o monitoramento dos estabelecimentos comerciais cabem à Secretaria de Estado de Economia do DF. (A questão cobra o texto expresso do Decreto.)"
+    "correta": 3,
+    "comentario": "Conforme o art. 6º do Decreto nº 42.376/2021, o benefício do Cartão Gás é concedido mediante repasse pecuniário bimestral, creditado em nome do responsável familiar registrado no Cadastro Único — não por saque, depósito mensal, entrega de botijões ou desconto em fatura."
   },
   {
     "id": "q30",
     "n": 30,
     "tema": "Assistência Social",
-    "enunciado": "A respeito dos benefícios eventuais da assistência social, assinale a opção correta.",
+    "enunciado": "Os Benefícios Eventuais da política de assistência social compreendem provisões suplementares e provisórias prestadas em razão de",
     "alts": [
-      "Compreendem o pagamento de aposentadoria por idade e de pensão por morte aos dependentes do segurado.",
-      "Entre as suas modalidades, incluem-se o auxílio por natalidade e o auxílio por morte (funeral), de caráter provisório e suplementar.",
-      "Incluem o benefício mensal e continuado de um salário mínimo à pessoa idosa de baixa renda.",
-      "Abrangem o financiamento subsidiado da casa própria às famílias inscritas no Cadastro Único.",
-      "Compreendem a oferta de bolsas de estudo de ensino superior aos jovens em vulnerabilidade."
+      "aposentadoria por idade e pensão por morte aos dependentes do segurado.",
+      "nascimento, morte, situações de vulnerabilidade temporária e de calamidade pública.",
+      "benefício mensal e continuado de um salário mínimo à pessoa idosa ou com deficiência de baixa renda.",
+      "aquisição da casa própria por famílias inscritas no Cadastro Único.",
+      "custeio de tratamentos de saúde de alta complexidade dos beneficiários."
     ],
     "correta": 1,
-    "comentario": "São benefícios eventuais, entre outros, o auxílio por natalidade e o auxílio por morte (funeral) — provisões provisórias e suplementares; o BPC é benefício continuado e a aposentadoria/pensão são previdenciárias."
+    "comentario": "Os benefícios eventuais são provisões suplementares e provisórias por nascimento, morte, vulnerabilidade temporária e calamidade (LOAS, art. 22). Aposentadoria/pensão são previdenciárias e o benefício mensal e continuado de um salário mínimo é o BPC — benefício continuado, não eventual."
   },
   {
     "id": "q31",
     "n": 31,
-    "tema": "Segurança Alimentar (SISAN)",
-    "enunciado": "A respeito da segurança alimentar e nutricional (SAN), no âmbito do SISAN, assinale a opção correta.",
+    "tema": "Segurança Alimentar (DF)",
+    "enunciado": "A respeito dos equipamentos públicos de segurança alimentar e nutricional do Distrito Federal, assinale a opção correta.",
     "alts": [
-      "Resume-se ao fornecimento de cestas básicas em situações de calamidade pública.",
-      "Consiste na fiscalização sanitária dos restaurantes e estabelecimentos comerciais.",
-      "Tem por objeto o controle dos preços dos gêneros alimentícios no mercado.",
-      "Consiste no direito de todos ao acesso regular e permanente a alimentos de qualidade, em quantidade suficiente, sem comprometer outras necessidades essenciais.",
-      "Consiste na distribuição gratuita de medicamentos à população vulnerável."
+      "As refeições dos Restaurantes Comunitários são gratuitas para os usuários inscritos no CadÚnico.",
+      "O acesso aos Restaurantes Comunitários depende de encaminhamento prévio pelo CRAS.",
+      "Os Restaurantes Comunitários ofertam refeições a preço popular, contribuindo para o direito humano à alimentação adequada.",
+      "A política de segurança alimentar do DF limita-se à distribuição de cestas básicas em situações de calamidade.",
+      "Os bancos de alimentos têm por função fiscalizar a validade dos produtos comercializados no varejo."
     ],
-    "correta": 3,
-    "comentario": "A SAN é o direito de todos ao acesso regular e permanente a alimentos de qualidade e em quantidade suficiente, sem prejuízo de outras necessidades essenciais — não se reduz a cestas, fiscalização sanitária ou controle de preços."
+    "correta": 2,
+    "comentario": "Os Restaurantes Comunitários ofertam refeições a preço popular — não são gratuitas nem restritas a inscritos no CadÚnico —, promovendo o direito humano à alimentação adequada. A política de SAN não se resume a cestas em calamidade, e os bancos de alimentos não exercem fiscalização sanitária."
   },
   {
     "id": "q32",
     "n": 32,
     "tema": "Assistência Social (DF)",
-    "enunciado": "A respeito do Conselho de Assistência Social do Distrito Federal (CAS/DF), assinale a opção correta.",
+    "enunciado": "A respeito da gestão da política de assistência social no Distrito Federal, assinale a opção correta.",
     "alts": [
-      "É órgão colegiado de natureza consultiva, cabendo-lhe opinar sobre a política, sem poder de deliberação.",
-      "É órgão colegiado e permanente, de composição paritária entre governo e sociedade civil, com atribuições deliberativas e de controle da política de assistência social.",
-      "Tem composição majoritariamente governamental, reservando-se à sociedade civil um terço das vagas.",
-      "Cabe-lhe executar diretamente os serviços socioassistenciais, em substituição aos CRAS e CREAS.",
-      "Suas decisões dependem de homologação prévia do Poder Legislativo distrital para produzir efeitos."
+      "A coordenação da política e da rede socioassistencial cabe à Secretaria de Estado de Desenvolvimento Social (SEDES), órgão gestor do SUAS no âmbito distrital, em articulação com o controle social.",
+      "A deliberação sobre a política compete ao órgão gestor, cabendo ao Conselho de Assistência Social função meramente consultiva.",
+      "O cofinanciamento da política, no DF, independe da participação da União e dos estados.",
+      "A vigilância socioassistencial, no DF, é atribuição privativa das entidades conveniadas.",
+      "O comando da política, no DF, é compartilhado entre a SEDES e a Secretaria de Saúde, em gestão dual."
     ],
-    "correta": 1,
-    "comentario": "Os conselhos de assistência social são colegiados, permanentes, paritários (metade governo, metade sociedade civil) e deliberativos, com função de controle social."
+    "correta": 0,
+    "comentario": "No DF, a coordenação da política e da rede cabe à SEDES (gestor do SUAS), com comando único e em articulação com o controle social. O Conselho é deliberativo; o cofinanciamento é partilhado pelos três entes; a vigilância socioassistencial é função da gestão; e o comando é único, não compartilhado com a Saúde."
   },
   {
     "id": "q33",
     "n": 33,
     "tema": "Direito Constitucional",
-    "enunciado": "A respeito dos princípios fundamentais previstos expressamente na Constituição Federal de 1988, assinale a opção correta.",
+    "enunciado": "Quanto à integração de que trata o parágrafo único do art. 4º da CF/1988, assinale a alternativa correta.",
     "alts": [
-      "Nas relações internacionais, a República Federativa do Brasil rege-se pelo princípio da dependência nacional às diretrizes fixadas pela comunidade latino-americana de nações.",
-      "Nas relações internacionais, a República Federativa do Brasil rege-se pelo princípio da concessão de anistia.",
-      "Constitui princípio fundamental da República Federativa do Brasil a forma federativa de Estado.",
-      "Constitui fundamento da República Federativa do Brasil construir uma sociedade livre, justa e solidária.",
-      "Constituem objetivos fundamentais da República Federativa do Brasil os valores sociais do trabalho e da livre iniciativa."
+      "A República buscará a integração dos povos de todo o continente americano, visando à formação de uma comunidade americana de nações.",
+      "A República Federativa do Brasil buscará a integração econômica, política, social e cultural dos povos da América Latina, visando à formação de uma comunidade latino-americana de nações.",
+      "A República buscará a integração dos povos da América Latina e da Europa, visando à formação de uma comunidade euro-latino-americana.",
+      "A República buscará a integração dos povos dos cinco continentes, visando à formação de uma comunidade latino-americana.",
+      "A República buscará a integração socioeconômica com os Estados Unidos da América, visando à formação de uma comunidade das nações americanas."
     ],
-    "correta": 2,
-    "comentario": "A forma federativa de Estado é princípio fundamental (art. 1º). Nas relações internacionais (art. 4º) vigoram a independência nacional e a concessão de asilo político; construir sociedade livre, justa e solidária é objetivo (art. 3º); e os valores sociais do trabalho e da livre iniciativa são fundamentos (art. 1º)."
+    "correta": 1,
+    "comentario": "O parágrafo único do art. 4º da CF/1988 dispõe que a República buscará a integração econômica, política, social e cultural dos povos da América Latina, visando à formação de uma comunidade latino-americana de nações."
   },
   {
     "id": "q34",
     "n": 34,
     "tema": "Direito Constitucional",
-    "enunciado": "No que se refere aos direitos e garantias fundamentais, assinale a opção correta.",
+    "enunciado": "Conforme a CF/1988, sempre que a falta de norma regulamentadora torne inviável o exercício dos direitos e das liberdades constitucionais e das prerrogativas inerentes à nacionalidade, à soberania e à cidadania, caberá",
     "alts": [
-      "O direito fundamental à vida é hierarquicamente superior aos demais direitos fundamentais.",
-      "As associações somente poderão ser compulsoriamente dissolvidas ou ter as suas atividades suspensas por decisão judicial transitada em julgado.",
-      "Os direitos sociais previstos na CF/1988 não integram o catálogo dos direitos e garantias fundamentais, em razão de sua natureza meramente programática e da ausência de aplicabilidade direta.",
-      "A proteção do trabalhador em face da automação é direito fundamental de aplicabilidade imediata e constitui exemplo de norma constitucional de eficácia plena.",
-      "Os direitos individuais, como direitos de liberdade, e os direitos sociais, como direitos de igualdade, mantêm relação de recíproca complementaridade, pois ambos concretizam aspectos do princípio da dignidade da pessoa humana."
+      "mandado de segurança.",
+      "habeas corpus.",
+      "habeas data.",
+      "ação popular.",
+      "mandado de injunção."
     ],
     "correta": 4,
-    "comentario": "Direitos de liberdade e de igualdade complementam-se na concretização da dignidade humana. Não há hierarquia entre direitos fundamentais; a dissolução compulsória exige trânsito em julgado, mas a suspensão das atividades basta decisão judicial; os direitos sociais são direitos fundamentais; e a proteção em face da automação é norma de eficácia limitada."
+    "comentario": "O mandado de injunção (art. 5º, LXXI) cabe quando a falta de norma regulamentadora inviabiliza o exercício de direitos e liberdades constitucionais e de prerrogativas da nacionalidade, da soberania e da cidadania. Os demais remédios protegem outros bens."
   },
   {
     "id": "q35",
     "n": 35,
     "tema": "Direito Constitucional",
-    "enunciado": "A respeito da inviolabilidade do domicílio (art. 5º, XI, da CF/1988), assinale a opção correta.",
+    "enunciado": "Acerca dos direitos e das garantias fundamentais, assinale a alternativa correta.",
     "alts": [
-      "É permitida a entrada na casa sem o consentimento do morador em caso de flagrante delito ou desastre, ou para prestar socorro, a qualquer hora do dia ou da noite.",
-      "É permitida a entrada na casa a qualquer hora, inclusive durante a noite, desde que mediante ordem judicial.",
-      "A entrada na casa, durante a noite, é admitida por simples determinação judicial.",
-      "A entrada na casa exige, em qualquer hipótese, prévia ordem judicial.",
-      "É vedada a entrada na casa, no período noturno, ainda que em situação de flagrante delito."
+      "São gratuitas as ações de habeas corpus e habeas data e, na forma da lei, os atos necessários ao exercício da cidadania, desde que comprovada a condição de pobreza do cidadão.",
+      "A obtenção de certidões em repartições públicas, para a defesa de direitos, depende do pagamento da respectiva taxa de serviço, salvo se comprovada a pobreza do requerente.",
+      "O direito à vida, previsto no caput do art. 5º da CF/1988, abrange tanto o direito de não ser morto quanto o direito de ter uma vida digna.",
+      "Com fundamento no direito de igualdade, não podem existir tratamentos diferenciados em razão do gênero, da capacidade física ou da condição econômica do indivíduo.",
+      "As entidades associativas, independentemente de autorização, têm legitimidade para representar os seus filiados judicial ou extrajudicialmente."
     ],
-    "correta": 0,
-    "comentario": "Em flagrante delito, desastre ou para prestar socorro, o ingresso é permitido a qualquer hora; por determinação judicial, somente durante o dia. Logo, não há ingresso judicial à noite, nem se exige ordem judicial nas hipóteses de flagrante, desastre ou socorro."
+    "correta": 2,
+    "comentario": "O direito à vida abrange o direito de não ser morto e o de ter vida digna. HC e HD são gratuitos independentemente de pobreza; a obtenção de certidões independe de taxa (art. 5º, XXXIV); o direito de igualdade admite tratamentos diferenciados (ações afirmativas); e as associações precisam de autorização expressa para representar filiados (art. 5º, XXI)."
   },
   {
     "id": "q36",
     "n": 36,
-    "tema": "Direito Administrativo",
-    "enunciado": "À luz das disposições da CF/1988 relativas à administração pública, assinale a opção correta.",
+    "tema": "Direito Constitucional",
+    "enunciado": "Acerca dos direitos e das garantias fundamentais, assinale a alternativa correta.",
     "alts": [
-      "O servidor da administração direta investido em mandato eletivo federal ficará afastado do cargo, e esse período de afastamento não poderá ser computado como tempo de serviço para qualquer efeito legal.",
-      "Os servidores públicos civis não possuem direito à livre associação sindical, por se submeterem a regime jurídico de direito público.",
-      "A investidura em cargo público efetivo pode ser feita, excepcionalmente, sem aprovação prévia em concurso público, desde que reconhecida situação de emergência e haja previsão em lei.",
-      "A prática de ato de improbidade administrativa por agente público implica a suspensão da função pública e dos direitos políticos, sem prejuízo da ação penal cabível.",
-      "A abstenção do poder público em classificar atos e documentos como sigilosos, em cumprimento à lei, bem como o deferimento de pedidos de acesso a informações administrativas, são exemplos de aplicação do princípio da publicidade."
+      "A ação de grupos armados contra a ordem constitucional e o Estado democrático constitui crime inafiançável e insuscetível de graça ou anistia.",
+      "A prática do racismo constitui crime inafiançável e imprescritível, sujeito à pena de detenção, nos termos da lei.",
+      "A definitividade, e não a transitoriedade, caracteriza as ações afirmativas como instrumentos de realização da igualdade material.",
+      "Quanto ao mandado de injunção, a teoria não concretista sustenta que a decisão do STF terá eficácia contra todos.",
+      "O exercício de qualquer trabalho, ofício ou profissão é livre, atendidas as qualificações profissionais que a lei estabelecer."
     ],
     "correta": 4,
-    "comentario": "A transparência e o acesso à informação concretizam a publicidade (art. 37, caput). O tempo de mandato eletivo é contado para vários efeitos (art. 38); os servidores civis têm direito à sindicalização; a investidura em cargo efetivo exige concurso; e a improbidade gera perda da função (não suspensão) e suspensão dos direitos políticos."
+    "comentario": "É livre o exercício de qualquer trabalho, ofício ou profissão, atendidas as qualificações legais (art. 5º, XIII). A ação de grupos armados é inafiançável e imprescritível; o racismo sujeita-se à pena de reclusão; a transitoriedade é da essência das ações afirmativas; e a teoria não concretista não confere eficácia contra todos ao mandado de injunção."
   },
   {
     "id": "q37",
     "n": 37,
     "tema": "Direito Constitucional",
-    "enunciado": "A respeito da estabilidade e da perda do cargo do servidor público (CF/1988), assinale a opção correta.",
+    "enunciado": "A respeito da acumulação remunerada de cargos públicos na CF/1988, assinale a opção correta.",
     "alts": [
-      "O servidor estável pode perder o cargo por sentença judicial transitada em julgado, por PAD ou por avaliação periódica de desempenho, sempre assegurada a ampla defesa.",
-      "O servidor estável pode ser exonerado por simples ato discricionário da autoridade nomeante.",
-      "O servidor estável só pode perder o cargo mediante decisão judicial transitada em julgado.",
-      "A perda do cargo por avaliação periódica de desempenho dispensa o contraditório.",
-      "Extinto o cargo, o servidor estável é demitido, sem direito a disponibilidade remunerada."
+      "É lícita a acumulação de dois cargos privativos de profissionais de saúde com profissões regulamentadas, havendo compatibilidade de horários.",
+      "É livre a acumulação remunerada de cargos, empregos e funções públicas, desde que respeitado o teto constitucional.",
+      "A acumulação de dois cargos de professor é vedada, ainda que haja compatibilidade de horários.",
+      "A proibição de acumular não alcança os empregos em empresas públicas e sociedades de economia mista, já que são regidos pela Consolidação das Leis do Trabalho (CLT) — regime celetista.",
+      "A acumulação lícita de cargos independe da compatibilidade de horários entre eles."
     ],
     "correta": 0,
-    "comentario": "Art. 41, § 1º: o estável perde o cargo por sentença transitada, por PAD ou por avaliação periódica, sempre com ampla defesa; extinto o cargo, fica em disponibilidade com remuneração proporcional (§ 3º)."
+    "comentario": "É lícita a acumulação de dois cargos de saúde regulamentados, com compatibilidade de horários (art. 37, XVI, c). A acumulação não é livre; a de dois professores é permitida; a proibição alcança empresas públicas e sociedades de economia mista (XVII); e a compatibilidade de horários é sempre exigida."
   },
   {
     "id": "q38",
     "n": 38,
-    "tema": "Direito Administrativo",
-    "enunciado": "A respeito dos atributos do ato administrativo, assinale a opção correta.",
+    "tema": "Direito Constitucional",
+    "enunciado": "A respeito dos direitos dos servidores públicos na CF/1988, assinale a opção correta.",
     "alts": [
-      "A presunção de legitimidade impõe obrigações a terceiros independentemente de sua concordância.",
-      "A imperatividade consiste na execução direta do ato por meios próprios da Administração.",
-      "A tipicidade traduz a coerção indireta para compelir o particular ao cumprimento.",
-      "A autoexecutoriedade permite à Administração executar diretamente suas decisões, sem prévia autorização judicial.",
-      "A discricionariedade é a presunção de que o ato é válido até prova em contrário."
+      "É vedada ao servidor público civil a livre associação sindical.",
+      "O direito de greve do servidor público será exercido nos termos e nos limites definidos em lei específica.",
+      "O servidor público adquire a estabilidade no momento da posse no cargo efetivo.",
+      "A remuneração do servidor pode exceder o subsídio dos Ministros do STF, se houver previsão em lei.",
+      "Ao servidor em estágio probatório é vedado filiar-se a partido político."
     ],
-    "correta": 3,
-    "comentario": "A autoexecutoriedade é a execução direta pela Administração. As demais trocam os atributos: imperatividade (imposição unilateral), presunção (validade até prova em contrário), exigibilidade (coerção indireta) e tipicidade (correspondência a tipos legais)."
+    "correta": 1,
+    "comentario": "O direito de greve é exercido nos termos de lei específica (art. 37, VII). A livre associação sindical é assegurada (VI); a estabilidade exige três anos de efetivo exercício; a remuneração sujeita-se ao teto (XI); e não há vedação à filiação partidária do servidor."
   },
   {
     "id": "q39",
     "n": 39,
-    "tema": "LC 840/2011",
-    "enunciado": "À luz da LC nº 840/2011, constituem formas de vacância de cargo público",
+    "tema": "Direito Administrativo",
+    "enunciado": "O atributo da presunção de legitimidade e de veracidade dos atos administrativos produz, como efeito prático,",
     "alts": [
-      "a exoneração, a reversão e a recondução.",
-      "a readaptação, a promoção e a exoneração.",
-      "a exoneração, a demissão, a aposentadoria, a posse em outro cargo inacumulável e o falecimento.",
-      "o aproveitamento, a reintegração e a readaptação.",
-      "a licença, o afastamento e a substituição."
+      "a inversão do ônus da prova, cabendo a quem alega a ilegitimidade do ato demonstrá-la.",
+      "a impossibilidade de o ato vir a ser questionado perante o Poder Judiciário.",
+      "a desnecessidade de a Administração fundamentar os atos que restringem direitos dos particulares.",
+      "a impossibilidade de a própria Administração rever o ato (autotutela).",
+      "a atribuição à Administração do ônus de provar a validade do ato em juízo."
     ],
-    "correta": 2,
-    "comentario": "São formas de vacância a exoneração, a demissão, a aposentadoria, a posse em outro cargo inacumulável e o falecimento. Reversão, recondução, aproveitamento e reintegração são formas de provimento."
+    "correta": 0,
+    "comentario": "A presunção de legitimidade/veracidade faz o ato presumir-se válido e verdadeiro até prova em contrário, invertendo o ônus probatório para quem o impugna — o que não impede o controle judicial, a motivação ou a autotutela."
   },
   {
     "id": "q40",
     "n": 40,
     "tema": "Direito Administrativo",
-    "enunciado": "O Diretor de Recursos Humanos da SEDES expediu, por ato formal, a declaração de tempo de serviço prestado à administração por servidor requerente. Considerando a teoria dos atos administrativos, assinale a opção que indica o elemento que representa o resultado prático do ato (o seu efeito jurídico imediato).",
+    "enunciado": "O atributo pelo qual o ato administrativo deve corresponder a figuras (tipos) previamente definidas em lei como aptas a produzir determinados resultados é",
     "alts": [
-      "a motivação.",
-      "o objeto.",
-      "a finalidade.",
-      "o motivo.",
-      "a forma."
+      "a autoexecutoriedade.",
+      "a tipicidade.",
+      "a imperatividade.",
+      "a presunção de veracidade.",
+      "a exigibilidade."
     ],
     "correta": 1,
-    "comentario": "O objeto é o efeito jurídico imediato do ato — aquilo que ele dispõe/produz (aqui, declarar o tempo de serviço). O motivo é a situação que o autoriza; a finalidade é o interesse público visado; a forma é o modo de exteriorização; e a motivação é a exposição dos fundamentos."
+    "comentario": "A tipicidade exige que o ato corresponda a figuras predefinidas em lei para produzir seus efeitos próprios; autoexecutoriedade, imperatividade, presunção e exigibilidade são outros atributos."
   },
   {
     "id": "q41",
     "n": 41,
     "tema": "Direito Administrativo",
-    "enunciado": "A respeito do poder de polícia, assinale a opção correta.",
+    "enunciado": "Quanto às formas de extinção do ato administrativo, assinale a opção correta.",
     "alts": [
-      "A autoexecutoriedade é o atributo do poder de polícia que permite ao agente público empregar a força, se necessário, para executar a medida.",
-      "A coercibilidade consiste na prerrogativa de a Administração, por vontade própria, modificar imediatamente a ordem jurídica, impondo desde logo obrigações aos particulares.",
-      "O poder de polícia desenvolve-se em quatro fases — ordem, consentimento, fiscalização e sanção —, sendo indelegáveis as fases de consentimento e de fiscalização.",
-      "Segundo a doutrina, o fundamento do poder de polícia é o princípio da predominância (supremacia) do interesse público sobre o particular.",
-      "A polícia judiciária incide, basicamente, sobre as atividades dos particulares."
+      "A revogação pressupõe a ilegalidade do ato e produz efeitos retroativos (ex tunc).",
+      "A anulação decorre de juízo de conveniência e oportunidade da Administração.",
+      "A revogação recai sobre ato válido, por razões de conveniência e oportunidade, produzindo efeitos prospectivos (ex nunc).",
+      "A cassação decorre da revogação do ato por mera conveniência da Administração.",
+      "A revogação produz efeitos retroativos (ex tunc), desde a edição do ato revogado."
     ],
-    "correta": 3,
-    "comentario": "O fundamento do poder de polícia é a supremacia do interesse público sobre o particular. O emprego da força é a coercibilidade; a imposição unilateral imediata é a imperatividade; entre as fases, são indelegáveis a ordem e a sanção; e a polícia administrativa incide sobre atividades, ao passo que a judiciária recai sobre pessoas."
+    "correta": 2,
+    "comentario": "A revogação atinge ato válido por conveniência/oportunidade (ex nunc); a cassação resulta do descumprimento, pelo beneficiário, das condições de manutenção do ato; a anulação é por ilegalidade (ex tunc)."
   },
   {
     "id": "q42",
     "n": 42,
     "tema": "Direito Administrativo",
-    "enunciado": "A respeito do poder disciplinar, assinale a opção correta.",
+    "enunciado": "No âmbito do poder hierárquico, a transferência temporária do exercício de competência de um órgão a outro, e a possibilidade de o superior chamar para si o exercício de competência do subordinado, denominam-se, respectivamente,",
     "alts": [
-      "Consiste em editar regulamentos para a fiel execução das leis.",
-      "Consiste em rever os próprios atos por conveniência e oportunidade.",
-      "Consiste na prerrogativa de apurar infrações e aplicar penalidades aos servidores e demais pessoas sujeitas à disciplina administrativa.",
-      "Consiste em restringir direitos de qualquer particular em prol do interesse público.",
-      "Consiste em delegar e avocar competências dentro da hierarquia administrativa."
+      "delegação e avocação.",
+      "revogação e anulação.",
+      "ratificação e convalidação.",
+      "desconcentração e descentralização.",
+      "cassação e caducidade."
     ],
-    "correta": 2,
-    "comentario": "O poder disciplinar apura faltas e aplica sanções a servidores e a quem esteja sujeito à disciplina administrativa. As demais descrevem os poderes regulamentar, de autotutela, de polícia e hierárquico."
+    "correta": 0,
+    "comentario": "No poder hierárquico, a delegação transfere temporariamente o exercício de competência e a avocação é o chamamento, pelo superior, da competência do subordinado; os demais pares referem-se a outros institutos."
   },
   {
     "id": "q43",
     "n": 43,
     "tema": "Direito Administrativo",
-    "enunciado": "A respeito da empresa pública, integrante da administração indireta, assinale a opção correta.",
+    "enunciado": "O poder regulamentar (normativo) da Administração caracteriza-se por permitir a edição de atos gerais para a fiel execução das leis, sendo certo que",
     "alts": [
-      "É pessoa jurídica de direito público, criada diretamente por lei.",
-      "É pessoa jurídica de direito privado, criada mediante autorização legal, com capital exclusivamente público.",
-      "Caracteriza-se por ter capital majoritariamente privado.",
-      "Integra a administração direta, desprovida de personalidade jurídica própria.",
-      "Pode ser criada independentemente de autorização legislativa."
+      "o regulamento pode revogar a lei que lhe serve de fundamento, desde que motivado.",
+      "o regulamento pode instituir tributos não previstos em lei, em casos de urgência.",
+      "o regulamento equipara-se à lei em sentido formal, com igual hierarquia.",
+      "o regulamento de execução não pode inovar na ordem jurídica, criando direitos ou obrigações não previstos em lei.",
+      "o regulamento autônomo pode, em regra, criar obrigações não previstas em lei."
     ],
-    "correta": 1,
-    "comentario": "A empresa pública é pessoa jurídica de direito privado, com capital exclusivamente público, cuja criação depende de autorização em lei específica."
+    "correta": 3,
+    "comentario": "O poder regulamentar permite detalhar a lei para sua fiel execução, mas o regulamento executivo não inova na ordem jurídica (não cria direitos/obrigações, nem tributos, sem previsão legal), não revoga a lei nem a ela se equipara."
   },
   {
     "id": "q44",
     "n": 44,
     "tema": "Direito Administrativo",
-    "enunciado": "A respeito do princípio da autotutela (Súmula 473 do STF), assinale a opção correta.",
+    "enunciado": "A respeito dos sentidos da expressão “Administração Pública”, assinale a opção correta.",
     "alts": [
-      "A Administração pode anular seus próprios atos quando ilegais e revogá-los por conveniência e oportunidade, respeitados os direitos adquiridos.",
-      "A Administração depende sempre do Poder Judiciário para rever os seus atos.",
-      "A Administração não pode revogar atos discricionários.",
-      "A Administração está impedida de anular os seus atos eivados de ilegalidade.",
-      "A Administração só pode revogar os seus atos mediante autorização legislativa."
+      "Em sentido material, corresponde ao conjunto de órgãos e entidades do Estado, e não à atividade desempenhada.",
+      "Em sentido formal, confunde-se com as funções de legislar e de julgar exercidas pelo Estado.",
+      "Em sentido formal (subjetivo), designa o conjunto de órgãos, agentes e entidades incumbidos da função administrativa; em sentido material (objetivo), designa a própria atividade administrativa.",
+      "Em sentido objetivo, restringe-se aos órgãos da administração direta da União.",
+      "Os sentidos formal e material são equivalentes, designando sempre os mesmos elementos."
     ],
-    "correta": 0,
-    "comentario": "Pela autotutela (Súmula 473/STF), a Administração anula atos ilegais e revoga atos inconvenientes por si mesma, respeitados os direitos adquiridos — sem depender do Judiciário ou do Legislativo."
+    "correta": 2,
+    "comentario": "Em sentido formal/subjetivo, a Administração Pública é o conjunto de órgãos, agentes e entidades que exercem a função administrativa; em sentido material/objetivo, é a própria atividade administrativa. Os dois sentidos não se confundem nem se restringem à administração direta da União."
   },
   {
     "id": "q45",
     "n": 45,
-    "tema": "LC 840/2011",
-    "enunciado": "À luz da LC nº 840/2011, assinale a opção correta.",
+    "tema": "Direito Administrativo",
+    "enunciado": "A respeito do conceito de Estado e de seus elementos constitutivos, assinale a opção correta.",
     "alts": [
-      "Na hipótese de acumulação lícita de cargos, o servidor poderá aproveitar o prazo e a pontuação do estágio probatório de um cargo para o outro.",
-      "A recondução consiste na reinvestidura do servidor no cargo anteriormente ocupado quando invalidada a sua demissão por decisão administrativa ou judicial, com o restabelecimento dos direitos.",
-      "Quando houver conveniência para o serviço, a penalidade de suspensão poderá ser convertida em multa, ficando o servidor afastado de suas funções durante o período.",
-      "As denúncias anônimas sobre infração disciplinar serão desconsideradas, sendo indispensável, para o início das investigações, a representação por escrito com a identificação do denunciante.",
-      "Se um servidor cometer assédio sexual e outro cometer assédio moral, ambos estarão sujeitos à mesma pena máxima de suspensão."
+      "São elementos do Estado a população, o patrimônio público e a administração indireta.",
+      "O território é elemento dispensável, bastando o povo e um governo organizado.",
+      "Governo e Estado são expressões sinônimas, a designar a mesma realidade jurídica.",
+      "São elementos constitutivos do Estado o povo, o território e o governo soberano.",
+      "O povo confunde-se com a população, abrangendo todos os que se encontrem no território, ainda que estrangeiros de passagem."
     ],
-    "correta": 4,
-    "comentario": "O assédio sexual e o assédio moral sujeitam-se à mesma pena máxima de suspensão. Não se aproveita estágio probatório entre cargos; a descrição da letra B é a de reintegração (não recondução); a conversão da suspensão em multa mantém o servidor em exercício; e a denúncia anônima pode ser apurada de ofício."
+    "correta": 3,
+    "comentario": "O Estado constitui-se de três elementos: povo (vínculo jurídico-político de nacionalidade), território (base física) e governo soberano. O povo não se confunde com a população (conceito demográfico); o território é indispensável; e governo não é sinônimo de Estado."
   },
   {
     "id": "q46",
     "n": 46,
     "tema": "LC 840/2011",
-    "enunciado": "À luz da LC nº 840/2011, a respeito da responsabilidade do servidor, assinale a opção correta.",
+    "enunciado": "À luz da LC nº 840/2011, assinale a opção que apresenta conduta VEDADA (proibição) ao servidor público.",
     "alts": [
-      "A responsabilidade penal exclui automaticamente a responsabilidade administrativa pelo mesmo fato.",
-      "O recebimento de vantagem indevida constitui mero descumprimento de dever, punível com advertência.",
-      "A ausência ao serviço sem autorização é conduta atípica, não sujeita a qualquer penalidade.",
-      "A absolvição no processo administrativo impede a responsabilização penal pelo mesmo fato.",
-      "As responsabilidades civil, penal e administrativa são independentes entre si e podem cumular-se pelo mesmo fato."
+      "Delegar a subordinado, por ato formal, competência que lhe tenha sido cometida, nos casos previstos em lei.",
+      "Exercer atividade remunerada compatível com o cargo, fora do horário de expediente.",
+      "Opor resistência injustificada ao andamento de documento, de processo ou à execução de serviço.",
+      "Requerer, por escrito, a revisão de processo administrativo disciplinar de que tenha sido parte.",
+      "Cumprir as ordens superiores, exceto quando manifestamente ilegais."
     ],
-    "correta": 4,
-    "comentario": "As três esferas (civil, penal e administrativa) são independentes e cumuláveis. A penal não exclui a administrativa; receber vantagem indevida é infração grave; faltar sem autorização é infração funcional; e só a absolvição penal que negue o fato ou a autoria repercute nas demais esferas."
+    "correta": 2,
+    "comentario": "Opor resistência injustificada ao andamento de documento, processo ou serviço é proibição. As demais condutas são permitidas ou constituem deveres: a delegação prevista em lei, o exercício de atividade compatível fora do expediente, o pedido de revisão de PAD e o cumprimento de ordens (salvo as manifestamente ilegais) não são vedados."
   },
   {
     "id": "q47",
     "n": 47,
-    "tema": "Atendimento ao público",
-    "enunciado": "A respeito das qualidades do atendimento ao público, assinale a opção correta.",
+    "tema": "LC 840/2011",
+    "enunciado": "À luz da LC nº 840/2011, a respeito das penalidades disciplinares, assinale a opção correta.",
     "alts": [
-      "A cortesia caracteriza-se pelo tratamento formal, impessoal e distante dos interesses do solicitante.",
-      "A eficiência caracteriza-se pela satisfação do cidadão quanto às informações solicitadas.",
-      "A presteza caracteriza-se pela priorização das tarefas internas em relação ao atendimento do público.",
-      "A presteza caracteriza-se pelo atendimento ágil e disposto, com vontade de ajudar e de resolver a demanda do cidadão.",
-      "A urbanidade caracteriza-se, essencialmente, pela mera agilidade do atendimento prestado."
+      "A inassiduidade habitual é punível com suspensão de até noventa dias.",
+      "O abandono de cargo é punível com suspensão de até noventa dias.",
+      "A falta de urbanidade no trato com o público é punível com suspensão, por trinta dias.",
+      "A reincidência de falta punida com advertência sujeita o servidor à penalidade de suspensão.",
+      "A improbidade administrativa é punível com suspensão na primeira ocorrência."
     ],
     "correta": 3,
-    "comentario": "A presteza é a disposição de atender com agilidade e vontade de resolver a demanda. A cortesia é o trato gentil e respeitoso (não distante); a eficiência envolve resultado com economia de meios; e a urbanidade é a civilidade no trato, não a simples rapidez."
+    "comentario": "A reincidência de falta punida com advertência enseja suspensão. A inassiduidade habitual, o abandono de cargo e a improbidade administrativa são puníveis com demissão; e a falta de urbanidade, com advertência — não com suspensão."
   },
   {
     "id": "q48",
     "n": 48,
-    "tema": "Lei 13.460/2017",
-    "enunciado": "A respeito dos direitos básicos do usuário dos serviços públicos (Lei nº 13.460/2017), assinale a opção correta.",
+    "tema": "Atendimento ao público",
+    "enunciado": "No atendimento telefônico ao público, constitui boa prática",
     "alts": [
-      "O usuário tem direito à obtenção de informações precisas e ao atendimento conforme normas e prazos, observados os princípios da regularidade, da continuidade e da cortesia.",
-      "As manifestações dos usuários, por envolverem juízo de valor, dispensam tratamento e resposta pela administração.",
-      "A avaliação da qualidade do serviço público é vedada ao usuário, por competir ao próprio órgão prestador.",
-      "A administração pode exigir, como regra, o reconhecimento de firma e a autenticação dos documentos apresentados pelo usuário.",
-      "O atendimento deve priorizar a conveniência interna do órgão, ainda que em prejuízo da continuidade do serviço."
+      "transferir de imediato a chamada ao setor competente, dispensada a escuta da demanda do cidadão.",
+      "fornecer a informação solicitada com rapidez, ainda que sem confirmar o entendimento do cidadão.",
+      "encaminhar de imediato a ligação a outro setor, sem registrar a demanda do cidadão.",
+      "abster-se de anotar a demanda, a fim de não burocratizar o atendimento.",
+      "identificar-se e identificar o órgão, ouvir com atenção a demanda e registrar as informações necessárias ao encaminhamento."
     ],
-    "correta": 0,
-    "comentario": "A Lei nº 13.460/2017 assegura informação adequada e atendimento conforme normas e prazos, com regularidade, continuidade e cortesia. As manifestações devem ser respondidas; o usuário pode avaliar o serviço; veda-se, como regra, exigir reconhecimento de firma e autenticação; e o serviço orienta-se pelo interesse do usuário."
+    "correta": 4,
+    "comentario": "No atendimento telefônico, recomenda-se identificar-se e ao órgão, ouvir com atenção, confirmar o entendimento e registrar os dados necessários ao correto encaminhamento — etapas que não devem ser suprimidas em nome da rapidez."
   },
   {
     "id": "q49",
     "n": 49,
-    "tema": "Redação Oficial",
-    "enunciado": "A respeito dos fechos de comunicação no padrão ofício, assinale a opção correta.",
+    "tema": "Atendimento ao público",
+    "enunciado": "A impessoalidade no atendimento ao público exige que o servidor",
     "alts": [
-      "Para autoridade de hierarquia superior, emprega-se o fecho “Atenciosamente”.",
-      "Para autoridade de mesma hierarquia, emprega-se o fecho “Cordialmente”.",
-      "Para autoridade de hierarquia superior, emprega-se o fecho “Respeitosamente”.",
-      "O Manual prevê o uso de “Saudações” como fecho padrão das comunicações.",
-      "O fecho “Abraços” é admitido nas comunicações entre autoridades."
+      "trate todos os cidadãos de forma isonômica, sem privilégios ou discriminações pessoais.",
+      "demonstre empatia e acolhimento, adaptando o tom ao perfil de cada cidadão.",
+      "priorize a celeridade, reduzindo ao mínimo o tempo de cada atendimento.",
+      "mantenha sigilo sobre as informações pessoais prestadas pelo cidadão.",
+      "trate o cidadão com cordialidade e gentileza ao longo de toda a interação."
     ],
-    "correta": 2,
-    "comentario": "O Manual prevê apenas dois fechos: “Respeitosamente” (autoridade superior) e “Atenciosamente” (mesma hierarquia ou inferior); “Cordialmente”, “Saudações” e “Abraços” não são padronizados."
+    "correta": 0,
+    "comentario": "A impessoalidade impõe o tratamento isonômico de todos, sem privilégios ou discriminações; empatia, celeridade, sigilo e cortesia são outras qualidades/deveres do atendimento, que não se confundem com a impessoalidade."
   },
   {
     "id": "q50",
     "n": 50,
     "tema": "Redação Oficial",
-    "enunciado": "A respeito dos princípios aplicáveis à redação oficial, assinale a opção correta.",
+    "enunciado": "A concisão, como qualidade da redação oficial, consiste em",
     "alts": [
-      "Os documentos oficiais devem ser redigidos com clareza e concisão, o que significa utilizar o máximo de palavras possível para evitar ambiguidades.",
-      "Na redação oficial, a introdução é a parte do texto em que o assunto é detalhado e, havendo mais de uma ideia, cada uma é tratada em parágrafo distinto.",
-      "A impessoalidade dos documentos oficiais é decorrência do princípio constitucional da impessoalidade que rege a Administração Pública.",
-      "O cacófato (cacofonia) não deve ser empregado nas comunicações oficiais e indica a redundância de expressão, isto é, a repetição de uma mesma ideia por palavras diferentes.",
-      "A linguagem comedida e sem excessos, com ordenação lógica e econômica das ideias, corresponde à qualidade denominada eloquência."
+      "redigir com clareza, eliminando ambiguidades e obscuridades do texto.",
+      "transmitir o máximo de informação com o mínimo de palavras, sem prejuízo da clareza.",
+      "empregar a norma culta e o tratamento formal exigidos do expediente.",
+      "padronizar a estrutura do documento conforme o padrão ofício.",
+      "redigir de forma impessoal, sem marcas da opinião de quem escreve."
     ],
-    "correta": 2,
-    "comentario": "A impessoalidade da redação oficial decorre do princípio constitucional da impessoalidade (art. 37 da CF). Concisão é usar o mínimo de palavras; detalhar o assunto cabe ao desenvolvimento; o cacófato é um som desagradável (não redundância); e a ordenação lógica e econômica refere-se à concisão/clareza."
+    "correta": 1,
+    "comentario": "A concisão é dizer o essencial com economia de palavras, sem sacrificar a clareza; clareza, formalidade, padronização e impessoalidade são outras qualidades da redação oficial, distintas da concisão."
   },
   {
     "id": "q51",
     "n": 51,
     "tema": "Redação Oficial",
-    "enunciado": "A respeito dos vocativos no padrão ofício, assinale a opção correta.",
+    "enunciado": "No padrão ofício de redação oficial, são partes integrantes do documento, entre outras,",
     "alts": [
-      "O vocativo “Ilustríssimo Senhor” é o tratamento padrão para os chefes de Poder.",
-      "O vocativo “Prezado Senhor” é o empregado para o Presidente da República.",
-      "O vocativo “Caro Senhor” é reservado às autoridades de alto escalão.",
-      "O vocativo “Excelentíssimo Senhor”, seguido do cargo, é empregado para o Presidente da República e os chefes de Poder.",
-      "O vocativo “Digníssimo Senhor” é exigido para todas as autoridades."
+      "a epígrafe, a cláusula de vigência e a sanção, próprias dos atos normativos.",
+      "o brasão da República, o número de protocolo e o código de barras, como únicas partes.",
+      "o tipo e o número do expediente, o local e a data, o assunto, o destinatário, o texto, o fecho e a identificação do signatário.",
+      "o título, o resumo e as palavras-chave, à semelhança de um artigo científico.",
+      "a ementa e o preâmbulo, seguidos do articulado em incisos e parágrafos."
     ],
-    "correta": 3,
-    "comentario": "O Manual reserva “Excelentíssimo Senhor” (mais o cargo) aos chefes dos Poderes; “Ilustríssimo”, “Prezado”, “Caro” e “Digníssimo” não são os vocativos prescritos para essas autoridades."
+    "correta": 2,
+    "comentario": "O padrão ofício compõe-se de tipo e número do expediente, local e data, assunto, destinatário, texto, fecho e identificação do signatário; epígrafe, ementa, preâmbulo, cláusula de vigência e articulado são partes dos atos normativos (leis), não do ofício."
   },
   {
     "id": "q52",
     "n": 52,
-    "tema": "Arquivologia",
-    "enunciado": "Conforme a teoria das três idades, a respeito dos arquivos, assinale a opção correta.",
+    "tema": "Redação Oficial",
+    "enunciado": "Conforme a edição vigente do Manual de Redação da Presidência da República, o expediente denominado “padrão ofício”",
     "alts": [
-      "O arquivo intermediário reúne os documentos de uso frequente e de consulta constante.",
-      "O arquivo corrente reúne os documentos de uso frequente, em tramitação ou de consulta constante.",
-      "O arquivo permanente reúne os documentos de uso frequente, ainda em tramitação.",
-      "O arquivo corrente reúne os documentos que já perderam o valor administrativo.",
-      "O arquivo corrente é destinado à guarda definitiva dos documentos históricos."
+      "preservou o memorando para as comunicações internas, ao lado do novo padrão ofício.",
+      "resultou da unificação de três antigos expedientes — o ofício, o aviso e o memorando — que passaram a ter diagramação única.",
+      "destina-se às comunicações entre órgãos públicos, sendo vedado o seu envio a particulares.",
+      "é empregado nas comunicações internas de um mesmo órgão, em substituição ao antigo aviso.",
+      "exige o tratamento por extenso, sendo vedado o uso das abreviaturas dos pronomes de tratamento."
     ],
     "correta": 1,
-    "comentario": "O arquivo corrente reúne os documentos de uso frequente, em tramitação/consulta constante; o intermediário aguarda prazos e o permanente guarda os de valor histórico definitivo."
+    "comentario": "A edição vigente do Manual unificou ofício, aviso e memorando em um único expediente — o “padrão ofício” —, com diagramação padronizada, aplicável a comunicações internas e externas, inclusive a particulares."
   },
   {
     "id": "q53",
     "n": 53,
     "tema": "Arquivologia",
-    "enunciado": "A respeito do princípio da proveniência (respeito aos fundos), na arquivologia, assinale a opção correta.",
+    "enunciado": "Quanto ao grau de sigilo, os documentos de arquivo classificam-se em",
     "alts": [
-      "Os documentos de um mesmo produtor (fundo) não devem ser misturados aos de outros produtores, preservando-se a sua origem.",
-      "Todos os documentos devem ser organizados por assunto, independentemente de sua origem.",
-      "Os arquivos devem ser eliminados após um ano de sua produção.",
-      "Os documentos digitais não se submetem aos princípios da arquivística.",
-      "A ordem original dos documentos deve ser sempre desfeita na organização."
+      "correntes, intermediários e permanentes, conforme a frequência de uso.",
+      "textuais, iconográficos e cartográficos, conforme o gênero.",
+      "originais e cópias, conforme a forma de reprodução.",
+      "primários e secundários, conforme o valor do documento.",
+      "ostensivos e sigilosos, conforme o acesso seja irrestrito ou submetido a restrições legais."
     ],
-    "correta": 0,
-    "comentario": "Pelo princípio da proveniência, os documentos de um fundo (produtor) são mantidos juntos e não se misturam aos de outros produtores — preserva-se a origem e a ordem original."
+    "correta": 4,
+    "comentario": "Quanto ao grau de sigilo, os documentos são ostensivos (acesso irrestrito) ou sigilosos (acesso restrito por lei); as demais alternativas classificam os documentos pelas idades, pelo gênero, pela reprodução e pelo valor."
   },
   {
     "id": "q54",
     "n": 54,
     "tema": "Arquivologia",
-    "enunciado": "A respeito da avaliação de documentos de arquivo, assinale a opção correta.",
+    "enunciado": "A gestão de documentos, conforme a legislação arquivística, compreende o conjunto de procedimentos e operações técnicas referentes",
     "alts": [
-      "A avaliação consiste em organizar os documentos por assunto ou função, originando o plano de classificação.",
-      "A avaliação identifica os valores primário e secundário dos documentos e fixa os prazos de guarda e a destinação final (eliminação ou recolhimento).",
-      "A avaliação tem por objeto registrar a entrada e a tramitação dos documentos no protocolo.",
-      "A avaliação destina-se a converter os documentos em suporte digital, no âmbito da gestão eletrônica.",
-      "A avaliação corresponde ao recolhimento dos documentos de valor histórico ao arquivo permanente."
+      "à produção, à tramitação (uso) e à avaliação/destinação dos documentos, visando à sua eliminação ou ao recolhimento para guarda permanente.",
+      "às atividades de protocolo, de recebimento e de expedição, excluída a fase de destinação.",
+      "à avaliação e à eliminação dos documentos, sem abranger a fase de produção.",
+      "à guarda permanente dos documentos de valor histórico, no arquivo permanente.",
+      "à digitalização e à preservação digital, no âmbito da gestão eletrônica de documentos."
     ],
-    "correta": 1,
-    "comentario": "A avaliação reconhece os valores primário e secundário e define prazos de guarda e destinação (consolidados na tabela de temporalidade). Organizar por assunto é a classificação; registrar a tramitação é o protocolo; digitalizar é gestão eletrônica; e recolher ao permanente é o recolhimento."
+    "correta": 0,
+    "comentario": "A gestão de documentos abrange as fases de produção, utilização/tramitação e avaliação/destinação (com eliminação ou recolhimento); as demais alternativas captam apenas uma parte do processo."
   },
   {
     "id": "q55",
     "n": 55,
     "tema": "Administração de Materiais",
-    "enunciado": "A respeito da gestão de estoques, assinale a opção correta.",
+    "enunciado": "O Lote Econômico de Compra (LEC), em administração de materiais, corresponde à quantidade de pedido que",
     "alts": [
-      "O estoque de segurança (mínimo) protege o abastecimento contra atrasos na entrega e variações no consumo, evitando a ruptura.",
-      "O estoque de segurança tem por finalidade elevar ao máximo o capital imobilizado em estoque.",
-      "O estoque de segurança elimina a necessidade de novas compras.",
-      "O estoque de segurança substitui o ponto de pedido na reposição.",
-      "O estoque de segurança destina-se a armazenar os itens obsoletos do almoxarifado."
+      "corresponde ao nível de estoque que, ao ser atingido, dispara um novo pedido de compra.",
+      "representa a reserva destinada a cobrir atrasos de entrega e oscilações de consumo.",
+      "minimiza o custo total de estoque, equilibrando os custos de pedido (aquisição) e os custos de manutenção (armazenagem).",
+      "indica o número de vezes que o estoque se renova em determinado período.",
+      "é a quantidade máxima que o estoque pode atingir, conforme a capacidade de armazenagem."
     ],
-    "correta": 0,
-    "comentario": "O estoque de segurança é a reserva que protege contra atrasos de reposição e oscilações de consumo, evitando a ruptura — não eleva o capital imobilizado nem substitui o ponto de pedido."
+    "correta": 2,
+    "comentario": "O LEC é a quantidade de compra que minimiza o custo total (equilíbrio entre custos de pedido e de manutenção); as demais alternativas definem ponto de pedido, estoque de segurança, rotatividade e estoque máximo."
   },
   {
     "id": "q56",
     "n": 56,
-    "tema": "Patrimônio",
-    "enunciado": "A respeito da gestão patrimonial, assinale a opção correta.",
+    "tema": "Administração de Materiais",
+    "enunciado": "No recebimento de materiais, a conferência que verifica se o material entregue corresponde, em quantidade e em especificação/qualidade, ao que foi pedido denomina-se",
     "alts": [
-      "O tombamento consiste na retirada do bem do acervo por inservibilidade.",
-      "O tombamento consiste na transferência da posse do bem a terceiros.",
-      "O tombamento (registro) consiste em incorporar o bem ao patrimônio, atribuindo-lhe número de identificação para controle.",
-      "O tombamento consiste no empréstimo do bem por comodato.",
-      "O tombamento consiste na redução do valor do bem por depreciação."
+      "tombamento, com a atribuição de número patrimonial ao bem.",
+      "recebimento qualitativo e quantitativo (conferência do material).",
+      "liquidação da despesa, etapa da execução orçamentária.",
+      "inventário físico anual dos bens em estoque.",
+      "baixa do material por inservibilidade."
     ],
-    "correta": 2,
-    "comentario": "O tombamento/registro incorpora o bem ao patrimônio e lhe atribui número de identificação (plaqueta); retirada por inservibilidade é baixa, e a redução de valor é depreciação."
+    "correta": 1,
+    "comentario": "O recebimento envolve a conferência quantitativa (quantidades) e qualitativa (especificações/qualidade) do material face ao pedido/empenho; tombamento, liquidação, inventário e baixa são operações distintas."
   },
   {
     "id": "q57",
     "n": 57,
     "tema": "Patrimônio",
-    "enunciado": "A respeito da classificação dos bens móveis quanto ao estado de conservação, assinale a opção correta.",
+    "enunciado": "Na distinção entre material de consumo e material permanente, além do critério da durabilidade, a legislação adota critérios complementares. A respeito do tema, assinale a opção correta.",
     "alts": [
-      "Bem ocioso é aquele que, embora em perfeitas condições de uso, não pode mais ser recuperado.",
-      "Bem antieconômico é aquele cuja manutenção se mostra onerosa ou cujo rendimento é precário, em razão de uso prolongado ou de desgaste prematuro.",
-      "Bem recuperável é aquele que se encontra em uso e em plenas condições de funcionamento.",
-      "Bem irrecuperável é aquele que está sendo utilizado, porém com rendimento abaixo do esperado.",
-      "Bem servível é aquele cujo conserto custaria mais da metade do seu valor de mercado."
+      "O material permanente é definido pelo seu valor de aquisição, independentemente da durabilidade.",
+      "O material que, ao ser empregado, se incorpora a outro bem é classificado como permanente.",
+      "Considera-se material de consumo o que, em razão de sua fragilidade, perecibilidade, incorporabilidade ou transformabilidade, é assim classificado, ainda que tenha durabilidade superior a dois anos.",
+      "O material de consumo é o que possui durabilidade superior a dois anos e não perde a sua identidade física.",
+      "A durabilidade superior a dois anos, por si só, basta para classificar qualquer bem como material permanente."
     ],
-    "correta": 1,
-    "comentario": "Bem antieconômico tem manutenção onerosa ou rendimento precário pelo desgaste. O bem ocioso está em condições de uso, mas não é aproveitado; o recuperável precisa de reparo (custo de até 50% do valor); o irrecuperável não pode mais ser usado; e o servível está em condições de uso."
+    "correta": 2,
+    "comentario": "Os critérios de fragilidade, perecibilidade, incorporabilidade e transformabilidade classificam o bem como material de consumo, mesmo que durável por mais de dois anos. O valor de aquisição é critério auxiliar; o bem incorporável é de consumo; material de consumo dura até dois anos; e a durabilidade isolada não basta para classificar o bem como permanente."
   },
   {
     "id": "q58",
     "n": 58,
     "tema": "Patrimônio",
-    "enunciado": "A respeito do desfazimento de bens públicos móveis inservíveis, assinale a opção correta.",
+    "enunciado": "Na classificação dos bens patrimoniais inservíveis, denomina-se ocioso o bem que",
     "alts": [
-      "A inservibilidade do bem é, por si só, suficiente para o desfazimento, dispensadas a sua prévia classificação e avaliação.",
-      "O desfazimento por doação independe de qualquer justificativa de interesse público.",
-      "São formas de desfazimento, entre outras, a alienação (venda, permuta ou doação), a cessão e a destinação ambientalmente adequada dos rejeitos.",
-      "A alienação de bens móveis inservíveis exige, em regra, a modalidade concorrência, vedado o leilão.",
-      "O bem classificado como recuperável deve ser desfeito de imediato, antes de qualquer tentativa de conserto."
+      "se encontra em perfeitas condições de uso, mas não está sendo aproveitado.",
+      "apresenta desgaste que torna a sua manutenção onerosa ou o rendimento precário.",
+      "não pode mais ser utilizado nem economicamente recuperado.",
+      "necessita de reparos para voltar a ser utilizado.",
+      "está em uso regular e em boas condições de conservação."
     ],
-    "correta": 2,
-    "comentario": "O desfazimento dá-se por alienação (venda, permuta, doação), cessão ou destinação ambientalmente adequada. Exige prévia classificação e avaliação; a doação demanda justificativa de interesse público; a alienação de móveis usa, em regra, o leilão; e o bem recuperável deve ser reparado."
+    "correta": 0,
+    "comentario": "O bem ocioso está em condições de uso, porém não é aproveitado; difere do antieconômico (manutenção onerosa), do irrecuperável (não pode ser usado/recuperado), do recuperável (precisa de reparo) e do bem em uso regular."
   },
   {
     "id": "q59",
     "n": 59,
     "tema": "Licitações (Lei 14.133/2021)",
-    "enunciado": "A respeito das modalidades de licitação da Lei nº 14.133/2021, assinale a opção correta.",
+    "enunciado": "Na Lei nº 14.133/2021, o diálogo competitivo é a modalidade de licitação destinada a",
     "alts": [
-      "O leilão destina-se à aquisição de bens e serviços comuns por meio de lances.",
-      "O concurso destina-se à compra de bens comuns pela Administração.",
-      "A concorrência é a modalidade própria para a alienação de bens públicos.",
-      "O diálogo competitivo destina-se à aquisição de bens comuns de pronto pagamento.",
-      "O pregão destina-se à aquisição de bens e serviços comuns, com disputa por meio de lances."
+      "aquisição de bens e serviços comuns, com disputa por meio de lances.",
+      "alienação de bens públicos ao licitante que oferecer o maior lance.",
+      "seleção de trabalho técnico, científico ou artístico mediante a instituição de prêmio.",
+      "contratação de pequeno valor, mediante dispensa, sem fase de disputa.",
+      "contratações em que a Administração dialoga com licitantes previamente selecionados para desenvolver soluções capazes de atender a necessidades de inovação tecnológica ou de especial complexidade."
     ],
     "correta": 4,
-    "comentario": "O pregão é para bens e serviços comuns, com disputa por lances; o leilão é para alienação de bens, o concurso para trabalho técnico/artístico e o diálogo competitivo para objetos de inovação/complexidade."
+    "comentario": "O diálogo competitivo (Lei 14.133/2021) destina-se a objetos de inovação ou de especial complexidade, com diálogo prévio entre a Administração e licitantes selecionados; as demais alternativas descrevem o pregão, o leilão, o concurso e a dispensa."
   },
   {
     "id": "q60",
     "n": 60,
     "tema": "Licitações (Lei 14.133/2021)",
-    "enunciado": "Em conformidade com a Lei nº 14.133/2021 (Nova Lei de Licitações), assinale o prazo mínimo para a apresentação de propostas e lances, contado a partir da divulgação do edital, no caso de serviços e obras comuns de engenharia, quando adotado o critério de julgamento de menor preço.",
+    "enunciado": "São critérios de julgamento das propostas previstos na Lei nº 14.133/2021",
     "alts": [
-      "oito dias corridos.",
-      "dez dias úteis.",
-      "oito dias úteis.",
-      "dez dias corridos.",
-      "sessenta dias úteis."
+      "o menor preço e o maior desconto, vedada a adoção do critério de melhor técnica.",
+      "a melhor técnica e o maior lance, este para a contratação de serviços contínuos.",
+      "menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance e maior retorno econômico.",
+      "o sorteio entre os licitantes habilitados, como critério principal.",
+      "a maior pontuação obtida pelo licitante em cadastro de fornecedores."
     ],
-    "correta": 1,
-    "comentario": "Pela Lei nº 14.133/2021 (art. 55, I), para a aquisição de bens e a contratação de serviços e obras comuns — inclusive de engenharia — com julgamento por menor preço ou maior desconto, o prazo mínimo é de dez dias úteis."
+    "correta": 2,
+    "comentario": "A Lei 14.133/2021 (art. 33) prevê como critérios de julgamento: menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance e maior retorno econômico — o sorteio é critério de desempate, não de julgamento."
   }
 ];
