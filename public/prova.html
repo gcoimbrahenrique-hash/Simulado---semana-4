@@ -91,6 +91,21 @@
   .texto-base .ref{font-family:var(--disp);font-size:11px;font-weight:700;letter-spacing:.06em;color:#9C7A2E;text-transform:uppercase;margin-bottom:8px}
   .texto-base p{margin:0;font-size:14.5px;text-align:justify;color:#3a3a42}
 
+  .discursiva{background:var(--card);border:1px solid var(--linha);border-radius:var(--raio);padding:22px 24px;margin-top:26px;box-shadow:var(--sombra);border-top:3px solid var(--esmeralda);scroll-margin-top:84px}
+  .discursiva .dtit{display:flex;align-items:center;gap:11px;margin-bottom:8px}
+  .discursiva .dtit .q-num{background:var(--esmeralda)}
+  .discursiva h3{margin:0;font-size:17px;font-weight:700}
+  .discursiva .dinstr{font-size:13px;color:var(--tinta-suave);margin:0 0 16px}
+  .discursiva .mot{background:#FBF6EC;border:1px solid var(--champ-soft);border-left:4px solid var(--champagne);border-radius:12px;padding:14px 16px;margin-bottom:12px;font-size:13.5px;text-align:justify;color:#3a3a42}
+  .discursiva .cmd{font-size:14.5px;margin:18px 0 8px;color:#26262e;font-weight:500}
+  .discursiva ol{margin:0 0 16px;padding-left:22px}
+  .discursiva ol li{font-size:14px;margin-bottom:6px;color:#2c2c34}
+  .discursiva textarea{width:100%;min-height:320px;resize:vertical;padding:15px 16px;border:1.5px solid var(--linha);border-radius:12px;font-family:var(--corpo);font-size:15px;line-height:1.7;background:#FCFBF9;color:var(--tinta)}
+  .discursiva textarea:focus{outline:none;border-color:var(--champagne);box-shadow:0 0 0 4px var(--champ-soft)}
+  .discursiva .contagem{display:flex;justify-content:space-between;gap:10px;margin-top:9px;font-size:12px;color:var(--tinta-fraca)}
+  .discursiva .contagem b{font-family:var(--disp);color:var(--tinta-suave)}
+  .discursiva .contagem .over{color:var(--erro);font-weight:600}
+
   .questao{background:var(--card);border:1px solid var(--linha);border-radius:var(--raio);padding:20px 22px;margin-bottom:16px;box-shadow:var(--sombra);scroll-margin-top:84px}
   .q-topo{display:flex;align-items:center;gap:11px;margin-bottom:13px}
   .q-num{font-family:var(--disp);font-weight:700;font-size:13px;color:var(--marfim);background:var(--grafite);border-radius:8px;padding:4px 10px;letter-spacing:.04em}
@@ -197,7 +212,7 @@
       </div>
       <button class="btn" id="btn-entrar">Entrar na prova</button>
       <div class="aviso" id="aviso-login"></div>
-      <div style="text-align:center"><span class="selo">1h30 · 60 questões · uma única tentativa</span></div>
+      <div style="text-align:center"><span class="selo">3 horas · objetiva + discursiva · tentativa única</span></div>
     </div>
     <div class="login-rodape">Concurso não é loteria. É método.</div>
   </div>
@@ -216,7 +231,7 @@
       </div>
       <div class="relogio" id="relogio">
         <div class="rotulo">tempo<br>restante</div>
-        <div class="tempo num" id="tempo">90:00</div>
+        <div class="tempo num" id="tempo">03:00:00</div>
       </div>
     </div>
     <div class="progresso"><i id="prog-barra"></i></div>
@@ -233,6 +248,7 @@
         </div>
       </div>
       <div id="lista-questoes"></div>
+      <div id="discursiva-area"></div>
     </div>
 
     <aside class="mapa" id="mapa">
@@ -289,7 +305,7 @@
   "use strict";
   const API = '/api';
   const LETRAS = ['A','B','C','D','E','F','G','H'];
-  let estado = { login:null, senha:null, questoes:[], duracao:0, inicio:0, offset:0, respostas:{}, fimPrevisto:0, timer:null, enviada:false };
+  let estado = { login:null, senha:null, questoes:[], duracao:0, inicio:0, offset:0, respostas:{}, fimPrevisto:0, timer:null, enviada:false, discursiva:null, textoDiscursiva:'' };
   const $ = s => document.querySelector(s);
   const el = (t,c)=>{const e=document.createElement(t);if(c)e.className=c;return e;};
 
@@ -317,12 +333,15 @@
     estado.login=login; estado.senha=senha; estado.questoes=d.questoes; estado.duracao=d.duracao_min*60;
     estado.inicio=d.inicio; estado.offset=d.agora-Math.floor(Date.now()/1000); estado.fimPrevisto=d.inicio+estado.duracao;
     try{ estado.respostas=JSON.parse(localStorage.getItem('sim_resp_'+login)||'{}'); }catch(e){ estado.respostas={}; }
+    estado.discursiva=d.discursiva||null;
+    try{ estado.textoDiscursiva = localStorage.getItem('sim_disc_'+login); }catch(e){ estado.textoDiscursiva=null; }
+    if(estado.textoDiscursiva==null) estado.textoDiscursiva = d.discursiva_salva || '';
     localStorage.setItem('sim_sessao', JSON.stringify({login}));
     $('#barra-titulo').textContent=d.titulo; $('#cab-titulo').textContent=d.titulo;
     $('#cab-sub').textContent=d.subtitulo||''; $('#cab-nome').textContent=d.nome;
     $('#cont-total').textContent=d.questoes.length; $('#cont-total-m').textContent=d.questoes.length;
     $('#tela-login').style.display='none'; $('#app').style.display='block'; window.scrollTo(0,0);
-    renderQuestoes(); renderMapa(); atualizaContador(); iniciaTimer();
+    renderQuestoes(); renderDiscursiva(); renderMapa(); atualizaContador(); iniciaTimer();
     window.addEventListener('beforeunload', guardaSaida);
   }
   function guardaSaida(e){ if(!estado.enviada){ e.preventDefault(); e.returnValue=''; return ''; } }
@@ -358,6 +377,30 @@
     const cel=$('#cel-'+qid); if(cel) cel.classList.add('feita');
     atualizaContador();
   }
+  function renderDiscursiva(){
+    const area=$('#discursiva-area'); area.innerHTML='';
+    const D=estado.discursiva; if(!D) return;
+    const box=el('div','discursiva'); box.id='card-discursiva';
+    let html='<div class="dtit"><span class="q-num">D</span><h3>'+escapar(D.titulo||'Prova Discursiva')+'</h3></div>';
+    if(D.instrucoes) html+='<p class="dinstr">'+escapar(D.instrucoes)+'</p>';
+    (D.textos_motivadores||[]).forEach(t=>{ html+='<div class="mot">'+escapar(t)+'</div>'; });
+    if(D.enunciado) html+='<p class="cmd">'+escapar(D.enunciado)+'</p>';
+    if(D.aspectos&&D.aspectos.length){ html+='<ol>'; D.aspectos.forEach(a=>html+='<li>'+escapar(a)+'</li>'); html+='</ol>'; }
+    html+='<textarea id="disc-texto" placeholder="Digite aqui a sua redação…" spellcheck="true"></textarea>';
+    html+='<div class="contagem"><span id="disc-linhas">≈ 0 linhas</span><span id="disc-chars"><b>0</b> caracteres</span></div>';
+    box.innerHTML=html; area.appendChild(box);
+    const ta=$('#disc-texto'); const maxc=D.max_caracteres||2800; const maxl=D.max_linhas||30;
+    ta.maxLength=maxc; ta.value=estado.textoDiscursiva||'';
+    const upd=()=>{
+      estado.textoDiscursiva=ta.value;
+      try{ localStorage.setItem('sim_disc_'+estado.login, ta.value); }catch(e){}
+      const chars=ta.value.length, aprox=Math.ceil(chars/90);
+      const lin=$('#disc-linhas'); lin.textContent='≈ '+aprox+' de '+maxl+' linhas';
+      lin.className = aprox>maxl ? 'over' : '';
+      $('#disc-chars').innerHTML='<b>'+chars+'</b> caracteres';
+    };
+    ta.addEventListener('input',upd); upd();
+  }
   function renderMapa(){
     const g=$('#mapa-grade'); g.innerHTML='';
     estado.questoes.forEach(q=>{
@@ -373,8 +416,11 @@
   function iniciaTimer(){ tique(); estado.timer=setInterval(tique,1000); }
   function tique(){ let r=estado.fimPrevisto-agoraServidor(); if(r<=0){ render(0); tempoEsgotado(); return; } render(r); }
   function render(r){
-    const m=Math.floor(r/60), s=r%60;
-    $('#tempo').textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+    const pad=n=>String(n).padStart(2,'0');
+    const h=Math.floor(r/3600), m=Math.floor((r%3600)/60), s=r%60;
+    $('#tempo').textContent = (estado.duracao>=3600)
+      ? pad(h)+':'+pad(m)+':'+pad(s)
+      : pad(Math.floor(r/60))+':'+pad(s);
     $('#prog-barra').style.width=(Math.max(0,r/estado.duracao)*100)+'%';
     const rel=$('#relogio'); rel.classList.toggle('aten', r<=600 && r>300); rel.classList.toggle('alerta', r<=300);
   }
@@ -389,8 +435,10 @@
   function abreModal(){
     const n=Object.keys(estado.respostas).length, tot=estado.questoes.length;
     $('#modal-feitas').textContent=n+' / '+tot;
-    const branco=$('#modal-branco');
-    if(n<tot){ branco.style.display='block'; branco.textContent='Você deixou '+(tot-n)+' questão(ões) em branco.'; } else branco.style.display='none';
+    const branco=$('#modal-branco'); const avisos=[];
+    if(n<tot) avisos.push('Você deixou '+(tot-n)+' questão(ões) objetiva(s) em branco.');
+    if(estado.discursiva && !(estado.textoDiscursiva||'').trim()) avisos.push('A prova discursiva está em branco.');
+    if(avisos.length){ branco.style.display='block'; branco.textContent=avisos.join(' '); } else branco.style.display='none';
     $('#modal').classList.add('abre');
   }
   async function enviar(automatico){
@@ -399,14 +447,14 @@
     window.removeEventListener('beforeunload', guardaSaida);
     document.querySelectorAll('input,button').forEach(x=>x.disabled=true);
     try{
-      const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({acao:'enviar',login:estado.login,senha:estado.senha,respostas:estado.respostas})});
+      const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({acao:'enviar',login:estado.login,senha:estado.senha,respostas:estado.respostas,discursiva:estado.textoDiscursiva||''})});
       const d=await r.json(); finalizar(d,automatico);
     }catch(e){ finalizar({ok:false,erro:'rede'},automatico); }
   }
   function finalizar(d,automatico){
-    try{ localStorage.setItem('sim_feito_'+estado.login,'1'); localStorage.removeItem('sim_resp_'+estado.login); }catch(e){}
+    try{ localStorage.setItem('sim_feito_'+estado.login,'1'); localStorage.removeItem('sim_resp_'+estado.login); localStorage.removeItem('sim_disc_'+estado.login); }catch(e){}
     $('#app').style.display='none'; $('#fim').style.display='grid';
-    if(automatico){ $('#fim-titulo').textContent='Tempo esgotado'; $('#fim-msg').textContent='O tempo de 1h30 terminou e suas respostas foram enviadas automaticamente.'; }
+    if(automatico){ $('#fim-titulo').textContent='Tempo esgotado'; $('#fim-msg').textContent='O tempo terminou e sua prova foi enviada automaticamente.'; }
     if(d&&d.ok&&d.mostrar_nota){ $('#fim-nota').style.display='block'; $('#fim-acertos').textContent=d.acertos; $('#fim-total').textContent=d.total; $('#fim-pct').textContent=d.percentual+'% de acerto'; }
     window.scrollTo(0,0);
   }
