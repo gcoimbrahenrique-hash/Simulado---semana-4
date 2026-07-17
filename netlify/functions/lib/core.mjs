@@ -57,6 +57,8 @@ export async function handle(body, store) {
       titulo: CONFIG.PROVA_TITULO, subtitulo: CONFIG.PROVA_SUBTITULO,
       duracao_min: CONFIG.DURACAO_MIN, inicio: rec.inicio, agora: agora(),
       questoes: questoesParaAluno(),
+      discursiva: (CONFIG.DISCURSIVA && CONFIG.DISCURSIVA.ativa) ? CONFIG.DISCURSIVA : null,
+      discursiva_salva: (rec && typeof rec.discursiva === 'string') ? rec.discursiva : '',
     };
   }
 
@@ -84,6 +86,8 @@ export async function handle(body, store) {
     const total = QUESTOES.length;
     rec.finalizado = true; rec.fim = agora();
     rec.acertos = acertos; rec.total = total; rec.detalhe = detalhe;
+    rec.discursiva = String(body.discursiva == null ? '' : body.discursiva).slice(0, 20000);
+    if (rec.nota_discursiva === undefined) rec.nota_discursiva = null;
     await store.setJSON(keyAluno(login), rec);
 
     const resp = { ok: true, enviado: true, mostrar_nota: CONFIG.MOSTRAR_NOTA_AO_ALUNO };
@@ -92,6 +96,20 @@ export async function handle(body, store) {
       resp.percentual = total ? Math.round(acertos * 1000 / total) / 10 : 0;
     }
     return resp;
+  }
+
+  /* -------- SALVAR NOTA DA DISCURSIVA (professor) -------- */
+  if (acao === 'salvar_nota') {
+    const senha = String(body.prof_senha || '');
+    if (!senhaConfere(CONFIG.PROF_SENHA, senha))
+      return { ok: false, erro: 'Senha do professor incorreta.' };
+    const login = String(body.login || '').trim();
+    const rec = await store.get(keyAluno(login), { type: 'json' });
+    if (!rec) return { ok: false, erro: 'Aluno não encontrado.' };
+    rec.nota_discursiva = (body.nota === '' || body.nota == null) ? null : Number(body.nota);
+    rec.obs_discursiva = String(body.obs == null ? '' : body.obs).slice(0, 4000);
+    await store.setJSON(keyAluno(login), rec);
+    return { ok: true, login, nota_discursiva: rec.nota_discursiva };
   }
 
   /* -------- RESULTADOS (professor) -------- */
@@ -122,6 +140,7 @@ export async function handle(body, store) {
       ok: true, titulo: CONFIG.PROVA_TITULO, subtitulo: CONFIG.PROVA_SUBTITULO,
       duracao_min: CONFIG.DURACAO_MIN, total: QUESTOES.length,
       questoes: qmeta, alunos, turma,
+      discursiva: (CONFIG.DISCURSIVA && CONFIG.DISCURSIVA.ativa) ? CONFIG.DISCURSIVA : null,
     };
   }
 
